@@ -29,20 +29,42 @@
 		4641E0F02D301F8C00BA6C5F /* RepTallyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepTallyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4641E1192D30206B00BA6C5F /* Exceptions for "RepTally" folder in "RepTally" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/RepTallyTests/RepTallyTests.swift,
+				Tests/RepTallyUITests/RepTallyUITests.swift,
+				Tests/RepTallyUITests/RepTallyUITestsLaunchTests.swift,
+			);
+			target = 4641E0D52D301F8A00BA6C5F /* RepTally */;
+		};
+		4641E11A2D30206B00BA6C5F /* Exceptions for "RepTally" folder in "RepTallyTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/RepTallyTests/RepTallyTests.swift,
+			);
+			target = 4641E0E52D301F8C00BA6C5F /* RepTallyTests */;
+		};
+		4641E11B2D30206B00BA6C5F /* Exceptions for "RepTally" folder in "RepTallyUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/RepTallyUITests/RepTallyUITests.swift,
+				Tests/RepTallyUITests/RepTallyUITestsLaunchTests.swift,
+			);
+			target = 4641E0EF2D301F8C00BA6C5F /* RepTallyUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4641E0D82D301F8A00BA6C5F /* RepTally */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4641E1192D30206B00BA6C5F /* Exceptions for "RepTally" folder in "RepTally" target */,
+				4641E11A2D30206B00BA6C5F /* Exceptions for "RepTally" folder in "RepTallyTests" target */,
+				4641E11B2D30206B00BA6C5F /* Exceptions for "RepTally" folder in "RepTallyUITests" target */,
+			);
 			path = RepTally;
-			sourceTree = "<group>";
-		};
-		4641E0E92D301F8C00BA6C5F /* RepTallyTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RepTallyTests;
-			sourceTree = "<group>";
-		};
-		4641E0F32D301F8C00BA6C5F /* RepTallyUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RepTallyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				4641E0D82D301F8A00BA6C5F /* RepTally */,
-				4641E0E92D301F8C00BA6C5F /* RepTallyTests */,
-				4641E0F32D301F8C00BA6C5F /* RepTallyUITests */,
 				4641E0D72D301F8A00BA6C5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +150,6 @@
 			dependencies = (
 				4641E0E82D301F8C00BA6C5F /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				4641E0E92D301F8C00BA6C5F /* RepTallyTests */,
-			);
 			name = RepTallyTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +169,6 @@
 			);
 			dependencies = (
 				4641E0F22D301F8C00BA6C5F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4641E0F32D301F8C00BA6C5F /* RepTallyUITests */,
 			);
 			name = RepTallyUITests;
 			packageProductDependencies = (
@@ -395,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RepTally/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RepTally/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 6H4Q27BHWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RepTally/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RepTally/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 6H4Q27BHWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
