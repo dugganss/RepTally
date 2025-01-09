@@ -15,21 +15,23 @@ struct HomeView: View {
                     Image(systemName: "pause")
                         .rotationEffect(.degrees(90))
                         .font(.title)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(Color("SafeBlack"))
                         .padding(30)
+                        .padding(.top,10)
                 }
                 Spacer()
                 
                 Text("RepTally")
                     .padding(.top, 50)
-                    .font(.title2)
+                    .font(.title)
                 
                 Spacer()
                 Button(action: {}){
                     Image(systemName: "plus")
                         .font(.title)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(Color("SafeBlack"))
                         .padding(30)
+                        .padding(.top,10)
                 }
             }
             .padding()
@@ -39,15 +41,30 @@ struct HomeView: View {
                     Text("Hi,")
                         .font(.title)
                     Text("Username") //TODO: needs to display actual username
-                        .font(.title2)
+                        .font(.title)
                         .italic()
                 }.padding(.leading, 35)
                 Spacer()
             }.padding(.bottom)
-            Color("BackgroundColour")
-        }
+            ZStack{
+                Color("BackgroundColour")
+                VStack{
+                    Spacer()
+                    HomeCardView(title: "View your Previous Sessions")
+                        //.padding()
+                    Spacer()
+                    HomeCardView(title: "Set a Weekly Goal")
+                        //.padding()
+                    Spacer()
+                    NavBarView()
+                }
+            }
+        }.ignoresSafeArea()    
     }
+    
 }
+    
+
 
 #Preview {
     HomeView()

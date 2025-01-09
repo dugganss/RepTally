@@ -6,22 +6,31 @@
 //
 import SwiftUI
 
+///This is the view for the Navigation bar found at the bottom of some pages.
+///It has been implemented as its own view to allow for reusability on multiple screens.
 struct NavBarView: View {
     var body: some View{
         Color("NavBarColour")
             .overlay{
-            HStack{
-                Spacer()
-                Image(systemName: "house")
-                    .padding(.trailing, 30)
-                    .font(.title)
-                Spacer()
-                Image(systemName: "person")
-                    .padding(.leading,30)
-                    .font(.title)
-                Spacer()
-            }
-        }
+                HStack{
+                    
+                    Button(action: {}){
+                        Image(systemName: "house")
+                            .padding(.leading, 50)
+                            .font(.title)
+                            .foregroundStyle(Color("SafeBlack"))
+                    }
+                    
+                    Spacer()
+                    Button(action: {}){
+                        Image(systemName: "person")
+                            .padding(.trailing, 50)
+                            .font(.title)
+                            .foregroundStyle(Color("SafeBlack"))
+                    }
+                    
+                }
+            }.frame(width: .infinity ,height: 85)
     }
 }
 
