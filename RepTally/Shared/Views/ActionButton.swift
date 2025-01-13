@@ -50,7 +50,7 @@ struct ActionButton:View {
                     .bold()
             }
         }
-        .frame(width: self.width)
+        .frame(width: self.width, height: 60)
         .background(Color("ButtonColour"))
         .cornerRadius(5)
         
