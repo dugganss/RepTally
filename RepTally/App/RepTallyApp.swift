@@ -11,7 +11,7 @@ import SwiftUI
 struct RepTallyApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            CreateSessionView()
         }
     }
 }

@@ -17,6 +17,7 @@ struct NavBarView: View {
                     Button(action: {}){
                         Image(systemName: "house")
                             .padding(.leading, 50)
+                            .padding(.bottom, 10)
                             .font(.title)
                             .foregroundStyle(Color("SafeBlack"))
                     }
@@ -25,6 +26,7 @@ struct NavBarView: View {
                     Button(action: {}){
                         Image(systemName: "person")
                             .padding(.trailing, 50)
+                            .padding(.bottom, 10)
                             .font(.title)
                             .foregroundStyle(Color("SafeBlack"))
                     }

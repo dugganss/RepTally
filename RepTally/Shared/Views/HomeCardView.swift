@@ -15,7 +15,7 @@ struct HomeCardView: View{
             Color(.cardColour)
             VStack{
                 Text(title)
-                    .font(.title2)
+                    .font(.custom("Hesker",size: 23))
                     .frame(width:200)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.safeBlack)

@@ -23,7 +23,7 @@ struct HomeView: View {
                 
                 Text("RepTally")
                     .padding(.top, 50)
-                    .font(.title)
+                    .font(.custom("Delta Block", size: 30))
                 
                 Spacer()
                 Button(action: {}){
@@ -39,9 +39,9 @@ struct HomeView: View {
             HStack{
                 VStack(alignment: .leading){
                     Text("Hi,")
-                        .font(.title)
+                        .font(.custom("FreeSerif", size: 30))
                     Text("Username") //TODO: needs to display actual username
-                        .font(.title)
+                        .font(.custom("FreeSerif", size: 26))
                         .italic()
                 }.padding(.leading, 35)
                 Spacer()
