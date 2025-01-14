@@ -10,6 +10,7 @@ import SwiftUI
 ///It has been implemented as its own view to allow for reusability on multiple screens.
 struct NavBarView: View {
     var body: some View{
+        
         Color("NavBarColour")
             .overlay{
                 HStack{
@@ -32,7 +33,8 @@ struct NavBarView: View {
                     }
                     
                 }
-            }.frame(width: .infinity ,height: 85)
+            }.frame(height: 85)
+            
     }
 }
 

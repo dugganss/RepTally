@@ -21,7 +21,7 @@ struct HomeCardView: View{
                     .foregroundStyle(.safeBlack)
                     .padding(.bottom)
                     .bold()
-                ActionButton(title: "Go", isArrowButton: true, isBig: false)
+                ActionButton(title: "Go", isArrowButton: true, isBig: false, action: {})
             }
         }
         .frame(width: UIScreen.main.bounds.width-80, height: UIScreen.main.bounds.height-660)

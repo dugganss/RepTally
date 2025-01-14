@@ -13,16 +13,12 @@ struct CreateSessionView:View{
     var body: some View{
         VStack{
             HStack{
-                ReturnButton()
-                
                 Spacer()
-                
                 Text("New Session")
-                    .padding(.top, 50)
-                    .padding(.leading, -50)
+                    .padding(.top, 70)
+                    .padding(.bottom, 10)
                     .font(.custom("Delta Block", size: 30))
                     .frame(alignment: .center)
-                Spacer()
                 Spacer()
             }
             
@@ -75,12 +71,16 @@ struct CreateSessionView:View{
             .padding(.bottom, 15)
             Spacer()
             
-            ActionButton(title: "Start Session", isArrowButton: false, isBig: true)
+            ActionButton(title: "Start Session", isArrowButton: false, isBig: true, action: {})
                 .padding(.bottom, 10)
                 
             Spacer()
             NavBarView()
         }.ignoresSafeArea()
+        //code adapted from https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: ReturnButton())
+        //end of adapted code
     }
 }
 #Preview {

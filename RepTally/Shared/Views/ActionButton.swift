@@ -18,15 +18,16 @@ import SwiftUI
 ///- action: function, what the button does when pressed.
 struct ActionButton:View {
     var title: String
-    //var action: () -> Void
+    var action: () -> Void
     var isArrowButton : Bool
     var isBig : Bool
     var width : CGFloat
     
-    init(title: String, isArrowButton: Bool, isBig: Bool) {
+    init(title: String, isArrowButton: Bool, isBig: Bool, action: @escaping () -> Void) {
         self.title = title
         self.isArrowButton = isArrowButton
         self.isBig = isBig
+        self.action = action
         if(self.isBig){
             self.width = UIScreen.main.bounds.width-80
         }else{
@@ -36,7 +37,7 @@ struct ActionButton:View {
     }
     
     var body: some View {
-        Button(action: {}){
+        Button(action: {action()}){
             Text(title)
                 .foregroundStyle(.white)
                 .padding()
@@ -58,6 +59,6 @@ struct ActionButton:View {
     }
 }
 
-#Preview {
-    ActionButton(title: "Go", isArrowButton: true, isBig: false)
-}
+//#Preview {
+//    ActionButton(title: "Go", isArrowButton: true, isBig: false)
+//}
