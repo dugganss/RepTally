@@ -8,7 +8,7 @@ import SwiftUI
 
 struct HomeCardView: View{
     var title: String
-    //var action: () -> Void
+    var action: () -> Void
     
     var body: some View{
         ZStack{
@@ -21,7 +21,7 @@ struct HomeCardView: View{
                     .foregroundStyle(.safeBlack)
                     .padding(.bottom)
                     .bold()
-                ActionButton(title: "Go", isArrowButton: true, isBig: false, action: {})
+                ActionButton(title: "Go", isArrowButton: true, isBig: false, action: self.action)
             }
         }
         .frame(width: UIScreen.main.bounds.width-80, height: UIScreen.main.bounds.height-660)
@@ -31,5 +31,5 @@ struct HomeCardView: View{
 }
 
 #Preview {
-    HomeCardView(title: "View your previous sessions")
+    HomeCardView(title: "View your previous sessions", action: {})
 }

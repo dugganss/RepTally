@@ -76,12 +76,12 @@ struct HomeView: View {
 //                        NavBarView()
                         Spacer()
                         Group{
-                            HomeCardView(title: "View your Previous Sessions")
-                            HomeCardView(title: "Set a Weekly Goal")
+                            HomeCardView(title: "View your Previous Sessions", action: {self.openPreviousSessions = true})
+                            HomeCardView(title: "Set a Weekly Goal", action: {self.openWeeklyGoal = true})
                             ActionButton(title: "Start a Session", isArrowButton: false, isBig: true, action: {self.openCreateSessions = true})
-                                .navigationDestination(isPresented: $openCreateSessions){
-                                    CreateSessionView()
-                                }
+//                                .navigationDestination(isPresented: $openCreateSessions){
+//                                    CreateSessionView()
+//                                }
                             NavBarView()
                         }
                         .frame(maxHeight: .infinity, alignment: .bottom)
@@ -90,6 +90,12 @@ struct HomeView: View {
                     }
                 }
             }.ignoresSafeArea()
+            .navigationDestination(isPresented: $openCreateSessions){
+                CreateSessionView()
+            }
+            .navigationDestination(isPresented: $openPreviousSessions){
+                PreviousSessionView()
+            }
         }
     }
 }
