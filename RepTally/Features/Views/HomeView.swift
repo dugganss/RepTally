@@ -82,7 +82,7 @@ struct HomeView: View {
 //                                .navigationDestination(isPresented: $openCreateSessions){
 //                                    CreateSessionView()
 //                                }
-                            NavBarView()
+                            NavBarView(isAccount:false, isHome: true)
                         }
                         .frame(maxHeight: .infinity, alignment: .bottom)
                         .ignoresSafeArea()
@@ -96,6 +96,10 @@ struct HomeView: View {
             .navigationDestination(isPresented: $openPreviousSessions){
                 PreviousSessionView()
             }
+            .navigationDestination(isPresented: $openWeeklyGoal){
+                WeeklyGoalView()
+            }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

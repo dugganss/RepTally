@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AccountView: View{
+    @State private var username: String = "Username"
     var body: some View{
         VStack{
             HStack{
@@ -19,6 +20,24 @@ struct AccountView: View{
                     .frame(alignment: .center)
                 Spacer()
             }
+            VStack{
+                HStack{
+                    Text("Username")
+                        .font(.custom("Delta Block", size: 22))
+                        .padding(.top, 15)
+                    Spacer()
+                }
+                TextField(username, text: $username)
+                    .onSubmit {
+                        //code to save username to device here
+                    }
+                    .padding()
+                    .border(.primary)
+                    .padding(.trailing, 50)
+            }
+            .padding(.leading, 50)
+            Spacer()
+            NavBarView(isAccount: true, isHome: false)
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)

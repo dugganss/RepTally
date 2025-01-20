@@ -75,9 +75,10 @@ struct CreateSessionView:View{
                 .padding(.bottom, 10)
                 
             Spacer()
-            NavBarView()
+            NavBarView(isAccount: false, isHome: false)
         }.ignoresSafeArea()
-        //code adapted from https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
+        //code adapted from Ashish (2019)https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
+        
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: ReturnButton())
         //end of adapted code

@@ -26,6 +26,7 @@ struct PreviousSessionView: View{
                     //these cards will link to another screen that will display the data for the record chosen
                 }
             }
+            NavBarView(isAccount: false, isHome: false)
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
