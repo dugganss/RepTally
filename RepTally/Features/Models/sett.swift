@@ -8,7 +8,7 @@ import SwiftUI
 
 
 
-struct Set: Identifiable {
+struct sett: Identifiable {
     var id: Int
     var workout: String = ""
     var reps: Int = 0
