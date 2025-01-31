@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PreviousSessionView: View{
+    @ObservedObject var user: User
+    
     var body: some View{
         VStack{
             HStack{
@@ -26,7 +28,7 @@ struct PreviousSessionView: View{
                     //these cards will link to another screen that will display the data for the record chosen
                 }
             }
-            NavBarView(isAccount: false, isHome: false)
+            NavBarView(user: user, isAccount: false, isHome: false)
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
@@ -34,6 +36,4 @@ struct PreviousSessionView: View{
     }
         
 }
-#Preview {
-    PreviousSessionView()
-}
+

@@ -9,7 +9,7 @@ import SwiftUI
 ///This view is used every time a user adds a new set in the create session screen
 ///It allows Set objects to be created through the UI
 struct NewSessionCard: View{
-    @Binding var set: Set
+    @Binding var set: sett
     var delete: () -> Void
     
     var body: some View{

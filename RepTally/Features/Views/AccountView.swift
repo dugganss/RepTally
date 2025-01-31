@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AccountView: View{
+    @ObservedObject var user: User
+    
     @State private var username: String = "Username"
     var body: some View{
         VStack{
@@ -37,13 +39,11 @@ struct AccountView: View{
             }
             .padding(.leading, 50)
             Spacer()
-            NavBarView(isAccount: true, isHome: false)
+            NavBarView(user: user, isAccount: true, isHome: false)
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: ReturnButton())
     }
 }
-#Preview{
-    AccountView()
-}
+

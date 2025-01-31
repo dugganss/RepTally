@@ -7,8 +7,14 @@
 
 import SwiftUI
 
+//TODO: this currently uses sett for values, you have now created a class for it that is persisted on the device
+// you need to make this page work with it! figure it out lol.. not sure how youre going to connect the sessions
+// to specific users but youll figure it out.
+
 struct CreateSessionView:View{
-    @State private var sets: [Set] = [Set(id: 1)]
+    @ObservedObject var user: User
+    
+    @State private var sets: [sett] = [sett(id: 1)]
     
     var body: some View{
         VStack{
@@ -54,7 +60,7 @@ struct CreateSessionView:View{
                 //add new set button
                 Button(action: {
                     //if(sets.count > 0){
-                    sets.append(Set(id: sets.count+1))
+                    sets.append(sett(id: sets.count+1))
                     //}else{
                     //    sets.append(Set(id: 1))
                     //}
@@ -75,7 +81,7 @@ struct CreateSessionView:View{
                 .padding(.bottom, 10)
                 
             Spacer()
-            NavBarView(isAccount: false, isHome: false)
+            NavBarView(user: user, isAccount: false, isHome: false)
         }.ignoresSafeArea()
         //code adapted from Ashish (2019)https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
         
@@ -84,6 +90,4 @@ struct CreateSessionView:View{
         //end of adapted code
     }
 }
-#Preview {
-    CreateSessionView()
-}
+

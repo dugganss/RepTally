@@ -9,16 +9,19 @@ import SwiftUI
 ///This is the view for the Navigation bar found at the bottom of some pages.
 ///It has been implemented as its own view to allow for reusability on multiple screens.
 struct NavBarView: View {
+    @ObservedObject var user: User
+    
     @State private var isAccount:Bool
     @State private var isHome:Bool
     @State private var openHome = false
     @State private var openAccount = false
     
-    init(isAccount: Bool, isHome: Bool, openHome: Bool = false, openAccount: Bool = false) {
+    init(user: User, isAccount: Bool, isHome: Bool, openHome: Bool = false, openAccount: Bool = false) {
         self.isAccount = isAccount
         self.isHome = isHome
         self.openHome = openHome
         self.openAccount = openAccount
+        self.user = user
     }
     
     var body: some View{
@@ -54,14 +57,11 @@ struct NavBarView: View {
                     }
                 }.frame(height: 85)
         }.navigationDestination(isPresented: $openHome){
-            HomeView()
+            HomeView(user: user)
         }
         .navigationDestination(isPresented: $openAccount){
-            AccountView()
+            AccountView(user: user)
         }
     }
 }
 
-#Preview {
-    NavBarView(isAccount: false, isHome: false)
-}

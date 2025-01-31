@@ -6,10 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct LogInView: View {
+    // this defines the context for the coreDataStack (so that you can perform crud operation on persisting data)
+    @Environment(\.managedObjectContext) private var viewContext
+    
     @State private var username = ""
     @State private var logInSuccess = false
+    @State private var isEmpty = false
+    @State private var isTooLong = false
+    
+    @State private var currentUser: User?
     var body: some View {
         NavigationStack{
             VStack{
@@ -29,16 +37,22 @@ struct LogInView: View {
                 }
                     
                 TextField("Enter Username", text: $username)
-                    .onSubmit {
-                        //code to save username to device here, or check if already exists
-                    }
                     .padding()
                     .border(.primary)
                     .padding(.horizontal, 50)
                 
+                if(isEmpty){
+                    Text("Enter Username")
+                        .foregroundStyle(.red)
+                }
+                
+                if(isTooLong){
+                    Text("Username too long, must be < 15 characters")
+                        .foregroundStyle(.red)
+                }
+                
                 Button(action: {
-                    //if valid allow button to be pressed to open app. Should use the data associated with the user.
-                    logInSuccess = true
+                    logIn()
                 }){
                     Image(systemName: "arrow.right.circle")
                         .padding(.top,5)
@@ -48,13 +62,57 @@ struct LogInView: View {
                 Spacer()
             }
             .navigationDestination(isPresented: $logInSuccess){
-                HomeView()
+                if let user = currentUser {
+                    HomeView(user: user)
+                }else{
+                    Text("No User found")
+                        .foregroundStyle(.red)
+                }
             }
             .navigationBarBackButtonHidden(true)
         }
     }
+    
+    private func logIn(){
+        isEmpty = false
+        isTooLong = false
+        let trimmedUsername = username.trimmingCharacters(in: .whitespaces)
+        guard !trimmedUsername.isEmpty else{
+            isEmpty = true
+            return
+        }
+        
+        guard trimmedUsername.count < 15 else{
+            isTooLong = true
+            return
+        }
+        
+        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "username == %@", trimmedUsername)
+        
+        do {
+            let results = try viewContext.fetch(fetchRequest)
+            if let existingUser = results.first {
+                currentUser = existingUser
+            }else{
+                let newUser = User(context: viewContext)
+                newUser.username = trimmedUsername
+                try viewContext.save()
+                currentUser = newUser
+            }
+            if currentUser != nil{
+                logInSuccess = true
+            }
+        } catch{
+            print("error fetching or creating user \(error.localizedDescription)")
+        }
+    }
 }
 
+
+
 #Preview{
-    LogInView()
+    let coreDataStack = CoreDataStack.shared
+    let context = coreDataStack.persistentContainer.viewContext
+    return LogInView().environment(\.managedObjectContext, context)
 }

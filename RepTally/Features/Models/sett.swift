@@ -7,7 +7,7 @@
 import SwiftUI
 
 
-
+//temporary model for set from before persisting data on the device
 struct sett: Identifiable {
     var id: Int
     var workout: String = ""

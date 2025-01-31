@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct WeeklyGoalView: View {
+    @ObservedObject var user: User
+    
     var body: some View {
         VStack{
             HStack{
@@ -24,7 +26,7 @@ struct WeeklyGoalView: View {
                 .padding(.horizontal, 50)
             
             Spacer()
-            NavBarView(isAccount: true, isHome: false)
+            NavBarView(user: user, isAccount: true, isHome: false)
             
             
             
@@ -39,6 +41,3 @@ struct WeeklyGoalView: View {
     }
 }
 
-#Preview{
-    WeeklyGoalView()
-}

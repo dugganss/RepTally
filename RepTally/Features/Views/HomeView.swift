@@ -7,6 +7,8 @@
 
 import SwiftUI
 struct HomeView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject var user: User
     
     //navigation destination using booleans retrieved from https://medium.com/@fsamuelsmartins/how-to-use-the-swiftuis-navigationstack-79f32ada7c69
     @State private var openCreateSessions = false
@@ -47,7 +49,7 @@ struct HomeView: View {
                     VStack(alignment: .leading){
                         Text("Hi,")
                             .font(.custom("FreeSerif", size: 30))
-                        Text("Username") //TODO: needs to display actual username
+                        Text("\(user.username ?? "empty")")
                             .font(.custom("FreeSerif", size: 26))
                             .italic()
                     }.padding(.leading, 35)
@@ -82,7 +84,7 @@ struct HomeView: View {
 //                                .navigationDestination(isPresented: $openCreateSessions){
 //                                    CreateSessionView()
 //                                }
-                            NavBarView(isAccount:false, isHome: true)
+                            NavBarView(user: user, isAccount:false, isHome: true)
                         }
                         .frame(maxHeight: .infinity, alignment: .bottom)
                         .ignoresSafeArea()
@@ -91,19 +93,17 @@ struct HomeView: View {
                 }
             }.ignoresSafeArea()
             .navigationDestination(isPresented: $openCreateSessions){
-                CreateSessionView()
+                CreateSessionView(user: user)
             }
             .navigationDestination(isPresented: $openPreviousSessions){
-                PreviousSessionView()
+                PreviousSessionView(user: user)
             }
             .navigationDestination(isPresented: $openWeeklyGoal){
-                WeeklyGoalView()
+                WeeklyGoalView(user: user)
             }
             .navigationBarBackButtonHidden(true)
         }
     }
 }
     
-#Preview {
-    HomeView()
-}
+

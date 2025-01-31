@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct RepTallyApp: App {
+    let coreDataStack = CoreDataStack.shared
+    
     var body: some Scene {
         WindowGroup {
             LogInView()
+            //code adapted from Apple (n.d.) (setting up a core data stack)
+                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
+            //end of adapted code
         }
     }
 }
