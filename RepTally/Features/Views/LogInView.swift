@@ -12,6 +12,8 @@ struct LogInView: View {
     // this defines the context for the coreDataStack (so that you can perform crud operation on persisting data)
     @Environment(\.managedObjectContext) private var viewContext
     
+    @Binding var loggedInUser: User?
+    
     @State private var username = ""
     @State private var logInSuccess = false
     @State private var isEmpty = false
@@ -101,6 +103,7 @@ struct LogInView: View {
                 currentUser = newUser
             }
             if currentUser != nil{
+                loggedInUser = currentUser
                 logInSuccess = true
             }
         } catch{
@@ -111,8 +114,8 @@ struct LogInView: View {
 
 
 
-#Preview{
-    let coreDataStack = CoreDataStack.shared
-    let context = coreDataStack.persistentContainer.viewContext
-    return LogInView().environment(\.managedObjectContext, context)
-}
+//#Preview{
+//    let coreDataStack = CoreDataStack.shared
+//    let context = coreDataStack.persistentContainer.viewContext
+//    return LogInView().environment(\.managedObjectContext, context)
+//}

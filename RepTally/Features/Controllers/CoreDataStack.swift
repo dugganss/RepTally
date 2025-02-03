@@ -30,8 +30,7 @@ class CoreDataStack: ObservableObject{
     private init() {}
     // end of adapted code
     
-    func saveContext(){
-        let context = persistentContainer.viewContext
+    func saveContext(context: NSManagedObjectContext){
         if context.hasChanges {
             do{
                 try context.save()

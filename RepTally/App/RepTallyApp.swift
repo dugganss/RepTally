@@ -11,12 +11,20 @@ import SwiftUI
 struct RepTallyApp: App {
     let coreDataStack = CoreDataStack.shared
     
+    @State private var loggedInUser: User?
+    
     var body: some Scene {
         WindowGroup {
-            LogInView()
-            //code adapted from Apple (n.d.) (setting up a core data stack)
-                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
-            //end of adapted code
+            if let user = loggedInUser {
+                HomeView(user: user)
+                //code adapted from Apple (n.d.) (setting up a core data stack)
+                    .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
+                //end of adapted code
+            }
+            else{
+                LogInView(loggedInUser: $loggedInUser)
+                    .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
+            }
         }
     }
 }

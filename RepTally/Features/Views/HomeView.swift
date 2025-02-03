@@ -94,6 +94,7 @@ struct HomeView: View {
             }.ignoresSafeArea()
             .navigationDestination(isPresented: $openCreateSessions){
                 CreateSessionView(user: user)
+                    .environment(\.managedObjectContext, viewContext)
             }
             .navigationDestination(isPresented: $openPreviousSessions){
                 PreviousSessionView(user: user)

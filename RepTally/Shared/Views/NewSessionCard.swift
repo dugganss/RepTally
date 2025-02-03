@@ -9,7 +9,7 @@ import SwiftUI
 ///This view is used every time a user adds a new set in the create session screen
 ///It allows Set objects to be created through the UI
 struct NewSessionCard: View{
-    @Binding var set: sett
+    @Binding var set: IntermediateSet
     var delete: () -> Void
     
     var body: some View{
@@ -30,9 +30,10 @@ struct NewSessionCard: View{
                     .padding()
                     .foregroundStyle(.safeBlack)
                     .font(.custom("Wesker", size: 15))
+                Spacer()
                 Image(systemName: "chevron.down")
                     .foregroundStyle(.safeBlack)
-                    .padding(.leading, 40)
+                    .padding(.trailing, 40)
             }
                 .frame(maxWidth: 300, alignment: .leading)
                 .padding(.leading, 32)
@@ -46,14 +47,13 @@ struct NewSessionCard: View{
                         .font(.subheadline)
                         .foregroundStyle(.white)
                         .padding(.leading, -32)
-                    Stepper(value: $set.reps, in: 0...100){
+                    Stepper(value: $set.reps, in: 0...99){
                         Text("\(set.reps)")
-                            .frame(alignment: .trailing)
                             .padding(.horizontal, 3)
                             
                     }
                     .background(.navBarColour)
-                    .padding(.leading, 30)
+                    .padding(.leading, 20)
                     .cornerRadius(10)
                 
                 }
@@ -63,14 +63,13 @@ struct NewSessionCard: View{
                         .font(.subheadline)
                         .padding(.leading, -10)
                         .foregroundStyle(.white)
-                    Stepper(value: $set.repeats, in: 0...100){
+                    Stepper(value: $set.repeats, in: 0...99){
                         Text("\(set.repeats)")
-                            .frame(alignment: .center)
                             .padding(.horizontal, 3)
                             
                     }
                     .background(.navBarColour)
-                    .padding(.leading, 30)
+                    .padding(.leading, 20)
                     .cornerRadius(10)
                     
                 }
@@ -94,13 +93,13 @@ struct NewSessionCard: View{
 }
 
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        var set = Set(id: 1)
-//        NewSessionCard(set: Binding(get: {return set}, set: { Value in
-//            set = Value
-//        })) {
-//            var hi:Int = 0
-//        }
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        var set = IntermediateSet(id: 1)
+        NewSessionCard(set: Binding(get: {return set}, set: { Value in
+            set = Value
+        })) {
+            var hi:Int = 0
+        }
+    }
+}
