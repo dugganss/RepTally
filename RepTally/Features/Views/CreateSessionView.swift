@@ -16,89 +16,100 @@ struct CreateSessionView:View{
     @State private var sets: [IntermediateSet] = [IntermediateSet(id: 1)]
     @State private var incorrectDataEntry = false
     
+    @State private var openFrameCheck = false
+    
     var body: some View{
-        VStack{
-            HStack{
-                Spacer()
-                Text("New Session")
-                    .padding(.top, 70)
-                    .padding(.bottom, 10)
-                    .font(.custom("Delta Block", size: 30))
-                    .frame(alignment: .center)
-                Spacer()
-            }
-            
-            ScrollView{
-                VStack{
-                    ForEach(sets){ set in
-                        NewSessionCard(set: Binding(
-                            get: {
-                                self.sets.first(where: {$0.id == set.id})!
-                            },
-                            set: { updatedSet in
-                                if let index = self.sets.firstIndex(where: {$0.id == updatedSet.id}){
-                                    self.sets[index] = updatedSet
-                                }
-                            }), delete: {
-                                if let index = self.sets.firstIndex(where: {$0.id == set.id}){
-                                    if(self.sets.count > 1){
-                                        self.sets.remove(at: index)
-                                        if(sets.count > 0){
-                                            for i in 0...sets.count-1{
-                                                sets[i].id = i+1
+        NavigationStack{
+            VStack{
+                HStack{
+                    Spacer()
+                    Text("New Session")
+                        .padding(.top, 70)
+                        .padding(.bottom, 10)
+                        .font(.custom("Delta Block", size: 30))
+                        .frame(alignment: .center)
+                    Spacer()
+                }
+                
+                ScrollView{
+                    VStack{
+                        ForEach(sets){ set in
+                            NewSessionCard(set: Binding(
+                                get: {
+                                    self.sets.first(where: {$0.id == set.id})!
+                                },
+                                set: { updatedSet in
+                                    if let index = self.sets.firstIndex(where: {$0.id == updatedSet.id}){
+                                        self.sets[index] = updatedSet
+                                    }
+                                }), delete: {
+                                    if let index = self.sets.firstIndex(where: {$0.id == set.id}){
+                                        if(self.sets.count > 1){
+                                            self.sets.remove(at: index)
+                                            if(sets.count > 0){
+                                                for i in 0...sets.count-1{
+                                                    sets[i].id = i+1
+                                                }
                                             }
                                         }
                                     }
-                                }
-                            })
-                        .padding(.horizontal, 5)
+                                })
+                            .padding(.horizontal, 5)
+                        }
                     }
-                }
-                
-                //add new set button
-                Button(action: {
-                    sets.append(IntermediateSet(id: sets.count+1))
-                }) {
-                    HStack {
-                        Image(systemName: "plus.circle")
-                        Text("Add New Set")
+                    
+                    //add new set button
+                    Button(action: {
+                        sets.append(IntermediateSet(id: sets.count+1))
+                    }) {
+                        HStack {
+                            Image(systemName: "plus.circle")
+                            Text("Add New Set")
+                        }
                     }
+                    .font(.headline)
+                    .foregroundStyle(.safeBlack)
+                    .padding(.top, 5)
                 }
-                .font(.headline)
-                .foregroundStyle(.safeBlack)
-                .padding(.top, 5)
-            }
-            .padding(.bottom, 15)
-            Spacer()
-            if incorrectDataEntry{
-                Text("Ensure all Sets have a Workout and Reps")
-                    .foregroundStyle(.red)
-            }
-            ActionButton(title: "Start Session", isArrowButton: false, isBig: true, action: {
-                createSession()
-                //outputs sessions and sets to console
-//                if let sessions = user.sessions as? Set<Session> {
-//                    for session in sessions {
-//                        print("Session id: \(session.sessionID)")
-//                        // session.sets is also an NSSet or Swift Set<SetData>
-//                        if let sets = session.sets as? Set<SetData> {
-//                            for setData in sets {
-//                                print("Workout: \(setData.workout ?? "N/A"), Reps: \(setData.reps)")
-//                            }
-//                        }
-//                    }
-//                    }
-            })
+                .padding(.bottom, 15)
+                Spacer()
+                if incorrectDataEntry{
+                    Text("Ensure all Sets have a Workout and Reps")
+                        .foregroundStyle(.red)
+                }
+                ActionButton(title: "Start Session", isArrowButton: false, isBig: true, action: {
+                    createSession()
+                    if(!incorrectDataEntry){
+                        openFrameCheck = true
+                    }
+                    //outputs sessions and sets to console
+                    //                if let sessions = user.sessions as? Set<Session> {
+                    //                    for session in sessions {
+                    //                        print("Session id: \(session.sessionID)")
+                    //                        // session.sets is also an NSSet or Swift Set<SetData>
+                    //                        if let sets = session.sets as? Set<SetData> {
+                    //                            for setData in sets {
+                    //                                print("Workout: \(setData.workout ?? "N/A"), Reps: \(setData.reps)")
+                    //                            }
+                    //                        }
+                    //                    }
+                    //                    }
+                })
                 .padding(.bottom, 10)
                 
-            Spacer()
-            NavBarView(user: user, isAccount: false, isHome: false)
-        }.ignoresSafeArea()
-        //code adapted from Ashish (2019)https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
-        
-            .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading: ReturnButton())
-        //end of adapted code
+                Spacer()
+                NavBarView(user: user, isAccount: false, isHome: false)
+            }.ignoresSafeArea()
+            //code adapted from Ashish (2019)https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
+            
+                .navigationBarBackButtonHidden(true)
+                .navigationBarItems(leading: ReturnButton())
+            //end of adapted code
+        }
+        .navigationDestination(isPresented: $openFrameCheck){
+            FrameCheckView()
+                .environment(\.managedObjectContext, viewContext)
+        }
     }
     
     func createSession(){

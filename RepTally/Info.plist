@@ -5,8 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>DeltaBlock-2Oee3.ttf</string>
-        <string>FreeSerifItalic-aZW5.ttf</string>
-        <string>WeskerBoldsemiexpanded-YqXgO.otf</string>
+		<string>FreeSerifItalic-aZW5.ttf</string>
+		<string>WeskerBoldsemiexpanded-YqXgO.otf</string>
 	</array>
 </dict>
 </plist>
