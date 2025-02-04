@@ -28,12 +28,6 @@ struct WeeklyGoalView: View {
             Spacer()
             NavBarView(user: user, isAccount: true, isHome: false)
             
-            
-            
-            
-                
-            
-            
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)

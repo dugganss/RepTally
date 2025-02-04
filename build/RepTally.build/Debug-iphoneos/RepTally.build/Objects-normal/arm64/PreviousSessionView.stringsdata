@@ -1,0 +1,16 @@
+{
+  "source": "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/PreviousSessionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Previous Sessions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 17
+        }
+      }
+    ]
+  },
+  "version": 1
+}

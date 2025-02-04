@@ -1,0 +1,24 @@
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Delegates/Public+PopupSceneDelegate.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.o"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.swiftconstvalues"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/ScreenManager.swift":
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.swiftconstvalues"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.d"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.o"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+View.swift":
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.dia"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.d"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.swiftconstvalues"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.o"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/View Modifiers/RoundedCorner.swift":
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.swiftconstvalues"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.d"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.o"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.swiftdeps"

@@ -1,0 +1,30 @@
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/AnimationType.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.swiftdeps"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.dia"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Array++.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.d"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.dia"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.swiftconstvalues"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/Configurable.swift":
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.swiftconstvalues"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.o"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.dia"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/AnyPopup.swift":
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.swiftconstvalues"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.d"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.dia"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.swiftdeps"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.o"
+"/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Animation++.swift":
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.dia"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.d"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.swiftconstvalues"

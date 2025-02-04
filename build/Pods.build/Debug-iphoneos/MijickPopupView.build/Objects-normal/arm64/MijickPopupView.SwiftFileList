@@ -1,0 +1,36 @@
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Animation++.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/AnimationType.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/AnyPopup.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Array++.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/Configurable.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/DispatchSource++.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/GlobalConfig.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Bottom.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Centre.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Common.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Top.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/View\ Modifiers/HeightReader.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/ID.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Int++.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/KeyboardManager.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/LocalConfig.BottomPopup.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/LocalConfig.CentrePopup.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/LocalConfig.TopPopup.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/Popup.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupBottomStackView.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupCentreStackView.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/PopupManager.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/PopupStack.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupTopStackView.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupView.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Utilities/Public+DragDetent.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+Popup.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+PopupManager.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Delegates/Public+PopupSceneDelegate.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+View.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/View\ Modifiers/RoundedCorner.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/ScreenManager.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/Shadow.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/View++.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/View.Gestures++.swift
+/Users/sav/Desktop/Xcode\ Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/View.ScreenManager++.swift

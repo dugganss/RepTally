@@ -1,0 +1,16 @@
+PODS:
+  - MijickPopupView (2.7.1)
+
+DEPENDENCIES:
+  - MijickPopupView
+
+SPEC REPOS:
+  trunk:
+    - MijickPopupView
+
+SPEC CHECKSUMS:
+  MijickPopupView: 54863e093a18d6435cd5068850414570f9c1ba07
+
+PODFILE CHECKSUM: af06dbbd80747f3067bae6b7aa9fa70b9b75114c
+
+COCOAPODS: 1.16.2

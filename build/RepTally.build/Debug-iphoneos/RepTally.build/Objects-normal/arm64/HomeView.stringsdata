@@ -1,0 +1,32 @@
+{
+  "source": "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "RepTally",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hi,",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 52
+        }
+      }
+    ]
+  },
+  "version": 1
+}

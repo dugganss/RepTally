@@ -1,0 +1,24 @@
+"/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/SetData+CoreDataClass.swift":
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.dia"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.swiftdeps"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.o"
+"/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/Session+CoreDataProperties.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.swiftdeps"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.dia"
+"/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/SetData+CoreDataProperties.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.o"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.dia"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.swiftdeps"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.swiftconstvalues"
+"/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/Session+CoreDataClass.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.d"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.swiftconstvalues"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.dia"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.o"

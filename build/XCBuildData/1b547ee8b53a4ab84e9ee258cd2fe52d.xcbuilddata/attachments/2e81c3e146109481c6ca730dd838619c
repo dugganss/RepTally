@@ -1,0 +1,328 @@
+{
+  "" : {
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTally-master.dia",
+    "emit-module-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTally-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTally-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTally-master.swiftdeps"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/Session+CoreDataClass.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/Session+CoreDataProperties.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/Session+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/SetData+CoreDataClass.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/SetData+CoreDataProperties.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SetData+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/User+CoreDataClass.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/User+CoreDataProperties.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/User+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/CoreDataGenerated/UserDataModel/UserDataModel+CoreDataModel.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/UserDataModel+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/App/RepTallyApp.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/RepTallyApp~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Camera/CameraView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Camera/CameraViewController.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraViewController~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Controllers/CoreDataStack.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CoreDataStack~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Models/CameraInfoModel.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Models/IntermediateSet.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/AccountView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/CreateSessionView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/FrameCheckView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/HomeView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/LogInView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/PreviousSessionView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/SessionView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SessionView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/SettingsView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/SummaryView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/SummaryView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/WeeklyGoalView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/WeeklyGoalView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Vision/LineDrawingView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Vision/VisionOverlayController.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/ActionButton.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/CentreCustomPopup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/HomeCardView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeCardView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/NavBarView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NavBarView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/NewSessionCard.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/NewSessionCard~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/ReturnButton.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ReturnButton~partial.swiftmodule"
+  }
+}

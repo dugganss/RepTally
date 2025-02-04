@@ -8,7 +8,22 @@
 import SwiftUI
 
 struct SessionView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject var user: User
+    @State private var isGoingHome = false
     var body: some View {
-        Text("session view")
+        NavigationStack{
+            Text("session view")
+            Button(action: {
+                isGoingHome = true
+            }){
+                Text("Return home")
+            }
+            .navigationDestination(isPresented: $isGoingHome){
+                HomeView(user: user)
+                    .environment(\.managedObjectContext, viewContext)
+            }
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }

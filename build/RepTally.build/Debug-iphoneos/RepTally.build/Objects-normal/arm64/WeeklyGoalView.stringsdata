@@ -1,0 +1,24 @@
+{
+  "source": "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/WeeklyGoalView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "This is not a current feature of RepTally. It may be included in future versions, however it is more to demonstrate the potential of expandability.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weekly Goal",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 17
+        }
+      }
+    ]
+  },
+  "version": 1
+}

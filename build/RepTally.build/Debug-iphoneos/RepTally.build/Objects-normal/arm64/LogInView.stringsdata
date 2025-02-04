@@ -1,0 +1,56 @@
+{
+  "source": "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/LogInView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Rep Tally",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter Username",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Username too long, must be < 15 characters",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter Username",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Log In",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "No User found",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 70
+        }
+      }
+    ]
+  },
+  "version": 1
+}

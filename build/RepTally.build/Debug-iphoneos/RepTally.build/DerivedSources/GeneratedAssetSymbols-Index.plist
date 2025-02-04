@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameBackgroundColour</string>
+			<key>relativePath</key>
+			<string>./BackgroundColour.colorset</string>
+			<key>swiftSymbol</key>
+			<string>backgroundColour</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameButtonColour</string>
+			<key>relativePath</key>
+			<string>./ButtonColour.colorset</string>
+			<key>swiftSymbol</key>
+			<string>buttonColour</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameCardColour</string>
+			<key>relativePath</key>
+			<string>./CardColour.colorset</string>
+			<key>swiftSymbol</key>
+			<string>cardColour</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameNavBarColour</string>
+			<key>relativePath</key>
+			<string>./NavBarColour.colorset</string>
+			<key>swiftSymbol</key>
+			<string>navBarColour</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameOverlayMenuColour</string>
+			<key>relativePath</key>
+			<string>./OverlayMenuColour.colorset</string>
+			<key>swiftSymbol</key>
+			<string>overlayMenuColour</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameSafeBlack</string>
+			<key>relativePath</key>
+			<string>./SafeBlack.colorset</string>
+			<key>swiftSymbol</key>
+			<string>safeBlack</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameSafeWhite</string>
+			<key>relativePath</key>
+			<string>./SafeWhite.colorset</string>
+			<key>swiftSymbol</key>
+			<string>safeWhite</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array/>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

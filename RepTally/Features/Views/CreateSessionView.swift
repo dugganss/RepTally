@@ -107,7 +107,7 @@ struct CreateSessionView:View{
             //end of adapted code
         }
         .navigationDestination(isPresented: $openFrameCheck){
-            FrameCheckView()
+            FrameCheckView(user: user)
                 .environment(\.managedObjectContext, viewContext)
         }
     }

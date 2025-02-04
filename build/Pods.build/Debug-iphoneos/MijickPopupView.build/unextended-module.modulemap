@@ -1,0 +1,10 @@
+framework module MijickPopupView {
+  umbrella header "MijickPopupView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MijickPopupView.__Swift {
+  exclude header "MijickPopupView-Swift.h"
+}

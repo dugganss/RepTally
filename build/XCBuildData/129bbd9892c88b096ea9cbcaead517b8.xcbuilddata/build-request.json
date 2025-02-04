@@ -1,0 +1,88 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd42c78f1a251fc0b1a9b7007912435452d1"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd4229b6fe990002992aa8d29ce8cc64c971"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd42ea7164c75b4615cc221e819227d99fe6"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd420c99101f460fb8653b6a491fb649d34d"
+    },
+    {
+      "guid" : "922aad117995a2d9caba5796cc5244fe56d7e3cf68a40a0cdc8408fbbad3ff56"
+    },
+    {
+      "guid" : "922aad117995a2d9caba5796cc5244fef24774e7772c66c29152dc0fed515468"
+    },
+    {
+      "guid" : "922aad117995a2d9caba5796cc5244fe0c042c79f10edefa03f881827812d3e1"
+    }
+  ],
+  "containerPath" : "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos18.1",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/sav/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/sav/Library/Developer/Xcode/DerivedData/RepTally-ewvdxprzacghmgbeyubjseyhdxmd/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/sav/Library/Developer/Xcode/DerivedData/RepTally-ewvdxprzacghmgbeyubjseyhdxmd/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "18.3",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/sav/Library/Developer/Xcode/DerivedData/RepTally-ewvdxprzacghmgbeyubjseyhdxmd/CodeCoverage/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "TARGET_DEVICE_IDENTIFIER" : "00008130-0018082A007A8D3A",
+          "TARGET_DEVICE_MODEL" : "iPhone16,1",
+          "TARGET_DEVICE_OS_VERSION" : "18.3",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

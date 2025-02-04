@@ -1,0 +1,24 @@
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/CreateSessionView.swift":
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.swiftdeps"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.d"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.dia"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CreateSessionView.o"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Models/IntermediateSet.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.swiftconstvalues"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.d"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.dia"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/IntermediateSet.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/AccountView.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.o"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.d"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.dia"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/AccountView.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Models/CameraInfoModel.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.d"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.dia"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.swiftconstvalues"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CameraInfoModel.swiftdeps"

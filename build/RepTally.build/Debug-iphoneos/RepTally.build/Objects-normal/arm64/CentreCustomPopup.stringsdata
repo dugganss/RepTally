@@ -1,0 +1,32 @@
+{
+  "source": "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/CentreCustomPopup.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "More Features",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Esse anim aliqua cupidatat sint ea et id ea voluptate.",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 50
+        }
+      }
+    ]
+  },
+  "version": 1
+}

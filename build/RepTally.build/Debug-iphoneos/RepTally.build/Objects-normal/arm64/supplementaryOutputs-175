@@ -1,0 +1,24 @@
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/FrameCheckView.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.o"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/FrameCheckView.swiftconstvalues"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/PreviousSessionView.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.dia"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/PreviousSessionView.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/HomeView.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.o"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.d"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.swiftconstvalues"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.dia"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/HomeView.swiftdeps"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/LogInView.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.swiftdeps"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.o"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LogInView.swiftconstvalues"

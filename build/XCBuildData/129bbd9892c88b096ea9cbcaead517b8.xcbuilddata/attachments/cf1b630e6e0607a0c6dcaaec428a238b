@@ -1,0 +1,368 @@
+{
+  "" : {
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/MijickPopupView-master.dia",
+    "emit-module-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/MijickPopupView-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/MijickPopupView-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/MijickPopupView-master.swiftdeps"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Animation++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Animation++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Array++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Array++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/DispatchSource++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/DispatchSource++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/Int++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Int++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/View.Gestures++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.Gestures++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/View.ScreenManager++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View.ScreenManager++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Extensions/View++.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/View++~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/KeyboardManager.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/KeyboardManager~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/PopupManager.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupManager~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Managers/ScreenManager.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ScreenManager~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/AnimationType.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnimationType~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/AnyPopup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/AnyPopup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/GlobalConfig.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/ID.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/ID~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Other/Shadow.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Shadow~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/Configurable.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Configurable~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/Popup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Popup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Protocols/PopupStack.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupStack~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/View Modifiers/HeightReader.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/HeightReader~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/View Modifiers/RoundedCorner.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/RoundedCorner~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupBottomStackView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupBottomStackView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupCentreStackView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupCentreStackView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupTopStackView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupTopStackView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Internal/Views/PopupView.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/PopupView~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Bottom.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Bottom~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Centre.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Centre~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Common.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Common~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/GlobalConfig.Top.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/GlobalConfig.Top~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/LocalConfig.BottomPopup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.BottomPopup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/LocalConfig.CentrePopup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.CentrePopup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Configurables/LocalConfig.TopPopup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/LocalConfig.TopPopup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Delegates/Public+PopupSceneDelegate.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupSceneDelegate~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+Popup.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+Popup~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+PopupManager.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+PopupManager~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Extensions/Public+View.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+View~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/Pods/MijickPopupView/Sources/Public/Utilities/Public+DragDetent.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/Objects-normal/arm64/Public+DragDetent~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'RepTally' in project 'RepTally'
+➜ Implicit dependency on target 'Pods-RepTally' in project 'Pods' via file 'Pods_RepTally.framework' in build phase 'Link Binary'
+➜ Implicit dependency on target 'MijickPopupView' in project 'Pods' via options '-framework MijickPopupView' in build setting 'OTHER_LDFLAGS'
+Target 'Pods-RepTally' in project 'Pods'
+➜ Explicit dependency on target 'MijickPopupView' in project 'Pods'
+Target 'MijickPopupView' in project 'Pods' (no dependencies)

@@ -18,8 +18,10 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack{
+            
             VStack{
                 HStack{
+                    
                     Button(action: {openSideMenu = true}){
                         Image(systemName: "pause")
                             .rotationEffect(.degrees(90))
@@ -81,6 +83,7 @@ struct HomeView: View {
                             HomeCardView(title: "View your Previous Sessions", action: {self.openPreviousSessions = true})
                             HomeCardView(title: "Set a Weekly Goal", action: {self.openWeeklyGoal = true})
                             ActionButton(title: "Start a Session", isArrowButton: false, isBig: true, action: {self.openCreateSessions = true})
+                            
 //                                .navigationDestination(isPresented: $openCreateSessions){
 //                                    CreateSessionView()
 //                                }

@@ -1,0 +1,24 @@
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Vision/VisionOverlayController.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.d"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.swiftdeps"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.o"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/VisionOverlayController.swiftconstvalues"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/ActionButton.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.o"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.swiftdeps"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.d"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/ActionButton.swiftconstvalues"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Shared/Views/CentreCustomPopup.swift":
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.o"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.dia"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.swiftconstvalues"
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/CentreCustomPopup.d"
+"/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Vision/LineDrawingView.swift":
+  dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.d"
+  object: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.o"
+  const-values: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.swiftconstvalues"
+  swift-dependencies: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.swiftdeps"
+  diagnostics: "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTally.build/Objects-normal/arm64/LineDrawingView.dia"

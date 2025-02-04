@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MijickPopupView
 
 @main
 struct RepTallyApp: App {
@@ -19,11 +20,13 @@ struct RepTallyApp: App {
                 HomeView(user: user)
                 //code adapted from Apple (n.d.) (setting up a core data stack)
                     .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
+                    .implementPopupView()
                 //end of adapted code
             }
             else{
                 LogInView(loggedInUser: $loggedInUser)
                     .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
+                    .implementPopupView()
             }
         }
     }

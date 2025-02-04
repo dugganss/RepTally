@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/sav/Desktop/Xcode Projects/RepTally/build/Debug-iphoneos/MijickPopupView/MijickPopupView.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/sav/Desktop/Xcode Projects/RepTally/build/Debug-iphoneos/MijickPopupView/MijickPopupView.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "MijickPopupView-Swift.h",
+      'external-contents': "/Users/sav/Desktop/Xcode Projects/RepTally/build/Pods.build/Debug-iphoneos/MijickPopupView.build/unextended-interface-header.h",
+    }]
+    }]
+}

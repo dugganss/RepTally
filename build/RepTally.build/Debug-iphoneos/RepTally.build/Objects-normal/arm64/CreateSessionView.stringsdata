@@ -1,0 +1,32 @@
+{
+  "source": "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Features/Views/CreateSessionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Ensure all Sets have a Workout and Reps",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Session",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add New Set",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 67
+        }
+      }
+    ]
+  },
+  "version": 1
+}

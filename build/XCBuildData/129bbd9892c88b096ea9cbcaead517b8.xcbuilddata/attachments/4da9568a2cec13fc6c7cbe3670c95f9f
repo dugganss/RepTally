@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests-master.dia",
+    "emit-module-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests-master.swiftdeps"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Tests/RepTallyUITests/RepTallyUITests.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITests~partial.swiftmodule"
+  },
+  "/Users/sav/Desktop/Xcode Projects/RepTally/RepTally/Tests/RepTallyUITests/RepTallyUITestsLaunchTests.swift" : {
+    "const-values" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.swiftconstvalues",
+    "dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.d",
+    "diagnostics" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.dia",
+    "index-unit-output-path" : "/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.o",
+    "llvm-bc" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.bc",
+    "object" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.o",
+    "swift-dependencies" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests.swiftdeps",
+    "swiftmodule" : "/Users/sav/Desktop/Xcode Projects/RepTally/build/RepTally.build/Debug-iphoneos/RepTallyUITests.build/Objects-normal/arm64/RepTallyUITestsLaunchTests~partial.swiftmodule"
+  }
+}
