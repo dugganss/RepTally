@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct HomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
@@ -34,7 +35,7 @@ struct HomeView: View {
                     
                     Text("RepTally")
                         .padding(.top, 50)
-                        .font(.custom("Delta Block", size: 30))
+                        .font(.custom("Lobster", size: 35))
                     
                     Spacer()
                     Button(action: {openCreateSessions = true}){
@@ -84,9 +85,6 @@ struct HomeView: View {
                             HomeCardView(title: "Set a Weekly Goal", action: {self.openWeeklyGoal = true})
                             ActionButton(title: "Start a Session", isArrowButton: false, isBig: true, action: {self.openCreateSessions = true})
                             
-//                                .navigationDestination(isPresented: $openCreateSessions){
-//                                    CreateSessionView()
-//                                }
                             NavBarView(user: user, isAccount:false, isHome: true)
                         }
                         .frame(maxHeight: .infinity, alignment: .bottom)

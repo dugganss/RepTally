@@ -25,7 +25,7 @@ struct LogInView: View {
             VStack{
                 Text("Rep Tally")
                     .padding(.top, 50)
-                    .font(.custom("Delta Block", size: 50))
+                    .font(.custom("Lobster", size: 55))
                     .frame(width: 120)
                     .multilineTextAlignment(.center)
                 Image(systemName: "dumbbell.fill")

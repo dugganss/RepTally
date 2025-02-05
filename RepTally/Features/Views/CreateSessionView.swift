@@ -121,7 +121,7 @@ struct CreateSessionView:View{
          */
         incorrectDataEntry = false
         let newSession = Session(context: viewContext)
-        newSession.sessionID = UUID()
+        newSession.timestamp = Date()
         newSession.user = user
         for setx in sets{
             let newSet = SetData(context: viewContext)

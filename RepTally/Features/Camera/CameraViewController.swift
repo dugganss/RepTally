@@ -16,8 +16,6 @@ import SwiftUI
 import AVFoundation
 import Accelerate
 
-//TODO: setup cocoapods so that you can setup litert to implement the other models
-
 class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBufferDelegate {
     var cameraInfoModel: CameraInfoModel?
     private let captureSession = AVCaptureSession()
@@ -72,14 +70,16 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
     //sets up view of live camera feed using a preview layer
     private func showCamera(){
         DispatchQueue.main.async { //runs on main thread because the preview layer is a UI component
-            let previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession) //creates preview layer with capture session
-            previewLayer.videoGravity = .resizeAspectFill
-            previewLayer.frame = self.view.bounds
-            previewLayer.backgroundColor = CGColor(red: 255,green: 255,blue: 255,alpha: 5)
-            self.view.layer.addSublayer(previewLayer)
+            if self.cameraInfoModel!.isDisplayCameraFeed{
+                let previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession) //creates preview layer with capture session
+                previewLayer.videoGravity = .resizeAspectFill
+                previewLayer.frame = self.view.bounds
+                previewLayer.backgroundColor = CGColor(red: 255,green: 255,blue: 255,alpha: 5)
+                self.view.layer.addSublayer(previewLayer)
+            }
             
             //adds pose estimation overlay view on top of camera preview layer
-            self.overlayViewController.setupOverlayView(in: previewLayer.frame)
+            self.overlayViewController.setupOverlayView(in: self.view.bounds)
             self.view.addSubview(self.overlayViewController.view)
             DispatchQueue.global(qos: .userInitiated).async { //starts capture session on background thread after the preview layer has set up in main thread to prevent delay
                 self.captureSession.startRunning()

@@ -17,5 +17,6 @@ import Combine
 //code adapted from Hudson (2021) https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects
 class CameraInfoModel: ObservableObject{
     @Published var isBodyDetected: Bool = false
+    @Published var isDisplayCameraFeed: Bool = true
 }
 //end of adapted code
