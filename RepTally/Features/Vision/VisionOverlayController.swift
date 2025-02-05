@@ -37,15 +37,6 @@ class VisionOverlayController : UIViewController, PoseEstimator{
         ("right_upLeg_joint", "right_leg_joint"),
         ("right_leg_joint", "right_foot_joint"),
     ]
-
-    
-    func setupOverlayView(in frame: CGRect){
-        DispatchQueue.main.async{
-            self.view.frame = frame
-            self.view.backgroundColor = .clear
-            self.view.addSubview(self.overlayView)
-        }
-    }
     
     internal func drawPoints(at points: [CGPoint]){
         DispatchQueue.main.async{

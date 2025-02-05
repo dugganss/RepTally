@@ -9,6 +9,9 @@ import UIKit
 
 protocol PoseEstimator: UIViewController {
     var cameraManagerModel: CameraManagerModel? {get set}
+    var overlayView: UIView {get}
+    var pointNameToLocationMapping : [String: CGPoint] {get set}
+    var skeletonMapping : [(String, String)] {get}
     func detectBody(in image: CVPixelBuffer)
-    func setupOverlayView(in frame: CGRect)
+    
 }
