@@ -1,18 +1,16 @@
 PODS:
   - MijickPopupView (2.7.1)
-  - TensorFlowLiteC (2.17.0):
-    - TensorFlowLiteC/Core (= 2.17.0)
-  - TensorFlowLiteC/Core (2.17.0)
-  - TensorFlowLiteSwift (2.17.0):
-    - TensorFlowLiteSwift/Core (= 2.17.0)
-  - TensorFlowLiteSwift/Core (2.17.0):
-    - TensorFlowLiteC (= 2.17.0)
-    - TensorFlowLiteSwift/Privacy (= 2.17.0)
-  - TensorFlowLiteSwift/Privacy (2.17.0)
+  - TensorFlowLiteC (2.9.1):
+    - TensorFlowLiteC/Core (= 2.9.1)
+  - TensorFlowLiteC/Core (2.9.1)
+  - TensorFlowLiteSwift (2.9.1):
+    - TensorFlowLiteSwift/Core (= 2.9.1)
+  - TensorFlowLiteSwift/Core (2.9.1):
+    - TensorFlowLiteC (= 2.9.1)
 
 DEPENDENCIES:
   - MijickPopupView
-  - TensorFlowLiteSwift
+  - TensorFlowLiteSwift (~> 2.9.0)
 
 SPEC REPOS:
   trunk:
@@ -22,9 +20,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   MijickPopupView: 54863e093a18d6435cd5068850414570f9c1ba07
-  TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
-  TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
+  TensorFlowLiteC: 0a765860195fae345ca7398e33b07c80104c4b61
+  TensorFlowLiteSwift: 0b584ad1fac27c0015609056a5ab4e7692bd1af3
 
-PODFILE CHECKSUM: be398d0389b6fc6909724decf6d41eedaf23677c
+PODFILE CHECKSUM: c64e6d5b6d76652a00342aeb145c1dcbd7e0d476
 
 COCOAPODS: 1.16.2

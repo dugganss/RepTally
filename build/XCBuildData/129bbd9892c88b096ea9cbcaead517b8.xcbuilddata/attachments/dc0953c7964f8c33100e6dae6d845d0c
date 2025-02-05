@@ -1,5 +1,0 @@
- extern const unsigned char Pods_RepTally_RepTallyUITestsVersionString[];
- extern const double Pods_RepTally_RepTallyUITestsVersionNumber;
-
- const unsigned char Pods_RepTally_RepTallyUITestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_RepTally_RepTallyUITests  PROJECT:Pods-1" "\n";
- const double Pods_RepTally_RepTallyUITestsVersionNumber __attribute__ ((used)) = (double)1.;

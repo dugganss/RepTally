@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		465E4F3D2D527DD40080B8E9 /* Pods_RepTally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8FC5BF44D84D9E33AE81E /* Pods_RepTally.framework */; };
-		465E4F3E2D527DD40080B8E9 /* Pods_RepTally.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8FC5BF44D84D9E33AE81E /* Pods_RepTally.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		49FF1FDAE38E6920A029B60D /* Pods_RepTallyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEC25CD5F955EDAC2459ED5 /* Pods_RepTallyTests.framework */; };
-		DAFDAA999DE781C55598B0B6 /* Pods_RepTally_RepTallyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D8E13D872FF2C33FB5B8A /* Pods_RepTally_RepTallyUITests.framework */; };
+		209CE852EAB826C05D6C0162 /* Pods_RepTallyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF36F934A908A8CD3FF54162 /* Pods_RepTallyTests.framework */; };
+		70305BC25C6B44EC2C15AE90 /* Pods_RepTally_RepTallyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3E371774E3AABCD8F171D8 /* Pods_RepTally_RepTallyUITests.framework */; };
+		A1631044CA1EF920092DC876 /* Pods_RepTally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D579D98E1FC54B9D0A42358 /* Pods_RepTally.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,35 +29,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		465E4F3C2D527DC60080B8E9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				465E4F3E2D527DD40080B8E9 /* Pods_RepTally.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1BEC25CD5F955EDAC2459ED5 /* Pods_RepTallyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepTallyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31CD7C5484407F31F060DA02 /* Pods-RepTallyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTallyTests.debug.xcconfig"; path = "Target Support Files/Pods-RepTallyTests/Pods-RepTallyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D579D98E1FC54B9D0A42358 /* Pods_RepTally.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepTally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E585C672D4118374987458C /* Pods-RepTally-RepTallyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally-RepTallyUITests.release.xcconfig"; path = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		265629F9E7E70A887F4B52F9 /* Pods-RepTally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally.release.xcconfig"; path = "Target Support Files/Pods-RepTally/Pods-RepTally.release.xcconfig"; sourceTree = "<group>"; };
 		4641E0D62D301F8A00BA6C5F /* RepTally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepTally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4641E0E62D301F8C00BA6C5F /* RepTallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepTallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4641E0F02D301F8C00BA6C5F /* RepTallyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepTallyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		465E4F2F2D527D6F0080B8E9 /* MijickPopupView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MijickPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465E4F362D527DB20080B8E9 /* MijickPopupView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MijickPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		658914181717B2B824AC8A52 /* Pods-RepTally-RepTallyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally-RepTallyUITests.debug.xcconfig"; path = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6E99C7914D383FEF3E763C10 /* Pods-RepTally-RepTallyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally-RepTallyUITests.release.xcconfig"; path = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		847844157AFCB909EA2CE8DE /* Pods-RepTally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally.release.xcconfig"; path = "Target Support Files/Pods-RepTally/Pods-RepTally.release.xcconfig"; sourceTree = "<group>"; };
-		8EDBAF2954C119CB9FA7FC89 /* Pods-RepTally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally.debug.xcconfig"; path = "Target Support Files/Pods-RepTally/Pods-RepTally.debug.xcconfig"; sourceTree = "<group>"; };
-		AD4D8E13D872FF2C33FB5B8A /* Pods_RepTally_RepTallyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepTally_RepTallyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFAD14C39877B818B9041068 /* Pods-RepTallyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTallyTests.release.xcconfig"; path = "Target Support Files/Pods-RepTallyTests/Pods-RepTallyTests.release.xcconfig"; sourceTree = "<group>"; };
-		B2F8FC5BF44D84D9E33AE81E /* Pods_RepTally.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepTally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465E54082D53BF590080B8E9 /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorFlowLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465E540B2D53BF740080B8E9 /* TensorFlowLiteC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TensorFlowLiteC.xcframework; path = Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework; sourceTree = "<group>"; };
+		465E54CD2D53C0630080B8E9 /* MijickPopupView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MijickPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3E371774E3AABCD8F171D8 /* Pods_RepTally_RepTallyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepTally_RepTallyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3083DFFA28222D0601C763 /* Pods-RepTallyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTallyTests.release.xcconfig"; path = "Target Support Files/Pods-RepTallyTests/Pods-RepTallyTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF36F934A908A8CD3FF54162 /* Pods_RepTallyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepTallyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A6E2ACEA1497AA71FEF0E7 /* Pods-RepTally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally.debug.xcconfig"; path = "Target Support Files/Pods-RepTally/Pods-RepTally.debug.xcconfig"; sourceTree = "<group>"; };
+		E1B1E7DEB42362AAD7725BEC /* Pods-RepTally-RepTallyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTally-RepTallyUITests.debug.xcconfig"; path = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE3FE0205846E0EA346D7D10 /* Pods-RepTallyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepTallyTests.debug.xcconfig"; path = "Target Support Files/Pods-RepTallyTests/Pods-RepTallyTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -107,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				465E4F3D2D527DD40080B8E9 /* Pods_RepTally.framework in Frameworks */,
+				A1631044CA1EF920092DC876 /* Pods_RepTally.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FF1FDAE38E6920A029B60D /* Pods_RepTallyTests.framework in Frameworks */,
+				209CE852EAB826C05D6C0162 /* Pods_RepTallyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFDAA999DE781C55598B0B6 /* Pods_RepTally_RepTallyUITests.framework in Frameworks */,
+				70305BC25C6B44EC2C15AE90 /* Pods_RepTally_RepTallyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +121,12 @@
 		20D0B7C05469CF19BA3B97D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8EDBAF2954C119CB9FA7FC89 /* Pods-RepTally.debug.xcconfig */,
-				847844157AFCB909EA2CE8DE /* Pods-RepTally.release.xcconfig */,
-				658914181717B2B824AC8A52 /* Pods-RepTally-RepTallyUITests.debug.xcconfig */,
-				6E99C7914D383FEF3E763C10 /* Pods-RepTally-RepTallyUITests.release.xcconfig */,
-				31CD7C5484407F31F060DA02 /* Pods-RepTallyTests.debug.xcconfig */,
-				AFAD14C39877B818B9041068 /* Pods-RepTallyTests.release.xcconfig */,
+				D8A6E2ACEA1497AA71FEF0E7 /* Pods-RepTally.debug.xcconfig */,
+				265629F9E7E70A887F4B52F9 /* Pods-RepTally.release.xcconfig */,
+				E1B1E7DEB42362AAD7725BEC /* Pods-RepTally-RepTallyUITests.debug.xcconfig */,
+				1E585C672D4118374987458C /* Pods-RepTally-RepTallyUITests.release.xcconfig */,
+				EE3FE0205846E0EA346D7D10 /* Pods-RepTallyTests.debug.xcconfig */,
+				8F3083DFFA28222D0601C763 /* Pods-RepTallyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,11 +154,14 @@
 		70AB2EDDCBF0CF7AE0E15911 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				465E54CD2D53C0630080B8E9 /* MijickPopupView.framework */,
+				465E540B2D53BF740080B8E9 /* TensorFlowLiteC.xcframework */,
+				465E54082D53BF590080B8E9 /* TensorFlowLite.framework */,
 				465E4F362D527DB20080B8E9 /* MijickPopupView.framework */,
 				465E4F2F2D527D6F0080B8E9 /* MijickPopupView.framework */,
-				B2F8FC5BF44D84D9E33AE81E /* Pods_RepTally.framework */,
-				AD4D8E13D872FF2C33FB5B8A /* Pods_RepTally_RepTallyUITests.framework */,
-				1BEC25CD5F955EDAC2459ED5 /* Pods_RepTallyTests.framework */,
+				1D579D98E1FC54B9D0A42358 /* Pods_RepTally.framework */,
+				8C3E371774E3AABCD8F171D8 /* Pods_RepTally_RepTallyUITests.framework */,
+				BF36F934A908A8CD3FF54162 /* Pods_RepTallyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,12 +173,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4641E0FA2D301F8C00BA6C5F /* Build configuration list for PBXNativeTarget "RepTally" */;
 			buildPhases = (
-				42366774902CADAF13CD7EB0 /* [CP] Check Pods Manifest.lock */,
+				F797F6EC3983C90AC8B8160B /* [CP] Check Pods Manifest.lock */,
 				4641E0D22D301F8A00BA6C5F /* Sources */,
 				4641E0D32D301F8A00BA6C5F /* Frameworks */,
 				4641E0D42D301F8A00BA6C5F /* Resources */,
-				465E4F3C2D527DC60080B8E9 /* Embed Frameworks */,
-				924E38FFCAC7AF062D7AEDD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,7 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4641E0FD2D301F8C00BA6C5F /* Build configuration list for PBXNativeTarget "RepTallyTests" */;
 			buildPhases = (
-				552BAFFC648D5D3BF74081C6 /* [CP] Check Pods Manifest.lock */,
+				28471C9D8E47B4CD2C2EA803 /* [CP] Check Pods Manifest.lock */,
 				4641E0E22D301F8C00BA6C5F /* Sources */,
 				4641E0E32D301F8C00BA6C5F /* Frameworks */,
 				4641E0E42D301F8C00BA6C5F /* Resources */,
@@ -224,11 +213,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4641E1002D301F8C00BA6C5F /* Build configuration list for PBXNativeTarget "RepTallyUITests" */;
 			buildPhases = (
-				E64FB50306BB7BEEC5016E83 /* [CP] Check Pods Manifest.lock */,
+				1494EC31F0BB9F072DF0B780 /* [CP] Check Pods Manifest.lock */,
 				4641E0EC2D301F8C00BA6C5F /* Sources */,
 				4641E0ED2D301F8C00BA6C5F /* Frameworks */,
 				4641E0EE2D301F8C00BA6C5F /* Resources */,
-				8BC8B15069CDADB7240C8446 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,7 +297,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42366774902CADAF13CD7EB0 /* [CP] Check Pods Manifest.lock */ = {
+		1494EC31F0BB9F072DF0B780 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,14 +312,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RepTally-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RepTally-RepTallyUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		552BAFFC648D5D3BF74081C6 /* [CP] Check Pods Manifest.lock */ = {
+		28471C9D8E47B4CD2C2EA803 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,41 +341,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8BC8B15069CDADB7240C8446 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		924E38FFCAC7AF062D7AEDD2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RepTally/Pods-RepTally-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RepTally/Pods-RepTally-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepTally/Pods-RepTally-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E64FB50306BB7BEEC5016E83 /* [CP] Check Pods Manifest.lock */ = {
+		F797F6EC3983C90AC8B8160B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +356,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RepTally-RepTallyUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RepTally-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -570,7 +524,7 @@
 		};
 		4641E0FB2D301F8C00BA6C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EDBAF2954C119CB9FA7FC89 /* Pods-RepTally.debug.xcconfig */;
+			baseConfigurationReference = D8A6E2ACEA1497AA71FEF0E7 /* Pods-RepTally.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -603,7 +557,7 @@
 		};
 		4641E0FC2D301F8C00BA6C5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 847844157AFCB909EA2CE8DE /* Pods-RepTally.release.xcconfig */;
+			baseConfigurationReference = 265629F9E7E70A887F4B52F9 /* Pods-RepTally.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -636,7 +590,7 @@
 		};
 		4641E0FE2D301F8C00BA6C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31CD7C5484407F31F060DA02 /* Pods-RepTallyTests.debug.xcconfig */;
+			baseConfigurationReference = EE3FE0205846E0EA346D7D10 /* Pods-RepTallyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -656,7 +610,7 @@
 		};
 		4641E0FF2D301F8C00BA6C5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFAD14C39877B818B9041068 /* Pods-RepTallyTests.release.xcconfig */;
+			baseConfigurationReference = 8F3083DFFA28222D0601C763 /* Pods-RepTallyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -676,7 +630,7 @@
 		};
 		4641E1012D301F8C00BA6C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658914181717B2B824AC8A52 /* Pods-RepTally-RepTallyUITests.debug.xcconfig */;
+			baseConfigurationReference = E1B1E7DEB42362AAD7725BEC /* Pods-RepTally-RepTallyUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -694,7 +648,7 @@
 		};
 		4641E1022D301F8C00BA6C5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E99C7914D383FEF3E763C10 /* Pods-RepTally-RepTallyUITests.release.xcconfig */;
+			baseConfigurationReference = 1E585C672D4118374987458C /* Pods-RepTally-RepTallyUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

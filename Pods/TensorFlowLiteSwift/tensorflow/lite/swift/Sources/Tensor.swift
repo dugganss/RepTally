@@ -26,8 +26,7 @@ public struct Tensor: Equatable, Hashable {
   /// The shape of the `Tensor`.
   public let shape: Shape
 
-  /// The data of the `Tensor`. The data is created with copied memory content. See creating data
-  /// from raw memory at https://developer.apple.com/documentation/foundation/data.
+  /// The data in the input or output `Tensor`.
   public let data: Data
 
   /// The quantization parameters for the `Tensor` if using a quantized model.
@@ -147,10 +146,4 @@ extension Tensor.Shape: ExpressibleByArrayLiteral {
   public init(arrayLiteral: Int...) {
     self.init(arrayLiteral)
   }
-}
-
-/// A tensor's function level purpose: input or output.
-internal enum TensorType: String {
-  case input
-  case output
 }

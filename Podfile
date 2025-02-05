@@ -1,21 +1,18 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, ''
+platform :ios, '17.6'
 
 target 'RepTally' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  # Build all pods as static frameworks by default.
   use_frameworks! :linkage => :static
 
   # Pods for RepTally
   pod 'MijickPopupView'
-  pod 'TensorFlowLiteSwift'
+  pod 'TensorFlowLiteSwift', '~> 2.9.0'
 
   target 'RepTallyTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'RepTallyUITests' do
-    # Pods for testing
   end
 
 end

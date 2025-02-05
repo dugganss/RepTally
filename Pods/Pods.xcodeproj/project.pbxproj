@@ -9,258 +9,229 @@
 /* Begin PBXAggregateTarget section */
 		AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 385FC1CBA052EDB3BB4CA2798A5B3B95 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */;
+			buildConfigurationList = 636D81D05741D892734E9C70745D0DB7 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */;
 			buildPhases = (
-				EF0F3C060DF24F255B082E70A9B8D5C0 /* [CP] Copy XCFrameworks */,
+				E428E9B2EB9A04CAA5BA04B652A1082B /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				1E39FB4BA5C1B16778DCB4FA5FE5BA25 /* PBXTargetDependency */,
 			);
 			name = TensorFlowLiteC;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		09B7E269F208579DC13010437BDF8ACF /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64139EFC6908A600E9304711DA7E4CA9 /* GlobalConfig.swift */; };
-		10EC0A1271DF1FC53FF0E3063AF35CBB /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF78604C5A4867209EF87867D415FC3 /* Tensor.swift */; };
-		17ED2FE3B32EEF7F6F59360DCDD09E28 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F4D65D1B42583290884322EF471CF /* TensorFlowLite.swift */; };
-		1B6CF03A9C55714980247C01B3A11F15 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94ADEE340DF9DE80DADD6CBB27789DB /* PopupManager.swift */; };
-		2311D2CD572F19F8A8EBA9A24DEE0239 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CBD7735A9061D5488AC396531EAC0 /* Shadow.swift */; };
-		237872C1C4ECD4B6BF3B5FF6E58997C6 /* Pods-RepTally-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A14F385E7F6AD140351B76BAB2E2156F /* Pods-RepTally-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27CCF9C1788CC3BDF85DAD4DBDC5498A /* PopupStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F4DBBABD51BDE022E71F3361FCB734 /* PopupStack.swift */; };
-		296B11A85AA6344174B36FF437CBBC27 /* LocalConfig.TopPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA8F637FA6CAB41DAF2C62D03C84AE /* LocalConfig.TopPopup.swift */; };
-		2CAE45698E0CE80871AE38B589F5A711 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B0C75AA61AAB7D05185FF74737902 /* InterpreterError.swift */; };
-		2ECD499977DD56562D00031342A7EE46 /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DADA5A1918C09CE482362ECB22231E7 /* View++.swift */; };
-		39F609B427D91A849A15E0EB4721AA14 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3741DC2A20CACD1055CB8A3F52016796 /* PopupView.swift */; };
-		4227B568D9267425D94CD52A53D7FA65 /* GlobalConfig.Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95650BEF1A5922EE5E5FA44A350DB372 /* GlobalConfig.Bottom.swift */; };
-		4360E3DF2EBD02B1806AE3168D841507 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D2146232381C5354961DF2333622F /* ID.swift */; };
-		4A011984D71034A9F1558DB8B087F771 /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9A2C91B196C3CB5018440EDA76E91 /* QuantizationParameters.swift */; };
-		4FEA76DA9D957724DB3446A8A0ADB5F6 /* GlobalConfig.Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC62AD4A935B7F5B8A40684E16F6B88 /* GlobalConfig.Top.swift */; };
-		53806A47BB53D8B3CED0C59DE3474CC2 /* Public+PopupSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B21EF6256976DDAF34D4B81F8AB073 /* Public+PopupSceneDelegate.swift */; };
-		5383891FB8FCD09AFC1FA598763722F6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 674D5529D4272F6962DA55E5F280BC45 /* PrivacyInfo.xcprivacy */; };
-		57408889EB6DFE48C799B864CCCADBE9 /* SignatureRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC354969391EE9920B8762C08B2771F /* SignatureRunner.swift */; };
-		5A38B37B2D54A2F709F9B55275FE4A1C /* View.ScreenManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C906909851A58FEEDA8F86D6AFB6A37 /* View.ScreenManager++.swift */; };
-		5AE561DA6EB95A19073F6A7CBB1899F0 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE9275ADA200F7091058F5E7C6F4340 /* Popup.swift */; };
-		5DFB2FA08A1EEE99486D0C31123BDD67 /* Pods-RepTallyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9547320A3E42D1C7E3DCC47FCFAC292F /* Pods-RepTallyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0348F66638FDDBA0E9E58604CF6DC150 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A958D06C0C430CB4BA35564C014A5159 /* TensorFlowLiteSwift-dummy.m */; };
+		09B7E269F208579DC13010437BDF8ACF /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE66D818CDC0C29F345887EED1BC06C /* GlobalConfig.swift */; };
+		1B6CF03A9C55714980247C01B3A11F15 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0DB9700621E457B7B6675FF2370C3E /* PopupManager.swift */; };
+		2311D2CD572F19F8A8EBA9A24DEE0239 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80A508B7ADD153C10C7BA3C4E919E7 /* Shadow.swift */; };
+		237872C1C4ECD4B6BF3B5FF6E58997C6 /* Pods-RepTally-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15987C12E2199B18A9F3E48B35BAA51F /* Pods-RepTally-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27CCF9C1788CC3BDF85DAD4DBDC5498A /* PopupStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9EF15735CA7E5B31E22D77774C619A /* PopupStack.swift */; };
+		296B11A85AA6344174B36FF437CBBC27 /* LocalConfig.TopPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C989C92320E9CE8E0F55BC8D7EA67 /* LocalConfig.TopPopup.swift */; };
+		2ECD499977DD56562D00031342A7EE46 /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58DDDF9D686613F2131F44BD78C2D9 /* View++.swift */; };
+		39F609B427D91A849A15E0EB4721AA14 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A48A21FF3A8EACDBB03C29C23936 /* PopupView.swift */; };
+		3DDCD29E7BC0EB9AF74CD6BA8CEFBC39 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD254207CB25ED66A2B9B73125D3FC56 /* Interpreter.swift */; };
+		4227B568D9267425D94CD52A53D7FA65 /* GlobalConfig.Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD7041D807FDC2BE12CC764E0F8974 /* GlobalConfig.Bottom.swift */; };
+		4360E3DF2EBD02B1806AE3168D841507 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785FA3146257C60F89914D3CBF54D926 /* ID.swift */; };
+		4FEA76DA9D957724DB3446A8A0ADB5F6 /* GlobalConfig.Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE283BFA3B35DDFF3D912265D0D355 /* GlobalConfig.Top.swift */; };
+		5130028101105D26EBF694E34367A400 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D9827FD62EC326B5A534D7DC44AAA /* Model.swift */; };
+		53806A47BB53D8B3CED0C59DE3474CC2 /* Public+PopupSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443FEB565B73F000198E2AF4D7DC55B /* Public+PopupSceneDelegate.swift */; };
+		5A38B37B2D54A2F709F9B55275FE4A1C /* View.ScreenManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6EEEC3863976E05985BB90657B4475 /* View.ScreenManager++.swift */; };
+		5AE561DA6EB95A19073F6A7CBB1899F0 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050220F447F16018478CF7994F8AE6D /* Popup.swift */; };
+		5DFB2FA08A1EEE99486D0C31123BDD67 /* Pods-RepTallyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F528A087B6733F08C7DE5074ED23F743 /* Pods-RepTallyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A4CB864E6DD30656DA4216EFA6C8E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		6AE3FEE84AB869B3BEE832CE18132EDD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6BB0B7765D2FDA5815B1ECD1A15B7B /* Model.swift */; };
-		6E78F4FCCBE95E7E403FFED2697A943B /* Public+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2C52E4A62CCC59584F698248A0C36 /* Public+Popup.swift */; };
-		71ED894E2EBA489A29548F58EB297755 /* AnyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB390F8DCB31893BE47AA25A7372D121 /* AnyPopup.swift */; };
-		79066BA7AFC2CB7E819CF754DC2849B8 /* PopupCentreStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D8F4258558D5A5761635DE19A05AF /* PopupCentreStackView.swift */; };
-		7B43BD6B8758EA3D2176EB598691A25C /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DB048666342DD662D046CB7974BC48 /* TensorFlowLiteSwift-dummy.m */; };
-		7CE87EB696018642DD67C929A5B6B134 /* Pods-RepTally-RepTallyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC6440C24AE68D3ED7C2C94BBF0B3176 /* Pods-RepTally-RepTallyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E78F4FCCBE95E7E403FFED2697A943B /* Public+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB52786DD46CFE6C675C06F43D36807 /* Public+Popup.swift */; };
+		71ED894E2EBA489A29548F58EB297755 /* AnyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095F51AA1B29EBC8C0601DD6439F840 /* AnyPopup.swift */; };
+		79066BA7AFC2CB7E819CF754DC2849B8 /* PopupCentreStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CF4608F2AB7671D1881092DF8C83C3 /* PopupCentreStackView.swift */; };
+		7CE87EB696018642DD67C929A5B6B134 /* Pods-RepTally-RepTallyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D92B6E396B8ED0D717104A24D57CC2 /* Pods-RepTally-RepTallyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8A61BF7671494DDD1F611B508A2033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		83E071669DEAE122B241D9BD094267B0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAC84006EB1065B236F4E29BB46A66F /* RoundedCorner.swift */; };
-		8AFB148C49E5712BA3D9AD718E4289CE /* Public+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0397B23566BD748EEDBAE08101EC823 /* Public+View.swift */; };
-		935A13FDECE13FDAB65C511892B09652 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22254CE2C9BD8D7B72E9AC9C8A83007 /* KeyboardManager.swift */; };
-		946C79675FE43E16148486DF4A695267 /* HeightReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2EA7FA907A10AC09BF5AEB63AD1C3F /* HeightReader.swift */; };
-		96E59D757FC76740D01495CACC4A8572 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E526C75DC0D5AA0CBF809D625EC4352 /* Delegate.swift */; };
-		972A9788F6C963DEC5986F16DD5B67DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		997CD6416A6B12A635614BE8C4BFB5EC /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 553021787D30431ED660A85AFCAAE7F0 /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A06E14EB0D98F9ED5A8EC2F78417F6F7 /* PopupTopStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105FCF1CFB444ECEF5C183531A04709 /* PopupTopStackView.swift */; };
-		A163845681804E97211D2472A0704783 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 485FA6B46BFD0679A330BAAD0DB23122 /* PrivacyInfo.xcprivacy */; };
-		A89E69F3DCEAB657E5749267F33E8B13 /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ED1009CCC407396FF45AE956FD7E1C /* Pods-RepTally-RepTallyUITests-dummy.m */; };
-		AA0399D62928DBA68204F2AFBF364990 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8766E95757E793014C1C8ADBB7C39F5 /* ScreenManager.swift */; };
-		AFC92DEEA5D4FA3EAE8F86BB1C587CC7 /* LocalConfig.CentrePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE663C712D8488A64BB93490DDF19CAD /* LocalConfig.CentrePopup.swift */; };
-		B16505DB1E267A43ECDB610AA3471486 /* Int++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776D84FD8BCB048FAC4C1C5F81A63E39 /* Int++.swift */; };
-		B851F3E6DF9D1FF69FB7E0C6D7248756 /* MijickPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD58A00488B7DDCDA0C94DD1FBC2D2C /* MijickPopupView-dummy.m */; };
-		BB605892C85EA65BD48686F372B23A79 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BCE240B87D477FFFB9D672B86E866C /* Configurable.swift */; };
-		C67A739EF4943BC738377640EE250FB1 /* MijickPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ED7ADA4920F8BE24EB1207F0D91B4E /* MijickPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C850386EC5944D928573E5BCAAB657A9 /* PopupBottomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54156C74BB5D2CE6779359F65BA9D8 /* PopupBottomStackView.swift */; };
-		D1628E8AA1EFEA2F79C0B18523230E61 /* Public+PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C436C77572DC0F16DCDCC69529642 /* Public+PopupManager.swift */; };
-		D1A6966E12CE99B52A34FF665D3B4235 /* Public+DragDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B780A8B52B7CD2BA1FAEA794560FDF4 /* Public+DragDetent.swift */; };
+		83E071669DEAE122B241D9BD094267B0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177128FE9B1639B9A7F52CBD17F7FC7 /* RoundedCorner.swift */; };
+		8AFB148C49E5712BA3D9AD718E4289CE /* Public+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12F4137123E655BB79E113154717F0 /* Public+View.swift */; };
+		935A13FDECE13FDAB65C511892B09652 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAAD058DF00D13335D1C8865192542 /* KeyboardManager.swift */; };
+		946C79675FE43E16148486DF4A695267 /* HeightReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F109AAA794EE73B4204D1536ADDDA /* HeightReader.swift */; };
+		9E3163F72FCC2B8D631D695F3E6B0563 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E5C4D8090AA29898825C9290D2ED60 /* TensorFlowLite.swift */; };
+		A06E14EB0D98F9ED5A8EC2F78417F6F7 /* PopupTopStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD99938F328E0B95C695199964D4F /* PopupTopStackView.swift */; };
+		A38EC85A957FCEB313F7EC741D3A567E /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BE2A0933B6D53BF03AECD8EA2B916 /* QuantizationParameters.swift */; };
+		A89E69F3DCEAB657E5749267F33E8B13 /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8E53EE955C40E29A853E6BEB33A9F /* Pods-RepTally-RepTallyUITests-dummy.m */; };
+		AA0399D62928DBA68204F2AFBF364990 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591BD9E913D69E20BC5CC142C200B527 /* ScreenManager.swift */; };
+		AD8574E44ADE8EE6BE37C06553AFFE8C /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E3BD8F7496CC7A44A9705AF439DDFF /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFC92DEEA5D4FA3EAE8F86BB1C587CC7 /* LocalConfig.CentrePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD80C4F3F6954FF7DC777888635E08 /* LocalConfig.CentrePopup.swift */; };
+		B16505DB1E267A43ECDB610AA3471486 /* Int++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423B68FA44070CBF9B2B290FA6124FF /* Int++.swift */; };
+		B851F3E6DF9D1FF69FB7E0C6D7248756 /* MijickPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C45C05FE8A1D1C2248BBDCC61B03788 /* MijickPopupView-dummy.m */; };
+		BB605892C85EA65BD48686F372B23A79 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18427B4D1BB297DC1BE451E3C7052A36 /* Configurable.swift */; };
+		BC4AFBE7EC276BF64573F80890549845 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF75E27B5D4B22E4C5096B74C843EB /* InterpreterError.swift */; };
+		C67A739EF4943BC738377640EE250FB1 /* MijickPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE8853F06D1F26E1D2EDACB062511EC /* MijickPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C850386EC5944D928573E5BCAAB657A9 /* PopupBottomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2149F5FC835C3EEFB689C0CE8A670 /* PopupBottomStackView.swift */; };
+		D1628E8AA1EFEA2F79C0B18523230E61 /* Public+PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728223909D9BE730CC4FFEAEFFFBE6F /* Public+PopupManager.swift */; };
+		D1A6966E12CE99B52A34FF665D3B4235 /* Public+DragDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612751AC0D9886FCDEF45295176CA291 /* Public+DragDetent.swift */; };
+		D269A63118A1AEF2A3AC487DF625B665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		D280A3EB8BAE39A3D83FE476B1D233EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		D38E8EF03D4B80D04B51BC76E16CEE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		D7E00744F53A9317B1A8F151386D8D19 /* LocalConfig.BottomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF85BBCF8259D5A9DEAF43D9F017B1 /* LocalConfig.BottomPopup.swift */; };
-		DD135B000989429BE9F8AD8FB1C331C3 /* DispatchSource++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A88A82125F1D4232600B398983584 /* DispatchSource++.swift */; };
-		DDDE02FBA414BFB6D896C9A860984085 /* Pods-RepTally-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE9DF0A524395A02E7662A274C7B55 /* Pods-RepTally-dummy.m */; };
-		DE836AE60716DE43BCE51E9820008597 /* GlobalConfig.Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA07B6841CF011D88799088CC06920 /* GlobalConfig.Common.swift */; };
-		DF0721114926A904F264A567532133A9 /* SignatureRunnerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E16A39630B6062A79CAD0879946B68 /* SignatureRunnerError.swift */; };
-		E819320C72ADDE2241622378BF4528AA /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DBDEA14B92B7CE9E0F170F195F4181 /* AnimationType.swift */; };
-		EF12A4DB819D923C42D9037781FDE9FE /* Pods-RepTallyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A6F0EEE8A04DC80AECFFD377D1B618 /* Pods-RepTallyTests-dummy.m */; };
-		F09EB87AE77A7A73EE937915124881FC /* View.Gestures++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A181C3F54479C282828EF7D7C6E297 /* View.Gestures++.swift */; };
-		F63CA9A8F8D54C6133BB41CC50171CBD /* Array++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DCA9D35AB01F1ABA259A289840651 /* Array++.swift */; };
-		F7254C0B2C3C8FA844B35CCEF93A9B72 /* GlobalConfig.Centre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CAF0C59B840C753C44612D97C62C72 /* GlobalConfig.Centre.swift */; };
-		F85321E6B8C6AE9F3439E15DB7FFAEBF /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE7768E7A14C330EC6FA75CECFC1BB /* Interpreter.swift */; };
-		FBF7C5E6BCF0E2567FE3B1938311EAD3 /* Animation++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0E98B44493D7D238A49C7BA13E018 /* Animation++.swift */; };
+		D7E00744F53A9317B1A8F151386D8D19 /* LocalConfig.BottomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA603EACC41DCCB6EFABD6AE65832EE /* LocalConfig.BottomPopup.swift */; };
+		DD135B000989429BE9F8AD8FB1C331C3 /* DispatchSource++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC708459E7B566465B864A7E289EDCCA /* DispatchSource++.swift */; };
+		DDDE02FBA414BFB6D896C9A860984085 /* Pods-RepTally-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81852D7B9AC121C3E91AFAB5A6E61340 /* Pods-RepTally-dummy.m */; };
+		DE836AE60716DE43BCE51E9820008597 /* GlobalConfig.Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27109C07AEEF13D59F46497B5211285 /* GlobalConfig.Common.swift */; };
+		E819320C72ADDE2241622378BF4528AA /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FA06BC56CB7B4B429C77229A57B68 /* AnimationType.swift */; };
+		EF12A4DB819D923C42D9037781FDE9FE /* Pods-RepTallyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D57E8D225A0F58F12381CC103D2FC40 /* Pods-RepTallyTests-dummy.m */; };
+		F09EB87AE77A7A73EE937915124881FC /* View.Gestures++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8DF7C3A5BDE64A3EC185BA8C91EFF /* View.Gestures++.swift */; };
+		F275216661DC8F99CE31BF33354F2748 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7B0A4F4F3EB17BAEE3B6B9730AB84 /* Delegate.swift */; };
+		F63CA9A8F8D54C6133BB41CC50171CBD /* Array++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDABFBEE902A9F2B40BE3B520840545 /* Array++.swift */; };
+		F7254C0B2C3C8FA844B35CCEF93A9B72 /* GlobalConfig.Centre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662813444FA8E9A6137E92875DD40CC /* GlobalConfig.Centre.swift */; };
+		F9B905ED717C160D35D8D7B4081BCAB5 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134026538D9B11CFDF31A3821F16ECF /* Tensor.swift */; };
+		FBF7C5E6BCF0E2567FE3B1938311EAD3 /* Animation++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9688CE08145FF4D07A782D4BD3AB /* Animation++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2993864A5D7EC47430BD125BF154FF15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F43B0F4F894278E76BC922B52FAFE130;
-			remoteInfo = MijickPopupView;
-		};
-		3FFE7BD46EE0D5BF402400802073441D /* PBXContainerItemProxy */ = {
+		263DE620DE8D12BAD916F21A72883B88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AF54A9CBA216C3BC19391BEDA9843B3F;
 			remoteInfo = "Pods-RepTally";
 		};
-		6A8C0C5DFEAFF3E17B7C4B9EE7488A21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E30F2EFBF0085562A1B5F3CE337DBC4;
-			remoteInfo = "TensorFlowLiteSwift-TensorFlowLite";
-		};
-		7217694978FF19930B8B4416E3C43ED5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
-		};
-		76C48CB29932BCE550850DFDF7034574 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E84A5C2B777F1A7DFA141FF65E7EF5F8;
-			remoteInfo = "TensorFlowLiteC-TensorFlowLiteC";
-		};
-		9221ADD75D8BDC22BA7AFF0AC8ED0197 /* PBXContainerItemProxy */ = {
+		2FC906213E8A25F2F796488F5035F109 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
 			remoteInfo = TensorFlowLiteSwift;
 		};
-		A234F54742B1F5FEF3CDD0727AA4532A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
-		};
-		B2B7E7C9CC7B8BD25052FDDAC360C787 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
-		};
-		D0FA3286B9A28ED012324190F1F7FB03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
-			remoteInfo = TensorFlowLiteSwift;
-		};
-		F1F4A9A5680B470335AADDB84DEE0718 /* PBXContainerItemProxy */ = {
+		48FEF7570082E573AC1CD5E7AA459E9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F43B0F4F894278E76BC922B52FAFE130;
 			remoteInfo = MijickPopupView;
 		};
+		6FEA3A3F76532A6E611ACB583BAA4F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		7EFC12A2BFCF41D27BD338D614B79B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F43B0F4F894278E76BC922B52FAFE130;
+			remoteInfo = MijickPopupView;
+		};
+		A7F8CDC2ABE038D5E32131FA9ECB9177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
+		E9BC95610EBAD500F717A094CB37E27C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
+			remoteInfo = TensorFlowLiteSwift;
+		};
+		FBA555BA65B17C01229A5646AE7E43ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
+			remoteInfo = TensorFlowLiteC;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020CEEA8B83AD745BAAD93C72E14C675 /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
-		0565D387998FAED111219620DD2C9C79 /* Pods-RepTallyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTallyTests.modulemap"; sourceTree = "<group>"; };
-		086E686B449C51E7EC3DCF5C46F15959 /* Pods-RepTally-RepTallyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-RepTallyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0E6BB0B7765D2FDA5815B1ECD1A15B7B /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/swift/Sources/Model.swift; sourceTree = "<group>"; };
-		12DBAE28627D9A4F3EAFFD717731A326 /* TensorFlowLiteC-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TensorFlowLiteC-xcframeworks.sh"; sourceTree = "<group>"; };
-		19BA07B6841CF011D88799088CC06920 /* GlobalConfig.Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Common.swift; path = Sources/Public/Configurables/GlobalConfig.Common.swift; sourceTree = "<group>"; };
-		1AC354969391EE9920B8762C08B2771F /* SignatureRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignatureRunner.swift; path = tensorflow/lite/swift/Sources/SignatureRunner.swift; sourceTree = "<group>"; };
-		1D5601775997FD3F96D4BBB895A282FB /* TensorFlowLiteSwift-TensorFlowLite */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "TensorFlowLiteSwift-TensorFlowLite"; path = TensorFlowLite.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0134026538D9B11CFDF31A3821F16ECF /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
+		023C4AE253BE4D1920B52C8ABC6B03F7 /* TensorFlowLiteC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.release.xcconfig; sourceTree = "<group>"; };
+		0423B68FA44070CBF9B2B290FA6124FF /* Int++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int++.swift"; path = "Sources/Internal/Extensions/Int++.swift"; sourceTree = "<group>"; };
+		04CCC6361D33C889DD9F217135B1C951 /* Pods-RepTally-RepTallyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-RepTallyUITests-Info.plist"; sourceTree = "<group>"; };
+		07BB9815E0A0249264D6626ED03F8274 /* Pods-RepTally-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-acknowledgements.plist"; sourceTree = "<group>"; };
+		082B6A274D2C6812DA1C0C944E031B12 /* Pods-RepTallyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTallyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0B0DB9700621E457B7B6675FF2370C3E /* PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupManager.swift; path = Sources/Internal/Managers/PopupManager.swift; sourceTree = "<group>"; };
+		0C4F8B1525D842C50C79CC2FA11F50CE /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
+		0DD92A4F9B2617EEA96A25D6D48F8D4E /* MijickPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MijickPopupView-Info.plist"; sourceTree = "<group>"; };
+		1443FEB565B73F000198E2AF4D7DC55B /* Public+PopupSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupSceneDelegate.swift"; path = "Sources/Public/Delegates/Public+PopupSceneDelegate.swift"; sourceTree = "<group>"; };
+		15987C12E2199B18A9F3E48B35BAA51F /* Pods-RepTally-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTally-umbrella.h"; sourceTree = "<group>"; };
+		17FD80C4F3F6954FF7DC777888635E08 /* LocalConfig.CentrePopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.CentrePopup.swift; path = Sources/Public/Configurables/LocalConfig.CentrePopup.swift; sourceTree = "<group>"; };
+		18427B4D1BB297DC1BE451E3C7052A36 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/Internal/Protocols/Configurable.swift; sourceTree = "<group>"; };
 		1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RepTallyTests"; path = Pods_RepTallyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EC62AD4A935B7F5B8A40684E16F6B88 /* GlobalConfig.Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Top.swift; path = Sources/Public/Configurables/GlobalConfig.Top.swift; sourceTree = "<group>"; };
-		207CBD7735A9061D5488AC396531EAC0 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = Sources/Internal/Other/Shadow.swift; sourceTree = "<group>"; };
-		20A181C3F54479C282828EF7D7C6E297 /* View.Gestures++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.Gestures++.swift"; path = "Sources/Internal/Extensions/View.Gestures++.swift"; sourceTree = "<group>"; };
-		23DB048666342DD662D046CB7974BC48 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
-		2490FBC56AD6081FA6A40407EA7FF18A /* Pods-RepTallyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTallyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		249421C050507F45D1EE526319359B7F /* Pods-RepTally-RepTallyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally-RepTallyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		25ED1009CCC407396FF45AE956FD7E1C /* Pods-RepTally-RepTallyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTally-RepTallyUITests-dummy.m"; sourceTree = "<group>"; };
-		2818164B8337CCA6FE4EA6F8109DEEEA /* MijickPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.release.xcconfig; sourceTree = "<group>"; };
-		289DCA9D35AB01F1ABA259A289840651 /* Array++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array++.swift"; path = "Sources/Internal/Extensions/Array++.swift"; sourceTree = "<group>"; };
-		2D4649DD20350A2130BC24A677E8FE63 /* TensorFlowLiteC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.debug.xcconfig; sourceTree = "<group>"; };
-		32DBDEA14B92B7CE9E0F170F195F4181 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Internal/Other/AnimationType.swift; sourceTree = "<group>"; };
-		350A88A82125F1D4232600B398983584 /* DispatchSource++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchSource++.swift"; path = "Sources/Internal/Extensions/DispatchSource++.swift"; sourceTree = "<group>"; };
-		3741DC2A20CACD1055CB8A3F52016796 /* PopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = Sources/Internal/Views/PopupView.swift; sourceTree = "<group>"; };
+		1EDABFBEE902A9F2B40BE3B520840545 /* Array++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array++.swift"; path = "Sources/Internal/Extensions/Array++.swift"; sourceTree = "<group>"; };
+		27CFBC2ACC7E8B2BAAA2C5E39EC6B21D /* Pods-RepTallyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTallyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29D92B6E396B8ED0D717104A24D57CC2 /* Pods-RepTally-RepTallyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTally-RepTallyUITests-umbrella.h"; sourceTree = "<group>"; };
+		2E14C16CA7AD220CC8567C169EDE249D /* Pods-RepTallyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTallyTests.modulemap"; sourceTree = "<group>"; };
+		2E1539018EB10FE30A73C8B21AA451C0 /* MijickPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.debug.xcconfig; sourceTree = "<group>"; };
+		3287A48A21FF3A8EACDBB03C29C23936 /* PopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = Sources/Internal/Views/PopupView.swift; sourceTree = "<group>"; };
+		3662813444FA8E9A6137E92875DD40CC /* GlobalConfig.Centre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Centre.swift; path = Sources/Public/Configurables/GlobalConfig.Centre.swift; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3B1D2146232381C5354961DF2333622F /* ID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID.swift; path = Sources/Internal/Other/ID.swift; sourceTree = "<group>"; };
-		3DEE9DF0A524395A02E7662A274C7B55 /* Pods-RepTally-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTally-dummy.m"; sourceTree = "<group>"; };
-		3F34C8211CEAAE4BC938106732817002 /* Pods-RepTally-RepTallyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTally-RepTallyUITests.modulemap"; sourceTree = "<group>"; };
-		41AF85BBCF8259D5A9DEAF43D9F017B1 /* LocalConfig.BottomPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.BottomPopup.swift; path = Sources/Public/Configurables/LocalConfig.BottomPopup.swift; sourceTree = "<group>"; };
-		472D8F4258558D5A5761635DE19A05AF /* PopupCentreStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupCentreStackView.swift; path = Sources/Internal/Views/PopupCentreStackView.swift; sourceTree = "<group>"; };
-		485FA6B46BFD0679A330BAAD0DB23122 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Frameworks/TensorFlowLiteC.xcframework/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		4B780A8B52B7CD2BA1FAEA794560FDF4 /* Public+DragDetent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+DragDetent.swift"; path = "Sources/Public/Utilities/Public+DragDetent.swift"; sourceTree = "<group>"; };
-		4D45AB97E1D1AC896FD92E35732EBD23 /* Pods-RepTally-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTally-acknowledgements.markdown"; sourceTree = "<group>"; };
-		553021787D30431ED660A85AFCAAE7F0 /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
-		557B0C75AA61AAB7D05185FF74737902 /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		39CD7041D807FDC2BE12CC764E0F8974 /* GlobalConfig.Bottom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Bottom.swift; path = Sources/Public/Configurables/GlobalConfig.Bottom.swift; sourceTree = "<group>"; };
+		3E7EE70BE78F05CA5B90645A139E584D /* TensorFlowLiteC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TensorFlowLiteC.xcframework; path = Frameworks/TensorFlowLiteC.xcframework; sourceTree = "<group>"; };
+		4050220F447F16018478CF7994F8AE6D /* Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popup.swift; path = Sources/Internal/Protocols/Popup.swift; sourceTree = "<group>"; };
+		4177128FE9B1639B9A7F52CBD17F7FC7 /* RoundedCorner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCorner.swift; path = "Sources/Internal/View Modifiers/RoundedCorner.swift"; sourceTree = "<group>"; };
+		49EE283BFA3B35DDFF3D912265D0D355 /* GlobalConfig.Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Top.swift; path = Sources/Public/Configurables/GlobalConfig.Top.swift; sourceTree = "<group>"; };
+		52ADCA9CAC0ECB9F30413202BAA2CBA8 /* Pods-RepTallyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTallyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		591BD9E913D69E20BC5CC142C200B527 /* ScreenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenManager.swift; path = Sources/Internal/Managers/ScreenManager.swift; sourceTree = "<group>"; };
+		593BE2A0933B6D53BF03AECD8EA2B916 /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
 		5BBF2F9EC375B4674F759AA1AD573FF2 /* Pods-RepTally-RepTallyUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RepTally-RepTallyUITests"; path = Pods_RepTally_RepTallyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DADA5A1918C09CE482362ECB22231E7 /* View++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View++.swift"; path = "Sources/Internal/Extensions/View++.swift"; sourceTree = "<group>"; };
-		61BCE240B87D477FFFB9D672B86E866C /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/Internal/Protocols/Configurable.swift; sourceTree = "<group>"; };
-		6305AF747140CF1793372E3187341C7B /* Pods-RepTally-RepTallyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTally-RepTallyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		64139EFC6908A600E9304711DA7E4CA9 /* GlobalConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.swift; path = Sources/Internal/Other/GlobalConfig.swift; sourceTree = "<group>"; };
-		644721D4B713A428F3225370D226DE68 /* Pods-RepTallyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTallyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		674D5529D4272F6962DA55E5F280BC45 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = tensorflow/lite/swift/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		731773706D6BD9F2BB7C58FFB36D11F9 /* Pods-RepTallyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTallyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		75FCB6F88FE0080485D2023DABBF52EC /* Pods-RepTally-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-Info.plist"; sourceTree = "<group>"; };
-		776D84FD8BCB048FAC4C1C5F81A63E39 /* Int++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int++.swift"; path = "Sources/Internal/Extensions/Int++.swift"; sourceTree = "<group>"; };
+		5C1A971BEFA08A4F5F14D2C7E0829D15 /* Pods-RepTally-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTally-acknowledgements.markdown"; sourceTree = "<group>"; };
+		612751AC0D9886FCDEF45295176CA291 /* Public+DragDetent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+DragDetent.swift"; path = "Sources/Public/Utilities/Public+DragDetent.swift"; sourceTree = "<group>"; };
+		652D90905D993AB8A7254B770E5C605A /* TensorFlowLiteC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.debug.xcconfig; sourceTree = "<group>"; };
+		67E2149F5FC835C3EEFB689C0CE8A670 /* PopupBottomStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupBottomStackView.swift; path = Sources/Internal/Views/PopupBottomStackView.swift; sourceTree = "<group>"; };
+		6A7F495B22F9389B44B2A548230AD06D /* Pods-RepTally.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTally.modulemap"; sourceTree = "<group>"; };
+		6C45C05FE8A1D1C2248BBDCC61B03788 /* MijickPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MijickPopupView-dummy.m"; sourceTree = "<group>"; };
+		6D57E8D225A0F58F12381CC103D2FC40 /* Pods-RepTallyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTallyTests-dummy.m"; sourceTree = "<group>"; };
+		6EE66D818CDC0C29F345887EED1BC06C /* GlobalConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.swift; path = Sources/Internal/Other/GlobalConfig.swift; sourceTree = "<group>"; };
+		6FD8633E0796B8E95CBAEB98E824A4E8 /* Pods-RepTally-RepTallyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-RepTallyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7095F51AA1B29EBC8C0601DD6439F840 /* AnyPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPopup.swift; path = Sources/Internal/Other/AnyPopup.swift; sourceTree = "<group>"; };
+		70D1E9C230FF4F73918FBCF307D2B860 /* Pods-RepTally-RepTallyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTally-RepTallyUITests.modulemap"; sourceTree = "<group>"; };
+		785FA3146257C60F89914D3CBF54D926 /* ID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID.swift; path = Sources/Internal/Other/ID.swift; sourceTree = "<group>"; };
+		7BFC54A280B12CA892A302ECD23D108D /* Pods-RepTally-RepTallyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally-RepTallyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF2FDD14A646362F2497DF40A781B58 /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
 		806099B73D6228786D40C75E339001A9 /* Pods-RepTally */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RepTally"; path = Pods_RepTally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80E9A2C91B196C3CB5018440EDA76E91 /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
-		81E0E98B44493D7D238A49C7BA13E018 /* Animation++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Animation++.swift"; path = "Sources/Internal/Extensions/Animation++.swift"; sourceTree = "<group>"; };
-		84841881B7C3134EE52EC016059354C2 /* MijickPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.debug.xcconfig; sourceTree = "<group>"; };
-		86CAF0C59B840C753C44612D97C62C72 /* GlobalConfig.Centre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Centre.swift; path = Sources/Public/Configurables/GlobalConfig.Centre.swift; sourceTree = "<group>"; };
-		86E88088BB87B239B0BCD15578D36D8F /* Pods-RepTallyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTallyTests-Info.plist"; sourceTree = "<group>"; };
-		8C906909851A58FEEDA8F86D6AFB6A37 /* View.ScreenManager++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.ScreenManager++.swift"; path = "Sources/Internal/Extensions/View.ScreenManager++.swift"; sourceTree = "<group>"; };
-		8E526C75DC0D5AA0CBF809D625EC4352 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
-		8EF76FFB17558A738087550545A54D3F /* ResourceBundle-TensorFlowLite-TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TensorFlowLite-TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
-		8FAC84006EB1065B236F4E29BB46A66F /* RoundedCorner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCorner.swift; path = "Sources/Internal/View Modifiers/RoundedCorner.swift"; sourceTree = "<group>"; };
-		90ED7ADA4920F8BE24EB1207F0D91B4E /* MijickPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-umbrella.h"; sourceTree = "<group>"; };
-		9547320A3E42D1C7E3DCC47FCFAC292F /* Pods-RepTallyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTallyTests-umbrella.h"; sourceTree = "<group>"; };
-		95650BEF1A5922EE5E5FA44A350DB372 /* GlobalConfig.Bottom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Bottom.swift; path = Sources/Public/Configurables/GlobalConfig.Bottom.swift; sourceTree = "<group>"; };
-		95C42AE5E022756F9E32393A67186E6F /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
-		97F4DBBABD51BDE022E71F3361FCB734 /* PopupStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupStack.swift; path = Sources/Internal/Protocols/PopupStack.swift; sourceTree = "<group>"; };
-		985E5F6A6B2240CCB8FEB885DF1618D7 /* TensorFlowLiteSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.debug.xcconfig; sourceTree = "<group>"; };
-		996C436C77572DC0F16DCDCC69529642 /* Public+PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupManager.swift"; path = "Sources/Public/Extensions/Public+PopupManager.swift"; sourceTree = "<group>"; };
-		9B9DE4BA084F391CBCAF6A5B88B4B881 /* Pods-RepTally-RepTallyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally-RepTallyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81852D7B9AC121C3E91AFAB5A6E61340 /* Pods-RepTally-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTally-dummy.m"; sourceTree = "<group>"; };
+		8728223909D9BE730CC4FFEAEFFFBE6F /* Public+PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupManager.swift"; path = "Sources/Public/Extensions/Public+PopupManager.swift"; sourceTree = "<group>"; };
+		8859734BB1D9386928015A9C5A717C44 /* TensorFlowLiteSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.release.xcconfig; sourceTree = "<group>"; };
+		8DDAAD058DF00D13335D1C8865192542 /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = Sources/Internal/Managers/KeyboardManager.swift; sourceTree = "<group>"; };
+		9796A7E59D5810CF5B6D3F41AA11ED84 /* Pods-RepTallyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTallyTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B9EF15735CA7E5B31E22D77774C619A /* PopupStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupStack.swift; path = Sources/Internal/Protocols/PopupStack.swift; sourceTree = "<group>"; };
+		9D4F6D300D67ED8F61E88D67A5EF333C /* Pods-RepTally-RepTallyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTally-RepTallyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F54156C74BB5D2CE6779359F65BA9D8 /* PopupBottomStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupBottomStackView.swift; path = Sources/Internal/Views/PopupBottomStackView.swift; sourceTree = "<group>"; };
-		9FD58A00488B7DDCDA0C94DD1FBC2D2C /* MijickPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MijickPopupView-dummy.m"; sourceTree = "<group>"; };
-		A14F385E7F6AD140351B76BAB2E2156F /* Pods-RepTally-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTally-umbrella.h"; sourceTree = "<group>"; };
-		A9B21EF6256976DDAF34D4B81F8AB073 /* Public+PopupSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupSceneDelegate.swift"; path = "Sources/Public/Delegates/Public+PopupSceneDelegate.swift"; sourceTree = "<group>"; };
-		A9BA8F637FA6CAB41DAF2C62D03C84AE /* LocalConfig.TopPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.TopPopup.swift; path = Sources/Public/Configurables/LocalConfig.TopPopup.swift; sourceTree = "<group>"; };
-		A9F3D1DE9C96C570B7CBE994E14F205D /* Pods-RepTallyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTallyTests.release.xcconfig"; sourceTree = "<group>"; };
-		AAAE7768E7A14C330EC6FA75CECFC1BB /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
-		ABE9275ADA200F7091058F5E7C6F4340 /* Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popup.swift; path = Sources/Internal/Protocols/Popup.swift; sourceTree = "<group>"; };
-		AC6440C24AE68D3ED7C2C94BBF0B3176 /* Pods-RepTally-RepTallyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTally-RepTallyUITests-umbrella.h"; sourceTree = "<group>"; };
-		AF9185013E87CFB887E5DEDA4C4E0E91 /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
-		B0397B23566BD748EEDBAE08101EC823 /* Public+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+View.swift"; path = "Sources/Public/Extensions/Public+View.swift"; sourceTree = "<group>"; };
-		B22254CE2C9BD8D7B72E9AC9C8A83007 /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = Sources/Internal/Managers/KeyboardManager.swift; sourceTree = "<group>"; };
-		B2935FB08CD316CCB98D68BC25EB2AD1 /* MijickPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MijickPopupView-Info.plist"; sourceTree = "<group>"; };
-		B3E16A39630B6062A79CAD0879946B68 /* SignatureRunnerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignatureRunnerError.swift; path = tensorflow/lite/swift/Sources/SignatureRunnerError.swift; sourceTree = "<group>"; };
-		B677E94E4330EED3BA84418A47313185 /* TensorFlowLiteSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.release.xcconfig; sourceTree = "<group>"; };
-		B94ADEE340DF9DE80DADD6CBB27789DB /* PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupManager.swift; path = Sources/Internal/Managers/PopupManager.swift; sourceTree = "<group>"; };
-		C105FCF1CFB444ECEF5C183531A04709 /* PopupTopStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupTopStackView.swift; path = Sources/Internal/Views/PopupTopStackView.swift; sourceTree = "<group>"; };
-		C4E39CE7D953A429B7984576BB425A6F /* TensorFlowLiteC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TensorFlowLiteC.xcframework; path = Frameworks/TensorFlowLiteC.xcframework; sourceTree = "<group>"; };
-		CA9D3424B6D3AC46301C5C12EE7B5E7B /* TensorFlowLiteC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.release.xcconfig; sourceTree = "<group>"; };
-		D0641B07AEC1B4339093BB58AE9C6333 /* ResourceBundle-TensorFlowLiteC-TensorFlowLiteC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TensorFlowLiteC-TensorFlowLiteC-Info.plist"; sourceTree = "<group>"; };
-		D283C2617F5043BEA6FE20FAC549203F /* Pods-RepTally-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-acknowledgements.plist"; sourceTree = "<group>"; };
-		D3A6F0EEE8A04DC80AECFFD377D1B618 /* Pods-RepTallyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTallyTests-dummy.m"; sourceTree = "<group>"; };
-		D5633368FBDA7F414FA44A38709080A0 /* MijickPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MijickPopupView.modulemap; sourceTree = "<group>"; };
-		D8C9B4F52CBD6D0422432E0842E1159E /* MijickPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-prefix.pch"; sourceTree = "<group>"; };
+		9E6DAB141A864DBB5BE62282A191B5F6 /* Pods-RepTallyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTallyTests-Info.plist"; sourceTree = "<group>"; };
+		9F12F4137123E655BB79E113154717F0 /* Public+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+View.swift"; path = "Sources/Public/Extensions/Public+View.swift"; sourceTree = "<group>"; };
+		9F802C4266AD205B379B7366F3E522CF /* MijickPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MijickPopupView.modulemap; sourceTree = "<group>"; };
+		A16C989C92320E9CE8E0F55BC8D7EA67 /* LocalConfig.TopPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.TopPopup.swift; path = Sources/Public/Configurables/LocalConfig.TopPopup.swift; sourceTree = "<group>"; };
+		A2CF4608F2AB7671D1881092DF8C83C3 /* PopupCentreStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupCentreStackView.swift; path = Sources/Internal/Views/PopupCentreStackView.swift; sourceTree = "<group>"; };
+		A2E5C4D8090AA29898825C9290D2ED60 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
+		A89B9688CE08145FF4D07A782D4BD3AB /* Animation++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Animation++.swift"; path = "Sources/Internal/Extensions/Animation++.swift"; sourceTree = "<group>"; };
+		A958D06C0C430CB4BA35564C014A5159 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
+		AAD8E53EE955C40E29A853E6BEB33A9F /* Pods-RepTally-RepTallyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTally-RepTallyUITests-dummy.m"; sourceTree = "<group>"; };
+		AC708459E7B566465B864A7E289EDCCA /* DispatchSource++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchSource++.swift"; path = "Sources/Internal/Extensions/DispatchSource++.swift"; sourceTree = "<group>"; };
+		AD254207CB25ED66A2B9B73125D3FC56 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
+		B19D9827FD62EC326B5A534D7DC44AAA /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/swift/Sources/Model.swift; sourceTree = "<group>"; };
+		B34B02112496E0B68ADF66128A3C4D50 /* Pods-RepTally-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-Info.plist"; sourceTree = "<group>"; };
+		BA6EEEC3863976E05985BB90657B4475 /* View.ScreenManager++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.ScreenManager++.swift"; path = "Sources/Internal/Extensions/View.ScreenManager++.swift"; sourceTree = "<group>"; };
+		BB58DDDF9D686613F2131F44BD78C2D9 /* View++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View++.swift"; path = "Sources/Internal/Extensions/View++.swift"; sourceTree = "<group>"; };
+		BDDFEE493D2ED670B7232CC532BBE73E /* TensorFlowLiteSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.debug.xcconfig; sourceTree = "<group>"; };
+		BF6F234587A9EE04B98D0FCFC5D0D14D /* Pods-RepTally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally.release.xcconfig"; sourceTree = "<group>"; };
+		C600B2CE6EB583D16E65F7BC795FDDAE /* Pods-RepTally-RepTallyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally-RepTallyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAA603EACC41DCCB6EFABD6AE65832EE /* LocalConfig.BottomPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.BottomPopup.swift; path = Sources/Public/Configurables/LocalConfig.BottomPopup.swift; sourceTree = "<group>"; };
+		CEAF75E27B5D4B22E4C5096B74C843EB /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
+		CFB4E70C09DF24D432B2178362443A48 /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
+		CFFE5D1499ED357B1F82F3A9BF8835B2 /* TensorFlowLiteC-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TensorFlowLiteC-xcframeworks.sh"; sourceTree = "<group>"; };
+		D6E8DF7C3A5BDE64A3EC185BA8C91EFF /* View.Gestures++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.Gestures++.swift"; path = "Sources/Internal/Extensions/View.Gestures++.swift"; sourceTree = "<group>"; };
 		D9C5EA71D851C0EBA7E66A9D3163528A /* MijickPopupView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MijickPopupView; path = MijickPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB390F8DCB31893BE47AA25A7372D121 /* AnyPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPopup.swift; path = Sources/Internal/Other/AnyPopup.swift; sourceTree = "<group>"; };
-		DCF2070541236D31E2785D048EA382B0 /* Pods-RepTally-RepTallyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-RepTallyUITests-Info.plist"; sourceTree = "<group>"; };
-		DE07804CE35D5ACCC50E007C17A09E65 /* Pods-RepTally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally.debug.xcconfig"; sourceTree = "<group>"; };
-		DF9F4D65D1B42583290884322EF471CF /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
-		E0A24A1180C12991411416B7ED10BD60 /* Pods-RepTally-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RepTally-resources.sh"; sourceTree = "<group>"; };
+		DCB52786DD46CFE6C675C06F43D36807 /* Public+Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+Popup.swift"; path = "Sources/Public/Extensions/Public+Popup.swift"; sourceTree = "<group>"; };
+		DFA7B0A4F4F3EB17BAEE3B6B9730AB84 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
+		E04A2A249E4C9E786864E74681240A5A /* MijickPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-prefix.pch"; sourceTree = "<group>"; };
 		E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLiteSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TensorFlowLiteSwift; path = TensorFlowLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8766E95757E793014C1C8ADBB7C39F5 /* ScreenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenManager.swift; path = Sources/Internal/Managers/ScreenManager.swift; sourceTree = "<group>"; };
-		EDC2C52E4A62CCC59584F698248A0C36 /* Public+Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+Popup.swift"; path = "Sources/Public/Extensions/Public+Popup.swift"; sourceTree = "<group>"; };
-		EE05CABF423CF6AB786C782A86593205 /* Pods-RepTally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally.release.xcconfig"; sourceTree = "<group>"; };
-		EE1E05231A52B686ECD8DF76E3A6AF6D /* Pods-RepTally-RepTallyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RepTally-RepTallyUITests-resources.sh"; sourceTree = "<group>"; };
-		F6CA8BFC88290AB33297A7C778E05B12 /* TensorFlowLiteC-TensorFlowLiteC */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "TensorFlowLiteC-TensorFlowLiteC"; path = TensorFlowLiteC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2EA7FA907A10AC09BF5AEB63AD1C3F /* HeightReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightReader.swift; path = "Sources/Internal/View Modifiers/HeightReader.swift"; sourceTree = "<group>"; };
-		FDF78604C5A4867209EF87867D415FC3 /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
-		FE663C712D8488A64BB93490DDF19CAD /* LocalConfig.CentrePopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.CentrePopup.swift; path = Sources/Public/Configurables/LocalConfig.CentrePopup.swift; sourceTree = "<group>"; };
-		FF71545F939E29D6578F9DA9D05A2358 /* Pods-RepTally.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTally.modulemap"; sourceTree = "<group>"; };
+		E27109C07AEEF13D59F46497B5211285 /* GlobalConfig.Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Common.swift; path = Sources/Public/Configurables/GlobalConfig.Common.swift; sourceTree = "<group>"; };
+		E8E3BD8F7496CC7A44A9705AF439DDFF /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
+		EB0F109AAA794EE73B4204D1536ADDDA /* HeightReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightReader.swift; path = "Sources/Internal/View Modifiers/HeightReader.swift"; sourceTree = "<group>"; };
+		F528A087B6733F08C7DE5074ED23F743 /* Pods-RepTallyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTallyTests-umbrella.h"; sourceTree = "<group>"; };
+		F76FA06BC56CB7B4B429C77229A57B68 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Internal/Other/AnimationType.swift; sourceTree = "<group>"; };
+		F9989D78093C470EC24C43D3DD946502 /* Pods-RepTally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBDD99938F328E0B95C695199964D4F /* PopupTopStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupTopStackView.swift; path = Sources/Internal/Views/PopupTopStackView.swift; sourceTree = "<group>"; };
+		FCE8853F06D1F26E1D2EDACB062511EC /* MijickPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-umbrella.h"; sourceTree = "<group>"; };
+		FD80A508B7ADD153C10C7BA3C4E919E7 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = Sources/Internal/Other/Shadow.swift; sourceTree = "<group>"; };
+		FE418BA84B49180FCB9225CE9F03EE94 /* MijickPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,19 +251,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1719D8F833D7C1A56973C307116D1B61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D269A63118A1AEF2A3AC487DF625B665 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		709A93EF0A2AB9E85F065C5335FEAF85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7E8A61BF7671494DDD1F611B508A2033 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73F1045F0938F215925BBACD594055DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				972A9788F6C963DEC5986F16DD5B67DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,214 +275,119 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A985D71F0BA9005FEA17E43DB83FC240 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3FE8E38CC91C4BBF6002A7E04D4438F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		148A0BDE63ECF723B98C93930107846A /* Privacy */ = {
+		236B7CEFDFB2684356E9BDB47475B8DB /* TensorFlowLiteSwift */ = {
 			isa = PBXGroup;
 			children = (
-				CF8C82A2F8A7413B94595A8538FAED2A /* Resources */,
-			);
-			name = Privacy;
-			sourceTree = "<group>";
-		};
-		2705D46123F1BC2D910A227D4832BDEF /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				8E526C75DC0D5AA0CBF809D625EC4352 /* Delegate.swift */,
-				AAAE7768E7A14C330EC6FA75CECFC1BB /* Interpreter.swift */,
-				557B0C75AA61AAB7D05185FF74737902 /* InterpreterError.swift */,
-				0E6BB0B7765D2FDA5815B1ECD1A15B7B /* Model.swift */,
-				80E9A2C91B196C3CB5018440EDA76E91 /* QuantizationParameters.swift */,
-				1AC354969391EE9920B8762C08B2771F /* SignatureRunner.swift */,
-				B3E16A39630B6062A79CAD0879946B68 /* SignatureRunnerError.swift */,
-				FDF78604C5A4867209EF87867D415FC3 /* Tensor.swift */,
-				DF9F4D65D1B42583290884322EF471CF /* TensorFlowLite.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		2BEBD9B89830EDB926E1D8D78AE2882B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8EF76FFB17558A738087550545A54D3F /* ResourceBundle-TensorFlowLite-TensorFlowLiteSwift-Info.plist */,
-				95C42AE5E022756F9E32393A67186E6F /* TensorFlowLiteSwift.modulemap */,
-				23DB048666342DD662D046CB7974BC48 /* TensorFlowLiteSwift-dummy.m */,
-				AF9185013E87CFB887E5DEDA4C4E0E91 /* TensorFlowLiteSwift-Info.plist */,
-				020CEEA8B83AD745BAAD93C72E14C675 /* TensorFlowLiteSwift-prefix.pch */,
-				553021787D30431ED660A85AFCAAE7F0 /* TensorFlowLiteSwift-umbrella.h */,
-				985E5F6A6B2240CCB8FEB885DF1618D7 /* TensorFlowLiteSwift.debug.xcconfig */,
-				B677E94E4330EED3BA84418A47313185 /* TensorFlowLiteSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteSwift";
-			sourceTree = "<group>";
-		};
-		3D44A6DB543FAA2FE07E259A9A320D85 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C4E39CE7D953A429B7984576BB425A6F /* TensorFlowLiteC.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4551637E37D5A1D7C3BC5A9E7BC031F0 /* TensorFlowLiteSwift */ = {
-			isa = PBXGroup;
-			children = (
-				2705D46123F1BC2D910A227D4832BDEF /* Core */,
-				148A0BDE63ECF723B98C93930107846A /* Privacy */,
-				2BEBD9B89830EDB926E1D8D78AE2882B /* Support Files */,
+				F0A89C2E6E0A80CD25A7FA971C2A83F9 /* Core */,
+				57EF238FB3E6D693B68E1FAF8C39A522 /* Support Files */,
 			);
 			name = TensorFlowLiteSwift;
 			path = TensorFlowLiteSwift;
 			sourceTree = "<group>";
 		};
-		5117CE67A3D31B1F01E33B29910B2100 /* Targets Support Files */ = {
+		2583B83A13A5C5545EE6CC1876D4E67A /* Pods-RepTallyTests */ = {
 			isa = PBXGroup;
 			children = (
-				9E1F9FE6734AA6F9B0D33D978D6392C9 /* Pods-RepTally */,
-				522F7AA528C7E5CA2830A18375F9A5B6 /* Pods-RepTally-RepTallyUITests */,
-				9130676A0FB095F507786F8B7A9CD48D /* Pods-RepTallyTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		522F7AA528C7E5CA2830A18375F9A5B6 /* Pods-RepTally-RepTallyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3F34C8211CEAAE4BC938106732817002 /* Pods-RepTally-RepTallyUITests.modulemap */,
-				6305AF747140CF1793372E3187341C7B /* Pods-RepTally-RepTallyUITests-acknowledgements.markdown */,
-				086E686B449C51E7EC3DCF5C46F15959 /* Pods-RepTally-RepTallyUITests-acknowledgements.plist */,
-				25ED1009CCC407396FF45AE956FD7E1C /* Pods-RepTally-RepTallyUITests-dummy.m */,
-				DCF2070541236D31E2785D048EA382B0 /* Pods-RepTally-RepTallyUITests-Info.plist */,
-				EE1E05231A52B686ECD8DF76E3A6AF6D /* Pods-RepTally-RepTallyUITests-resources.sh */,
-				AC6440C24AE68D3ED7C2C94BBF0B3176 /* Pods-RepTally-RepTallyUITests-umbrella.h */,
-				249421C050507F45D1EE526319359B7F /* Pods-RepTally-RepTallyUITests.debug.xcconfig */,
-				9B9DE4BA084F391CBCAF6A5B88B4B881 /* Pods-RepTally-RepTallyUITests.release.xcconfig */,
-			);
-			name = "Pods-RepTally-RepTallyUITests";
-			path = "Target Support Files/Pods-RepTally-RepTallyUITests";
-			sourceTree = "<group>";
-		};
-		9130676A0FB095F507786F8B7A9CD48D /* Pods-RepTallyTests */ = {
-			isa = PBXGroup;
-			children = (
-				0565D387998FAED111219620DD2C9C79 /* Pods-RepTallyTests.modulemap */,
-				644721D4B713A428F3225370D226DE68 /* Pods-RepTallyTests-acknowledgements.markdown */,
-				2490FBC56AD6081FA6A40407EA7FF18A /* Pods-RepTallyTests-acknowledgements.plist */,
-				D3A6F0EEE8A04DC80AECFFD377D1B618 /* Pods-RepTallyTests-dummy.m */,
-				86E88088BB87B239B0BCD15578D36D8F /* Pods-RepTallyTests-Info.plist */,
-				9547320A3E42D1C7E3DCC47FCFAC292F /* Pods-RepTallyTests-umbrella.h */,
-				731773706D6BD9F2BB7C58FFB36D11F9 /* Pods-RepTallyTests.debug.xcconfig */,
-				A9F3D1DE9C96C570B7CBE994E14F205D /* Pods-RepTallyTests.release.xcconfig */,
+				2E14C16CA7AD220CC8567C169EDE249D /* Pods-RepTallyTests.modulemap */,
+				27CFBC2ACC7E8B2BAAA2C5E39EC6B21D /* Pods-RepTallyTests-acknowledgements.markdown */,
+				082B6A274D2C6812DA1C0C944E031B12 /* Pods-RepTallyTests-acknowledgements.plist */,
+				6D57E8D225A0F58F12381CC103D2FC40 /* Pods-RepTallyTests-dummy.m */,
+				9E6DAB141A864DBB5BE62282A191B5F6 /* Pods-RepTallyTests-Info.plist */,
+				F528A087B6733F08C7DE5074ED23F743 /* Pods-RepTallyTests-umbrella.h */,
+				52ADCA9CAC0ECB9F30413202BAA2CBA8 /* Pods-RepTallyTests.debug.xcconfig */,
+				9796A7E59D5810CF5B6D3F41AA11ED84 /* Pods-RepTallyTests.release.xcconfig */,
 			);
 			name = "Pods-RepTallyTests";
 			path = "Target Support Files/Pods-RepTallyTests";
 			sourceTree = "<group>";
 		};
-		942944570EC8FC8AA04790C944ECA5FA /* TensorFlowLiteC */ = {
+		354F0902B176E616DD6B5BC953848F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1AC4A7748193A28B08D073DE59281F3 /* Core */,
-				FB88D697820F343C85C48B43A26DC2A2 /* Support Files */,
+				3E7EE70BE78F05CA5B90645A139E584D /* TensorFlowLiteC.xcframework */,
 			);
-			name = TensorFlowLiteC;
-			path = TensorFlowLiteC;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		961BED0BA311FAE87E55F4A60880BDA3 /* Pods */ = {
+		57EF238FB3E6D693B68E1FAF8C39A522 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC13B0C6EF4686020468ACE864A99C5E /* MijickPopupView */,
-				942944570EC8FC8AA04790C944ECA5FA /* TensorFlowLiteC */,
-				4551637E37D5A1D7C3BC5A9E7BC031F0 /* TensorFlowLiteSwift */,
+				7FF2FDD14A646362F2497DF40A781B58 /* TensorFlowLiteSwift.modulemap */,
+				A958D06C0C430CB4BA35564C014A5159 /* TensorFlowLiteSwift-dummy.m */,
+				CFB4E70C09DF24D432B2178362443A48 /* TensorFlowLiteSwift-Info.plist */,
+				0C4F8B1525D842C50C79CC2FA11F50CE /* TensorFlowLiteSwift-prefix.pch */,
+				E8E3BD8F7496CC7A44A9705AF439DDFF /* TensorFlowLiteSwift-umbrella.h */,
+				BDDFEE493D2ED670B7232CC532BBE73E /* TensorFlowLiteSwift.debug.xcconfig */,
+				8859734BB1D9386928015A9C5A717C44 /* TensorFlowLiteSwift.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteSwift";
 			sourceTree = "<group>";
 		};
-		9E1F9FE6734AA6F9B0D33D978D6392C9 /* Pods-RepTally */ = {
+		71919DC4CE62660527A57B064D6CB72B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF71545F939E29D6578F9DA9D05A2358 /* Pods-RepTally.modulemap */,
-				4D45AB97E1D1AC896FD92E35732EBD23 /* Pods-RepTally-acknowledgements.markdown */,
-				D283C2617F5043BEA6FE20FAC549203F /* Pods-RepTally-acknowledgements.plist */,
-				3DEE9DF0A524395A02E7662A274C7B55 /* Pods-RepTally-dummy.m */,
-				75FCB6F88FE0080485D2023DABBF52EC /* Pods-RepTally-Info.plist */,
-				E0A24A1180C12991411416B7ED10BD60 /* Pods-RepTally-resources.sh */,
-				A14F385E7F6AD140351B76BAB2E2156F /* Pods-RepTally-umbrella.h */,
-				DE07804CE35D5ACCC50E007C17A09E65 /* Pods-RepTally.debug.xcconfig */,
-				EE05CABF423CF6AB786C782A86593205 /* Pods-RepTally.release.xcconfig */,
+				D9C5EA71D851C0EBA7E66A9D3163528A /* MijickPopupView */,
+				806099B73D6228786D40C75E339001A9 /* Pods-RepTally */,
+				5BBF2F9EC375B4674F759AA1AD573FF2 /* Pods-RepTally-RepTallyUITests */,
+				1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */,
+				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLiteSwift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8871FBBF7E10BF44917248119B9765EB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				354F0902B176E616DD6B5BC953848F42 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		89F8919635AB60487F74FF639156F445 /* Pods-RepTally */ = {
+			isa = PBXGroup;
+			children = (
+				6A7F495B22F9389B44B2A548230AD06D /* Pods-RepTally.modulemap */,
+				5C1A971BEFA08A4F5F14D2C7E0829D15 /* Pods-RepTally-acknowledgements.markdown */,
+				07BB9815E0A0249264D6626ED03F8274 /* Pods-RepTally-acknowledgements.plist */,
+				81852D7B9AC121C3E91AFAB5A6E61340 /* Pods-RepTally-dummy.m */,
+				B34B02112496E0B68ADF66128A3C4D50 /* Pods-RepTally-Info.plist */,
+				15987C12E2199B18A9F3E48B35BAA51F /* Pods-RepTally-umbrella.h */,
+				F9989D78093C470EC24C43D3DD946502 /* Pods-RepTally.debug.xcconfig */,
+				BF6F234587A9EE04B98D0FCFC5D0D14D /* Pods-RepTally.release.xcconfig */,
 			);
 			name = "Pods-RepTally";
 			path = "Target Support Files/Pods-RepTally";
 			sourceTree = "<group>";
 		};
-		A1AC4A7748193A28B08D073DE59281F3 /* Core */ = {
+		8E146B259F14AB66FDE8031BC67F96B0 /* Pods-RepTally-RepTallyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3D44A6DB543FAA2FE07E259A9A320D85 /* Frameworks */,
-				FF8679D0FD1ED4F64415E4AA0D641B08 /* Resources */,
+				70D1E9C230FF4F73918FBCF307D2B860 /* Pods-RepTally-RepTallyUITests.modulemap */,
+				9D4F6D300D67ED8F61E88D67A5EF333C /* Pods-RepTally-RepTallyUITests-acknowledgements.markdown */,
+				6FD8633E0796B8E95CBAEB98E824A4E8 /* Pods-RepTally-RepTallyUITests-acknowledgements.plist */,
+				AAD8E53EE955C40E29A853E6BEB33A9F /* Pods-RepTally-RepTallyUITests-dummy.m */,
+				04CCC6361D33C889DD9F217135B1C951 /* Pods-RepTally-RepTallyUITests-Info.plist */,
+				29D92B6E396B8ED0D717104A24D57CC2 /* Pods-RepTally-RepTallyUITests-umbrella.h */,
+				7BFC54A280B12CA892A302ECD23D108D /* Pods-RepTally-RepTallyUITests.debug.xcconfig */,
+				C600B2CE6EB583D16E65F7BC795FDDAE /* Pods-RepTally-RepTallyUITests.release.xcconfig */,
 			);
-			name = Core;
+			name = "Pods-RepTally-RepTallyUITests";
+			path = "Target Support Files/Pods-RepTally-RepTallyUITests";
 			sourceTree = "<group>";
 		};
-		CC13B0C6EF4686020468ACE864A99C5E /* MijickPopupView */ = {
+		ABF4EDB2B4C0D1A404405401ADE14FA7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81E0E98B44493D7D238A49C7BA13E018 /* Animation++.swift */,
-				32DBDEA14B92B7CE9E0F170F195F4181 /* AnimationType.swift */,
-				DB390F8DCB31893BE47AA25A7372D121 /* AnyPopup.swift */,
-				289DCA9D35AB01F1ABA259A289840651 /* Array++.swift */,
-				61BCE240B87D477FFFB9D672B86E866C /* Configurable.swift */,
-				350A88A82125F1D4232600B398983584 /* DispatchSource++.swift */,
-				64139EFC6908A600E9304711DA7E4CA9 /* GlobalConfig.swift */,
-				95650BEF1A5922EE5E5FA44A350DB372 /* GlobalConfig.Bottom.swift */,
-				86CAF0C59B840C753C44612D97C62C72 /* GlobalConfig.Centre.swift */,
-				19BA07B6841CF011D88799088CC06920 /* GlobalConfig.Common.swift */,
-				1EC62AD4A935B7F5B8A40684E16F6B88 /* GlobalConfig.Top.swift */,
-				FC2EA7FA907A10AC09BF5AEB63AD1C3F /* HeightReader.swift */,
-				3B1D2146232381C5354961DF2333622F /* ID.swift */,
-				776D84FD8BCB048FAC4C1C5F81A63E39 /* Int++.swift */,
-				B22254CE2C9BD8D7B72E9AC9C8A83007 /* KeyboardManager.swift */,
-				41AF85BBCF8259D5A9DEAF43D9F017B1 /* LocalConfig.BottomPopup.swift */,
-				FE663C712D8488A64BB93490DDF19CAD /* LocalConfig.CentrePopup.swift */,
-				A9BA8F637FA6CAB41DAF2C62D03C84AE /* LocalConfig.TopPopup.swift */,
-				ABE9275ADA200F7091058F5E7C6F4340 /* Popup.swift */,
-				9F54156C74BB5D2CE6779359F65BA9D8 /* PopupBottomStackView.swift */,
-				472D8F4258558D5A5761635DE19A05AF /* PopupCentreStackView.swift */,
-				B94ADEE340DF9DE80DADD6CBB27789DB /* PopupManager.swift */,
-				97F4DBBABD51BDE022E71F3361FCB734 /* PopupStack.swift */,
-				C105FCF1CFB444ECEF5C183531A04709 /* PopupTopStackView.swift */,
-				3741DC2A20CACD1055CB8A3F52016796 /* PopupView.swift */,
-				4B780A8B52B7CD2BA1FAEA794560FDF4 /* Public+DragDetent.swift */,
-				EDC2C52E4A62CCC59584F698248A0C36 /* Public+Popup.swift */,
-				996C436C77572DC0F16DCDCC69529642 /* Public+PopupManager.swift */,
-				A9B21EF6256976DDAF34D4B81F8AB073 /* Public+PopupSceneDelegate.swift */,
-				B0397B23566BD748EEDBAE08101EC823 /* Public+View.swift */,
-				8FAC84006EB1065B236F4E29BB46A66F /* RoundedCorner.swift */,
-				E8766E95757E793014C1C8ADBB7C39F5 /* ScreenManager.swift */,
-				207CBD7735A9061D5488AC396531EAC0 /* Shadow.swift */,
-				5DADA5A1918C09CE482362ECB22231E7 /* View++.swift */,
-				20A181C3F54479C282828EF7D7C6E297 /* View.Gestures++.swift */,
-				8C906909851A58FEEDA8F86D6AFB6A37 /* View.ScreenManager++.swift */,
-				E05B4C59E8731341F2174658C34BFCAF /* Support Files */,
+				CFFE5D1499ED357B1F82F3A9BF8835B2 /* TensorFlowLiteC-xcframeworks.sh */,
+				652D90905D993AB8A7254B770E5C605A /* TensorFlowLiteC.debug.xcconfig */,
+				023C4AE253BE4D1920B52C8ABC6B03F7 /* TensorFlowLiteC.release.xcconfig */,
 			);
-			name = MijickPopupView;
-			path = MijickPopupView;
+			name = "Support Files";
+			path = "../Target Support Files/TensorFlowLiteC";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -519,18 +395,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				961BED0BA311FAE87E55F4A60880BDA3 /* Pods */,
-				F6E5E7B6A98D5300F9CE994E7EF02789 /* Products */,
-				5117CE67A3D31B1F01E33B29910B2100 /* Targets Support Files */,
+				F98BDCAE6BED4B1DFDD28A9A7E7C288D /* Pods */,
+				71919DC4CE62660527A57B064D6CB72B /* Products */,
+				F901AEA9B7D74AC88E01DF83A8C034EB /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		CF8C82A2F8A7413B94595A8538FAED2A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				674D5529D4272F6962DA55E5F280BC45 /* PrivacyInfo.xcprivacy */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -541,16 +409,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E05B4C59E8731341F2174658C34BFCAF /* Support Files */ = {
+		D261A3C091569C93E5DE833177C11D4E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5633368FBDA7F414FA44A38709080A0 /* MijickPopupView.modulemap */,
-				9FD58A00488B7DDCDA0C94DD1FBC2D2C /* MijickPopupView-dummy.m */,
-				B2935FB08CD316CCB98D68BC25EB2AD1 /* MijickPopupView-Info.plist */,
-				D8C9B4F52CBD6D0422432E0842E1159E /* MijickPopupView-prefix.pch */,
-				90ED7ADA4920F8BE24EB1207F0D91B4E /* MijickPopupView-umbrella.h */,
-				84841881B7C3134EE52EC016059354C2 /* MijickPopupView.debug.xcconfig */,
-				2818164B8337CCA6FE4EA6F8109DEEEA /* MijickPopupView.release.xcconfig */,
+				9F802C4266AD205B379B7366F3E522CF /* MijickPopupView.modulemap */,
+				6C45C05FE8A1D1C2248BBDCC61B03788 /* MijickPopupView-dummy.m */,
+				0DD92A4F9B2617EEA96A25D6D48F8D4E /* MijickPopupView-Info.plist */,
+				E04A2A249E4C9E786864E74681240A5A /* MijickPopupView-prefix.pch */,
+				FCE8853F06D1F26E1D2EDACB062511EC /* MijickPopupView-umbrella.h */,
+				2E1539018EB10FE30A73C8B21AA451C0 /* MijickPopupView.debug.xcconfig */,
+				FE418BA84B49180FCB9225CE9F03EE94 /* MijickPopupView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MijickPopupView";
@@ -564,43 +432,106 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F6E5E7B6A98D5300F9CE994E7EF02789 /* Products */ = {
+		F0A89C2E6E0A80CD25A7FA971C2A83F9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D9C5EA71D851C0EBA7E66A9D3163528A /* MijickPopupView */,
-				806099B73D6228786D40C75E339001A9 /* Pods-RepTally */,
-				5BBF2F9EC375B4674F759AA1AD573FF2 /* Pods-RepTally-RepTallyUITests */,
-				1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */,
-				F6CA8BFC88290AB33297A7C778E05B12 /* TensorFlowLiteC-TensorFlowLiteC */,
-				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLiteSwift */,
-				1D5601775997FD3F96D4BBB895A282FB /* TensorFlowLiteSwift-TensorFlowLite */,
+				DFA7B0A4F4F3EB17BAEE3B6B9730AB84 /* Delegate.swift */,
+				AD254207CB25ED66A2B9B73125D3FC56 /* Interpreter.swift */,
+				CEAF75E27B5D4B22E4C5096B74C843EB /* InterpreterError.swift */,
+				B19D9827FD62EC326B5A534D7DC44AAA /* Model.swift */,
+				593BE2A0933B6D53BF03AECD8EA2B916 /* QuantizationParameters.swift */,
+				0134026538D9B11CFDF31A3821F16ECF /* Tensor.swift */,
+				A2E5C4D8090AA29898825C9290D2ED60 /* TensorFlowLite.swift */,
 			);
-			name = Products;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		FB88D697820F343C85C48B43A26DC2A2 /* Support Files */ = {
+		F5155B5F5321F2EFF882A2A6175F6D4D /* TensorFlowLiteC */ = {
 			isa = PBXGroup;
 			children = (
-				D0641B07AEC1B4339093BB58AE9C6333 /* ResourceBundle-TensorFlowLiteC-TensorFlowLiteC-Info.plist */,
-				12DBAE28627D9A4F3EAFFD717731A326 /* TensorFlowLiteC-xcframeworks.sh */,
-				2D4649DD20350A2130BC24A677E8FE63 /* TensorFlowLiteC.debug.xcconfig */,
-				CA9D3424B6D3AC46301C5C12EE7B5E7B /* TensorFlowLiteC.release.xcconfig */,
+				8871FBBF7E10BF44917248119B9765EB /* Core */,
+				ABF4EDB2B4C0D1A404405401ADE14FA7 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteC";
+			name = TensorFlowLiteC;
+			path = TensorFlowLiteC;
 			sourceTree = "<group>";
 		};
-		FF8679D0FD1ED4F64415E4AA0D641B08 /* Resources */ = {
+		F901AEA9B7D74AC88E01DF83A8C034EB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				485FA6B46BFD0679A330BAAD0DB23122 /* PrivacyInfo.xcprivacy */,
+				89F8919635AB60487F74FF639156F445 /* Pods-RepTally */,
+				8E146B259F14AB66FDE8031BC67F96B0 /* Pods-RepTally-RepTallyUITests */,
+				2583B83A13A5C5545EE6CC1876D4E67A /* Pods-RepTallyTests */,
 			);
-			name = Resources;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F98BDCAE6BED4B1DFDD28A9A7E7C288D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFB004B931C215D5B9FDD35C66EBD4FF /* MijickPopupView */,
+				F5155B5F5321F2EFF882A2A6175F6D4D /* TensorFlowLiteC */,
+				236B7CEFDFB2684356E9BDB47475B8DB /* TensorFlowLiteSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFB004B931C215D5B9FDD35C66EBD4FF /* MijickPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				A89B9688CE08145FF4D07A782D4BD3AB /* Animation++.swift */,
+				F76FA06BC56CB7B4B429C77229A57B68 /* AnimationType.swift */,
+				7095F51AA1B29EBC8C0601DD6439F840 /* AnyPopup.swift */,
+				1EDABFBEE902A9F2B40BE3B520840545 /* Array++.swift */,
+				18427B4D1BB297DC1BE451E3C7052A36 /* Configurable.swift */,
+				AC708459E7B566465B864A7E289EDCCA /* DispatchSource++.swift */,
+				6EE66D818CDC0C29F345887EED1BC06C /* GlobalConfig.swift */,
+				39CD7041D807FDC2BE12CC764E0F8974 /* GlobalConfig.Bottom.swift */,
+				3662813444FA8E9A6137E92875DD40CC /* GlobalConfig.Centre.swift */,
+				E27109C07AEEF13D59F46497B5211285 /* GlobalConfig.Common.swift */,
+				49EE283BFA3B35DDFF3D912265D0D355 /* GlobalConfig.Top.swift */,
+				EB0F109AAA794EE73B4204D1536ADDDA /* HeightReader.swift */,
+				785FA3146257C60F89914D3CBF54D926 /* ID.swift */,
+				0423B68FA44070CBF9B2B290FA6124FF /* Int++.swift */,
+				8DDAAD058DF00D13335D1C8865192542 /* KeyboardManager.swift */,
+				CAA603EACC41DCCB6EFABD6AE65832EE /* LocalConfig.BottomPopup.swift */,
+				17FD80C4F3F6954FF7DC777888635E08 /* LocalConfig.CentrePopup.swift */,
+				A16C989C92320E9CE8E0F55BC8D7EA67 /* LocalConfig.TopPopup.swift */,
+				4050220F447F16018478CF7994F8AE6D /* Popup.swift */,
+				67E2149F5FC835C3EEFB689C0CE8A670 /* PopupBottomStackView.swift */,
+				A2CF4608F2AB7671D1881092DF8C83C3 /* PopupCentreStackView.swift */,
+				0B0DB9700621E457B7B6675FF2370C3E /* PopupManager.swift */,
+				9B9EF15735CA7E5B31E22D77774C619A /* PopupStack.swift */,
+				FBBDD99938F328E0B95C695199964D4F /* PopupTopStackView.swift */,
+				3287A48A21FF3A8EACDBB03C29C23936 /* PopupView.swift */,
+				612751AC0D9886FCDEF45295176CA291 /* Public+DragDetent.swift */,
+				DCB52786DD46CFE6C675C06F43D36807 /* Public+Popup.swift */,
+				8728223909D9BE730CC4FFEAEFFFBE6F /* Public+PopupManager.swift */,
+				1443FEB565B73F000198E2AF4D7DC55B /* Public+PopupSceneDelegate.swift */,
+				9F12F4137123E655BB79E113154717F0 /* Public+View.swift */,
+				4177128FE9B1639B9A7F52CBD17F7FC7 /* RoundedCorner.swift */,
+				591BD9E913D69E20BC5CC142C200B527 /* ScreenManager.swift */,
+				FD80A508B7ADD153C10C7BA3C4E919E7 /* Shadow.swift */,
+				BB58DDDF9D686613F2131F44BD78C2D9 /* View++.swift */,
+				D6E8DF7C3A5BDE64A3EC185BA8C91EFF /* View.Gestures++.swift */,
+				BA6EEEC3863976E05985BB90657B4475 /* View.ScreenManager++.swift */,
+				D261A3C091569C93E5DE833177C11D4E /* Support Files */,
+			);
+			name = MijickPopupView;
+			path = MijickPopupView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		06819E9499B792BB6FB63ADD4064155E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8574E44ADE8EE6BE37C06553AFFE8C /* TensorFlowLiteSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2139E61D16688F0ED18C78CCC962D901 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,14 +564,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F798CF6F5FB1EEC7BA31F0DB0B758D36 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				997CD6416A6B12A635614BE8C4BFB5EC /* TensorFlowLiteSwift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -656,44 +579,26 @@
 			buildRules = (
 			);
 			dependencies = (
-				06D922E6033C6FF22B3D7BA7A7E8F5F7 /* PBXTargetDependency */,
+				ACB19622DBD2F2B699F15359D1280473 /* PBXTargetDependency */,
 			);
 			name = "Pods-RepTallyTests";
 			productName = Pods_RepTallyTests;
 			productReference = 1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */;
 			productType = "com.apple.product-type.framework";
 		};
-		0E30F2EFBF0085562A1B5F3CE337DBC4 /* TensorFlowLiteSwift-TensorFlowLite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 653CBB15B865BF9C77D1ED4675EDBBB8 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift-TensorFlowLite" */;
-			buildPhases = (
-				9F9AE3376688E923354AAAB6EC815C75 /* Sources */,
-				A985D71F0BA9005FEA17E43DB83FC240 /* Frameworks */,
-				C45A3E2D306EB859284738D52225BF31 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TensorFlowLiteSwift-TensorFlowLite";
-			productName = TensorFlowLite;
-			productReference = 1D5601775997FD3F96D4BBB895A282FB /* TensorFlowLiteSwift-TensorFlowLite */;
-			productType = "com.apple.product-type.bundle";
-		};
 		10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62DC77CA6E1C5709232936DAB14E224E /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */;
+			buildConfigurationList = 707ADF4962C8AEE7DCDEDB91BE139786 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */;
 			buildPhases = (
-				F798CF6F5FB1EEC7BA31F0DB0B758D36 /* Headers */,
-				33F6BCB7436C711C3CB782200BDBE945 /* Sources */,
-				73F1045F0938F215925BBACD594055DF /* Frameworks */,
-				F6F31C620B5A5AD5BEC9A2A7CE50D566 /* Resources */,
+				06819E9499B792BB6FB63ADD4064155E /* Headers */,
+				3DA6F28999BB09FE99FBD42EBBC42809 /* Sources */,
+				1719D8F833D7C1A56973C307116D1B61 /* Frameworks */,
+				04FF6B695CC255F2241B3139572AFDB6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8ED018094A4194F9A53AFEA120428182 /* PBXTargetDependency */,
-				E7DB931DCA63DCD26A5C67B09DFCC7C2 /* PBXTargetDependency */,
+				EC60A39417363EE8B6BFDCF6B76E5E02 /* PBXTargetDependency */,
 			);
 			name = TensorFlowLiteSwift;
 			productName = TensorFlowLite;
@@ -712,9 +617,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				18E3D645A64BA10E11848959676E02DD /* PBXTargetDependency */,
-				7F7D0823DF6B151AC0863B0D16589CE4 /* PBXTargetDependency */,
-				65B8A29A80F1E392370D35F7DCA5ED91 /* PBXTargetDependency */,
+				1E3E4A919565765980C53E0B9B4138AE /* PBXTargetDependency */,
+				909A8E28DF4B87B29E48C54A529B0DAC /* PBXTargetDependency */,
+				9738C50EEE11D91375025841A2E64D8E /* PBXTargetDependency */,
 			);
 			name = "Pods-RepTally";
 			productName = Pods_RepTally;
@@ -733,31 +638,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				8B9D31FD3BDFD02B17A2CBEF2EE102CD /* PBXTargetDependency */,
-				9160A527992C82A307DE8295BF34D054 /* PBXTargetDependency */,
-				D487638F79207FB62E959A869836C844 /* PBXTargetDependency */,
+				91DF41EE371D65C19051AB2E7B3D3678 /* PBXTargetDependency */,
+				FFFCC0A4681850DEA550D22C7E8FCCF3 /* PBXTargetDependency */,
+				0C1693D57B977D36FBADABB4D7318EC1 /* PBXTargetDependency */,
 			);
 			name = "Pods-RepTally-RepTallyUITests";
 			productName = Pods_RepTally_RepTallyUITests;
 			productReference = 5BBF2F9EC375B4674F759AA1AD573FF2 /* Pods-RepTally-RepTallyUITests */;
 			productType = "com.apple.product-type.framework";
-		};
-		E84A5C2B777F1A7DFA141FF65E7EF5F8 /* TensorFlowLiteC-TensorFlowLiteC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D4AB719D2AA57C0EB9F75095E977D9D /* Build configuration list for PBXNativeTarget "TensorFlowLiteC-TensorFlowLiteC" */;
-			buildPhases = (
-				5996C19120BDD8FCB59F930DDA9507BB /* Sources */,
-				C3FE8E38CC91C4BBF6002A7E04D4438F /* Frameworks */,
-				8DE8A5D0C208E1297CC8F35A1A602C1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TensorFlowLiteC-TensorFlowLiteC";
-			productName = TensorFlowLiteC;
-			productReference = F6CA8BFC88290AB33297A7C778E05B12 /* TensorFlowLiteC-TensorFlowLiteC */;
-			productType = "com.apple.product-type.bundle";
 		};
 		F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */ = {
 			isa = PBXNativeTarget;
@@ -797,7 +685,7 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F6E5E7B6A98D5300F9CE994E7EF02789 /* Products */;
+			productRefGroup = 71919DC4CE62660527A57B064D6CB72B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -806,14 +694,19 @@
 				D1CF13B23541FF2AC7A616D1FD8F32BD /* Pods-RepTally-RepTallyUITests */,
 				091C4610415F1C722B997154BC1BC7E7 /* Pods-RepTallyTests */,
 				AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */,
-				E84A5C2B777F1A7DFA141FF65E7EF5F8 /* TensorFlowLiteC-TensorFlowLiteC */,
 				10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */,
-				0E30F2EFBF0085562A1B5F3CE337DBC4 /* TensorFlowLiteSwift-TensorFlowLite */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		04FF6B695CC255F2241B3139572AFDB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39911004F1CCC417510404F4F7BE33F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -842,33 +735,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DE8A5D0C208E1297CC8F35A1A602C1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A163845681804E97211D2472A0704783 /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C45A3E2D306EB859284738D52225BF31 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5383891FB8FCD09AFC1FA598763722F6 /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6F31C620B5A5AD5BEC9A2A7CE50D566 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EF0F3C060DF24F255B082E70A9B8D5C0 /* [CP] Copy XCFrameworks */ = {
+		E428E9B2EB9A04CAA5BA04B652A1082B /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -940,27 +810,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33F6BCB7436C711C3CB782200BDBE945 /* Sources */ = {
+		3DA6F28999BB09FE99FBD42EBBC42809 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E59D757FC76740D01495CACC4A8572 /* Delegate.swift in Sources */,
-				F85321E6B8C6AE9F3439E15DB7FFAEBF /* Interpreter.swift in Sources */,
-				2CAE45698E0CE80871AE38B589F5A711 /* InterpreterError.swift in Sources */,
-				6AE3FEE84AB869B3BEE832CE18132EDD /* Model.swift in Sources */,
-				4A011984D71034A9F1558DB8B087F771 /* QuantizationParameters.swift in Sources */,
-				57408889EB6DFE48C799B864CCCADBE9 /* SignatureRunner.swift in Sources */,
-				DF0721114926A904F264A567532133A9 /* SignatureRunnerError.swift in Sources */,
-				10EC0A1271DF1FC53FF0E3063AF35CBB /* Tensor.swift in Sources */,
-				17ED2FE3B32EEF7F6F59360DCDD09E28 /* TensorFlowLite.swift in Sources */,
-				7B43BD6B8758EA3D2176EB598691A25C /* TensorFlowLiteSwift-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5996C19120BDD8FCB59F930DDA9507BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F275216661DC8F99CE31BF33354F2748 /* Delegate.swift in Sources */,
+				3DDCD29E7BC0EB9AF74CD6BA8CEFBC39 /* Interpreter.swift in Sources */,
+				BC4AFBE7EC276BF64573F80890549845 /* InterpreterError.swift in Sources */,
+				5130028101105D26EBF694E34367A400 /* Model.swift in Sources */,
+				A38EC85A957FCEB313F7EC741D3A567E /* QuantizationParameters.swift in Sources */,
+				F9B905ED717C160D35D8D7B4081BCAB5 /* Tensor.swift in Sources */,
+				9E3163F72FCC2B8D631D695F3E6B0563 /* TensorFlowLite.swift in Sources */,
+				0348F66638FDDBA0E9E58604CF6DC150 /* TensorFlowLiteSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,13 +830,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A89E69F3DCEAB657E5749267F33E8B13 /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F9AE3376688E923354AAAB6EC815C75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,96 +844,65 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06D922E6033C6FF22B3D7BA7A7E8F5F7 /* PBXTargetDependency */ = {
+		0C1693D57B977D36FBADABB4D7318EC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = 2FC906213E8A25F2F796488F5035F109 /* PBXContainerItemProxy */;
+		};
+		1E3E4A919565765980C53E0B9B4138AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MijickPopupView;
+			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
+			targetProxy = 7EFC12A2BFCF41D27BD338D614B79B27 /* PBXContainerItemProxy */;
+		};
+		909A8E28DF4B87B29E48C54A529B0DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteC;
+			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
+			targetProxy = A7F8CDC2ABE038D5E32131FA9ECB9177 /* PBXContainerItemProxy */;
+		};
+		91DF41EE371D65C19051AB2E7B3D3678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MijickPopupView;
+			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
+			targetProxy = 48FEF7570082E573AC1CD5E7AA459E9E /* PBXContainerItemProxy */;
+		};
+		9738C50EEE11D91375025841A2E64D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TensorFlowLiteSwift;
+			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
+			targetProxy = E9BC95610EBAD500F717A094CB37E27C /* PBXContainerItemProxy */;
+		};
+		ACB19622DBD2F2B699F15359D1280473 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RepTally";
 			target = AF54A9CBA216C3BC19391BEDA9843B3F /* Pods-RepTally */;
-			targetProxy = 3FFE7BD46EE0D5BF402400802073441D /* PBXContainerItemProxy */;
+			targetProxy = 263DE620DE8D12BAD916F21A72883B88 /* PBXContainerItemProxy */;
 		};
-		18E3D645A64BA10E11848959676E02DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MijickPopupView;
-			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
-			targetProxy = 2993864A5D7EC47430BD125BF154FF15 /* PBXContainerItemProxy */;
-		};
-		1E39FB4BA5C1B16778DCB4FA5FE5BA25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TensorFlowLiteC-TensorFlowLiteC";
-			target = E84A5C2B777F1A7DFA141FF65E7EF5F8 /* TensorFlowLiteC-TensorFlowLiteC */;
-			targetProxy = 76C48CB29932BCE550850DFDF7034574 /* PBXContainerItemProxy */;
-		};
-		65B8A29A80F1E392370D35F7DCA5ED91 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteSwift;
-			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
-			targetProxy = 9221ADD75D8BDC22BA7AFF0AC8ED0197 /* PBXContainerItemProxy */;
-		};
-		7F7D0823DF6B151AC0863B0D16589CE4 /* PBXTargetDependency */ = {
+		EC60A39417363EE8B6BFDCF6B76E5E02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TensorFlowLiteC;
 			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = A234F54742B1F5FEF3CDD0727AA4532A /* PBXContainerItemProxy */;
+			targetProxy = 6FEA3A3F76532A6E611ACB583BAA4F1E /* PBXContainerItemProxy */;
 		};
-		8B9D31FD3BDFD02B17A2CBEF2EE102CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MijickPopupView;
-			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
-			targetProxy = F1F4A9A5680B470335AADDB84DEE0718 /* PBXContainerItemProxy */;
-		};
-		8ED018094A4194F9A53AFEA120428182 /* PBXTargetDependency */ = {
+		FFFCC0A4681850DEA550D22C7E8FCCF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TensorFlowLiteC;
 			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = B2B7E7C9CC7B8BD25052FDDAC360C787 /* PBXContainerItemProxy */;
-		};
-		9160A527992C82A307DE8295BF34D054 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteC;
-			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = 7217694978FF19930B8B4416E3C43ED5 /* PBXContainerItemProxy */;
-		};
-		D487638F79207FB62E959A869836C844 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteSwift;
-			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
-			targetProxy = D0FA3286B9A28ED012324190F1F7FB03 /* PBXContainerItemProxy */;
-		};
-		E7DB931DCA63DCD26A5C67B09DFCC7C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TensorFlowLiteSwift-TensorFlowLite";
-			target = 0E30F2EFBF0085562A1B5F3CE337DBC4 /* TensorFlowLiteSwift-TensorFlowLite */;
-			targetProxy = 6A8C0C5DFEAFF3E17B7C4B9EE7488A21 /* PBXContainerItemProxy */;
+			targetProxy = FBA555BA65B17C01229A5646AE7E43ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		031EE85F4A5D5A61E21C72FA0707D60C /* Debug */ = {
+		02C2058118E51124F725675C580AA98D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4649DD20350A2130BC24A677E8FE63 /* TensorFlowLiteC.debug.xcconfig */;
+			baseConfigurationReference = 023C4AE253BE4D1920B52C8ABC6B03F7 /* TensorFlowLiteC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		05D16FC5F44C2560316078470F846D46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA9D3424B6D3AC46301C5C12EE7B5E7B /* TensorFlowLiteC.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1090,26 +913,9 @@
 			};
 			name = Release;
 		};
-		16865C3265C9C7E9B5EA1FE1F3F97432 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B677E94E4330EED3BA84418A47313185 /* TensorFlowLiteSwift.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TensorFlowLiteSwift";
-				IBSC_MODULE = TensorFlowLite;
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/ResourceBundle-TensorFlowLite-TensorFlowLiteSwift-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = TensorFlowLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		1AB226C38A22A31DBD2EEB4D4497F39C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 249421C050507F45D1EE526319359B7F /* Pods-RepTally-RepTallyUITests.debug.xcconfig */;
+			baseConfigurationReference = 7BFC54A280B12CA892A302ECD23D108D /* Pods-RepTally-RepTallyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1146,26 +952,9 @@
 			};
 			name = Debug;
 		};
-		1D34D22F15676FEF1E10543474612E84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA9D3424B6D3AC46301C5C12EE7B5E7B /* TensorFlowLiteC.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TensorFlowLiteC";
-				IBSC_MODULE = TensorFlowLiteC;
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteC/ResourceBundle-TensorFlowLiteC-TensorFlowLiteC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = TensorFlowLiteC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		2A9275E3F4A413BDD5E5FA16B8CCC167 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE07804CE35D5ACCC50E007C17A09E65 /* Pods-RepTally.debug.xcconfig */;
+			baseConfigurationReference = F9989D78093C470EC24C43D3DD946502 /* Pods-RepTally.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1202,9 +991,9 @@
 			};
 			name = Debug;
 		};
-		306BC86DD86D4BE690CD4B080BF699E9 /* Release */ = {
+		472F19522DB5F8BDD857F09408A1CD6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B677E94E4330EED3BA84418A47313185 /* TensorFlowLiteSwift.release.xcconfig */;
+			baseConfigurationReference = 8859734BB1D9386928015A9C5A717C44 /* TensorFlowLiteSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1221,7 +1010,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1245,7 +1034,7 @@
 		};
 		5A5A1CB95E7B89FBA18E53F53143A0C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 731773706D6BD9F2BB7C58FFB36D11F9 /* Pods-RepTallyTests.debug.xcconfig */;
+			baseConfigurationReference = 52ADCA9CAC0ECB9F30413202BAA2CBA8 /* Pods-RepTallyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1284,7 +1073,7 @@
 		};
 		5D564ADC34ABBF0B38E130DA9FA24B2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B9DE4BA084F391CBCAF6A5B88B4B881 /* Pods-RepTally-RepTallyUITests.release.xcconfig */;
+			baseConfigurationReference = C600B2CE6EB583D16E65F7BC795FDDAE /* Pods-RepTally-RepTallyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1388,9 +1177,9 @@
 			};
 			name = Debug;
 		};
-		8E7332BD62DCFB5745DE139A2080B93D /* Debug */ = {
+		8F8BD9AD33DC27D8BB2EA2C4EEF19EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985E5F6A6B2240CCB8FEB885DF1618D7 /* TensorFlowLiteSwift.debug.xcconfig */;
+			baseConfigurationReference = BDDFEE493D2ED670B7232CC532BBE73E /* TensorFlowLiteSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1407,7 +1196,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1430,7 +1219,7 @@
 		};
 		AAE5B002837942119363E5F726D1F11C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9F3D1DE9C96C570B7CBE994E14F205D /* Pods-RepTallyTests.release.xcconfig */;
+			baseConfigurationReference = 9796A7E59D5810CF5B6D3F41AA11ED84 /* Pods-RepTallyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1532,7 +1321,7 @@
 		};
 		CC9A3FE868B960308B05409EEBDE715F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2818164B8337CCA6FE4EA6F8109DEEEA /* MijickPopupView.release.xcconfig */;
+			baseConfigurationReference = FE418BA84B49180FCB9225CE9F03EE94 /* MijickPopupView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1571,26 +1360,9 @@
 			};
 			name = Release;
 		};
-		D31780EAA3DFB7798F0FD90CE331C795 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985E5F6A6B2240CCB8FEB885DF1618D7 /* TensorFlowLiteSwift.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TensorFlowLiteSwift";
-				IBSC_MODULE = TensorFlowLite;
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/ResourceBundle-TensorFlowLite-TensorFlowLiteSwift-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = TensorFlowLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		D4EA0BDBFFABF05A318295FB499FBBAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE05CABF423CF6AB786C782A86593205 /* Pods-RepTally.release.xcconfig */;
+			baseConfigurationReference = BF6F234587A9EE04B98D0FCFC5D0D14D /* Pods-RepTally.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1630,7 +1402,7 @@
 		};
 		DADE6C43ECC23239AE93C3E4F60FABEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84841881B7C3134EE52EC016059354C2 /* MijickPopupView.debug.xcconfig */;
+			baseConfigurationReference = 2E1539018EB10FE30A73C8B21AA451C0 /* MijickPopupView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1668,44 +1440,26 @@
 			};
 			name = Debug;
 		};
-		EF19530945B9FD903CF7D36DF5FF5263 /* Debug */ = {
+		FB8162D9D845539F90D662331AE9284C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4649DD20350A2130BC24A677E8FE63 /* TensorFlowLiteC.debug.xcconfig */;
+			baseConfigurationReference = 652D90905D993AB8A7254B770E5C605A /* TensorFlowLiteC.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TensorFlowLiteC";
-				IBSC_MODULE = TensorFlowLiteC;
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteC/ResourceBundle-TensorFlowLiteC-TensorFlowLiteC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = TensorFlowLiteC;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D4AB719D2AA57C0EB9F75095E977D9D /* Build configuration list for PBXNativeTarget "TensorFlowLiteC-TensorFlowLiteC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EF19530945B9FD903CF7D36DF5FF5263 /* Debug */,
-				1D34D22F15676FEF1E10543474612E84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		385FC1CBA052EDB3BB4CA2798A5B3B95 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				031EE85F4A5D5A61E21C72FA0707D60C /* Debug */,
-				05D16FC5F44C2560316078470F846D46 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3CD05E833767AA03C85CD6BCF40278C7 /* Build configuration list for PBXNativeTarget "MijickPopupView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1733,20 +1487,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62DC77CA6E1C5709232936DAB14E224E /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */ = {
+		636D81D05741D892734E9C70745D0DB7 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E7332BD62DCFB5745DE139A2080B93D /* Debug */,
-				306BC86DD86D4BE690CD4B080BF699E9 /* Release */,
+				FB8162D9D845539F90D662331AE9284C /* Debug */,
+				02C2058118E51124F725675C580AA98D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		653CBB15B865BF9C77D1ED4675EDBBB8 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift-TensorFlowLite" */ = {
+		707ADF4962C8AEE7DCDEDB91BE139786 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D31780EAA3DFB7798F0FD90CE331C795 /* Debug */,
-				16865C3265C9C7E9B5EA1FE1F3F97432 /* Release */,
+				8F8BD9AD33DC27D8BB2EA2C4EEF19EE0 /* Debug */,
+				472F19522DB5F8BDD857F09408A1CD6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
