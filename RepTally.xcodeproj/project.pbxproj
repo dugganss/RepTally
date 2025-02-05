@@ -187,6 +187,7 @@
 				4641E0D32D301F8A00BA6C5F /* Frameworks */,
 				4641E0D42D301F8A00BA6C5F /* Resources */,
 				465E4F3C2D527DC60080B8E9 /* Embed Frameworks */,
+				924E38FFCAC7AF062D7AEDD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +228,7 @@
 				4641E0EC2D301F8C00BA6C5F /* Sources */,
 				4641E0ED2D301F8C00BA6C5F /* Frameworks */,
 				4641E0EE2D301F8C00BA6C5F /* Resources */,
+				8BC8B15069CDADB7240C8446 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,6 +351,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC8B15069CDADB7240C8446 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		924E38FFCAC7AF062D7AEDD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepTally/Pods-RepTally-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepTally/Pods-RepTally-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepTally/Pods-RepTally-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E64FB50306BB7BEEC5016E83 /* [CP] Check Pods Manifest.lock */ = {

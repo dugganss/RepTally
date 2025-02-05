@@ -12,7 +12,7 @@ import SwiftUI
 struct FrameCheckView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
-    @StateObject var cameraInfoModel = CameraInfoModel() //Observable object to track whether someone's been detected on camera
+    @StateObject var cameraInfoModel = CameraManagerModel() //Observable object to track whether someone's been detected on camera
     @StateObject var popUpDetector = PopUpDetectionModel()
     @State private var timeDetected = 2 //Amount of time someone needs to be detected on camera
     @State private var validDetection = false //flag for when timeDetected reaches 0
@@ -23,7 +23,7 @@ struct FrameCheckView: View {
     
     var body: some View{
         NavigationStack{
-            CameraView(cameraInfoModel: cameraInfoModel)
+            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: VisionOverlayController())
                 .clipShape(RoundedRectangle(cornerRadius: 55, style: .continuous))
                 .overlay(
                     RoundedRectangle(cornerRadius: 55, style: .continuous)
@@ -45,6 +45,7 @@ struct FrameCheckView: View {
                 .navigationBarBackButtonHidden(true)
                 .navigationBarItems(leading: ReturnButton())
                 .onAppear{ //pop up shows at when view is openec
+                    cameraInfoModel.isDisplaySkeleton = false
                     FrameCheckCentrePopup(popUpDetector: popUpDetector).showAndStack()
                 }
         }

@@ -7,6 +7,7 @@ target 'RepTally' do
 
   # Pods for RepTally
   pod 'MijickPopupView'
+  pod 'TensorFlowLiteSwift'
 
   target 'RepTallyTests' do
     inherit! :search_paths

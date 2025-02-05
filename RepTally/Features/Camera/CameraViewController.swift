@@ -17,19 +17,19 @@ import AVFoundation
 import Accelerate
 
 class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBufferDelegate {
-    var cameraInfoModel: CameraInfoModel?
+    var cameraManagerModel: CameraManagerModel?
     private let captureSession = AVCaptureSession()
     private var videoDataOutput = AVCaptureVideoDataOutput()
     private let videoOutputQueue = DispatchQueue(label: "videoOutputQueue")
-    private let overlayViewController = VisionOverlayController()
+    var poseEstimator: PoseEstimator?
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCameraInputOutput()
         showCamera()
-        overlayViewController.cameraInfoModel = cameraInfoModel
-        addChild(overlayViewController)
+        poseEstimator?.cameraManagerModel = cameraManagerModel
+        addChild(poseEstimator!)
     }
     
     // This function sets up the camera on a background thread. It identifies the front-facing camera device,
@@ -52,7 +52,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
             
             self.captureSession.addInput(videoInput) //adds input to capture session
             
-            //code adapted from Ajwani (2019)
+            //code adapted from Ajwani (2019) https://medium.com/onfido-tech/live-face-tracking-on-ios-using-vision-framework-adf8a1799233
             self.videoDataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString) : NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
             self.videoDataOutput.alwaysDiscardsLateVideoFrames = true
             self.videoDataOutput.setSampleBufferDelegate(self, queue: self.videoOutputQueue)
@@ -70,7 +70,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
     //sets up view of live camera feed using a preview layer
     private func showCamera(){
         DispatchQueue.main.async { //runs on main thread because the preview layer is a UI component
-            if self.cameraInfoModel!.isDisplayCameraFeed{
+            if self.cameraManagerModel!.isDisplayCameraFeed{
                 let previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession) //creates preview layer with capture session
                 previewLayer.videoGravity = .resizeAspectFill
                 previewLayer.frame = self.view.bounds
@@ -79,8 +79,8 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
             }
             
             //adds pose estimation overlay view on top of camera preview layer
-            self.overlayViewController.setupOverlayView(in: self.view.bounds)
-            self.view.addSubview(self.overlayViewController.view)
+            self.poseEstimator?.setupOverlayView(in: self.view.bounds)
+            self.view.addSubview(self.poseEstimator!.view)
             DispatchQueue.global(qos: .userInitiated).async { //starts capture session on background thread after the preview layer has set up in main thread to prevent delay
                 self.captureSession.startRunning()
                 
@@ -96,12 +96,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
                 debugPrint("unable to get image from sample buffer")
                 return
             }
-            overlayViewController.detectBody(in: frame)
+            poseEstimator?.detectBody(in: frame)
         }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.captureSession.stopRunning()
-    }
     
 }

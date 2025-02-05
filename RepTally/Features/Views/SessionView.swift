@@ -11,16 +11,18 @@ import CoreData
 struct SessionView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
-    @StateObject var cameraInfoModel = CameraInfoModel()
+    @StateObject var cameraManagerModel = CameraManagerModel()
     @State private var isGoingHome = false //flag to return home (temporary)
     @State private var sets: [SetData] = [] //workout related data for current session
     @State private var setIndex = 0 //index in sets (current workout)
     @State private var currentRep = 0 //counter of completed reps for current set
+    @State private var noRepeats = 0 //number of repeats of current set
+    @State private var subset = 0 //current subset
     var body: some View {
         NavigationStack{
-            if !sets.isEmpty{ 
+            if !sets.isEmpty{
                 VStack{
-                    Text("Set \(sets[setIndex].num)")
+                    Text("Set \(sets[setIndex].num).\(subset)")
                         .font(.title)
                     Spacer().frame(height: 20)
                     Text(sets[setIndex].workout!)
@@ -28,7 +30,7 @@ struct SessionView: View {
                         .bold()
                     HStack{
                         Spacer()
-                        CameraView(cameraInfoModel: cameraInfoModel)
+                        CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: VisionOverlayController())
                             .frame(width: 60, height: 90)
                             .padding(.trailing, 60)
                     }
@@ -49,8 +51,32 @@ struct SessionView: View {
                         .padding(.top, -90)
                     Spacer()
                     Button(action: {
+                        if currentRep < sets[setIndex].reps{
+                            currentRep += 1
+                            if currentRep == sets[setIndex].reps {
+                                if noRepeats > 0{
+                                    currentRep = 0
+                                    noRepeats -= 1
+                                    subset += 1
+                                }
+                                else if setIndex < sets.count - 1 {
+                                    currentRep = 0
+                                    setIndex += 1
+                                    noRepeats = Int(sets[setIndex].repeats)
+                                    subset = 0
+                                }
+                            }
+                        }
+                        })
+                    {
+                        Text("increment reps")
+                            .font(.title)
+                    }
+                    Spacer()
+                    Button(action: {
                         isGoingHome = true
-                    }){
+                    })
+                    {
                         Text("End Session")
                             .font(.title)
                     }
@@ -68,15 +94,18 @@ struct SessionView: View {
         .navigationBarBackButtonHidden(true)
         .onAppear{
             getSetInfoFromMostRecentSession()
-            cameraInfoModel.isDisplayCameraFeed = false //causes camera to not be displayed in the cameraView
-            for i in 1...3 { // temporary for preview to work
-                let set = SetData(context: viewContext)
-                set.num = Int32(i)
-                set.workout = "Workout \(i)"
-                set.reps = Int32(10 + i)
-                set.repeats = Int32(2)
-                sets.append(set)
+            cameraManagerModel.isDisplayCameraFeed = false //causes camera to not be displayed in the cameraView
+            if !sets.isEmpty{
+                noRepeats = Int(sets[setIndex].repeats)
             }
+//            for i in 1...3 { // temporary for preview to work
+//                let set = SetData(context: viewContext)
+//                set.num = Int32(i)
+//                set.workout = "Workout \(i)"
+//                set.reps = Int32(10 + i)
+//                set.repeats = Int32(2)
+//                sets.append(set)
+//            }
         }
     }
     

@@ -13,8 +13,8 @@
 import UIKit
 import Vision
 
-class VisionOverlayController : UIViewController{
-    var cameraInfoModel: CameraInfoModel?
+class VisionOverlayController : UIViewController, PoseEstimator{
+    var cameraManagerModel: CameraManagerModel?
     let overlayView = UIView()
     var pointNameToLocationMapping : [String: CGPoint] = [:]
     let skeletonMapping = [
@@ -98,17 +98,18 @@ class VisionOverlayController : UIViewController{
     }
     
     func detectBody(in image: CVPixelBuffer){
-        //code adapted from Tustanowski (2023) and Ajwani (2019)
+        //code adapted from Tustanowski (2023) and Ajwani (2019) https://medium.com/@kamil.tustanowski/detecting-body-pose-using-vision-framework-caba5435796a
+        //https://medium.com/onfido-tech/live-face-tracking-on-ios-using-vision-framework-adf8a1799233
         let bodyPoseRequest = VNDetectHumanBodyPoseRequest(completionHandler: { (request: VNRequest, error: Error?) in
             DispatchQueue.main.async{
                 guard let results = request.results as? [VNHumanBodyPoseObservation]
                 else{
                     print("Not detecting any people")
-                    self.cameraInfoModel?.isBodyDetected = false
+                    self.cameraManagerModel?.isBodyDetected = false
                     return
                 }
                 
-                self.cameraInfoModel?.isBodyDetected = !results.isEmpty
+                self.cameraManagerModel?.isBodyDetected = !results.isEmpty
                 let normalisedPoints = results.flatMap{ result in
                     result.availableJointNames
                         .compactMap{jointName in
@@ -129,8 +130,10 @@ class VisionOverlayController : UIViewController{
                 }
                 
                 let mappedPoints = self.mapPointsToOverlay(at: points, in: image)
-                self.drawPoints(at: mappedPoints)
-                self.drawLines(in: image)
+                if self.cameraManagerModel!.isDisplaySkeleton{
+                    self.drawPoints(at: mappedPoints)
+                    self.drawLines(in: image)
+                }
             }
         })
         
@@ -139,7 +142,7 @@ class VisionOverlayController : UIViewController{
             try requestHandler.perform([bodyPoseRequest])
         } catch{
             print("Can't make request due to \(error)")
-            cameraInfoModel?.isBodyDetected = false
+            cameraManagerModel?.isBodyDetected = false
         }
         //end of adapted code
         

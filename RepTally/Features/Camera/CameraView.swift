@@ -14,11 +14,13 @@ import SwiftUI
  */
 
 struct CameraView: UIViewControllerRepresentable {
-    var cameraInfoModel: CameraInfoModel
+    var cameraManagerModel: CameraManagerModel
+    var poseEstimator: PoseEstimator
     private let cameraViewController = CameraViewController()
     
     func makeUIViewController(context: Context) -> some UIViewController {
-        cameraViewController.cameraInfoModel = cameraInfoModel
+        cameraViewController.cameraManagerModel = cameraManagerModel
+        cameraViewController.poseEstimator = poseEstimator
         return cameraViewController
     }
     
