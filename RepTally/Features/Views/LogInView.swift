@@ -65,7 +65,7 @@ struct LogInView: View {
             }
             .navigationDestination(isPresented: $logInSuccess){
                 if let user = currentUser {
-                    HomeView(user: user)
+                    MainView(user: user)
                 }else{
                     Text("No User found")
                         .foregroundStyle(.red)

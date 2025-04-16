@@ -66,7 +66,6 @@ struct AccountView: View{
             }
             
             Spacer()
-            NavBarView(user: user, isAccount: true, isHome: false)
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
@@ -100,6 +99,13 @@ struct AccountView: View{
             
         }catch{
             print("error fetching or editing user \(error.localizedDescription)")
+        }
+        if viewContext.hasChanges && successfulChange {
+            do{
+                try viewContext.save()
+            } catch {
+                print("failed to save context \(error.localizedDescription)")
+            }
         }
     }
 }

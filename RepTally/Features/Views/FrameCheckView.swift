@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//TODO: also could find a way that displays a loadins symbol or something that displays while the pose estimation is loading
+//TODO: also could find a way that displays a loading symbol or something that displays while the pose estimation is loading
 
 struct FrameCheckView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -23,7 +23,7 @@ struct FrameCheckView: View {
     
     var body: some View{
         NavigationStack{
-            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: VisionOverlayController())
+            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: MoveNetOverlayController())
                 .clipShape(RoundedRectangle(cornerRadius: 55, style: .continuous))
                 .overlay(
                     RoundedRectangle(cornerRadius: 55, style: .continuous)
@@ -46,7 +46,7 @@ struct FrameCheckView: View {
                 .navigationBarItems(leading: ReturnButton())
                 .onAppear{ //pop up shows at when view is openec
                     cameraInfoModel.isDisplaySkeleton = false
-                    FrameCheckCentrePopup(popUpDetector: popUpDetector).showAndStack()
+                    ConfigurableCentrePopup(popUpDetector: popUpDetector, title: "Lets see where you are...", buttonText: "Understood", line1: "- Put your phone at a distance where your whole body is visible in the frame", line2: "- Center yourself within the frame and try to ensure that your body parts are visible (e.g. no objects obstructing view)", line3: "- The session will automatically start when you have been detected for a short period of time", dismissable: true).showAndStack()
                 }
         }
         .navigationDestination(isPresented: $validDetection){

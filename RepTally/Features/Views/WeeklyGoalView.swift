@@ -26,7 +26,7 @@ struct WeeklyGoalView: View {
                 .padding(.horizontal, 50)
             
             Spacer()
-            NavBarView(user: user, isAccount: true, isHome: false)
+            Spacer()
             
         }
         .ignoresSafeArea()

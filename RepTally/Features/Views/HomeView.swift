@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Binding var navigationPath: NavigationPath
+    @Binding var showNav: Bool
+    @Binding var resetBools: Bool
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
     
@@ -18,7 +21,7 @@ struct HomeView: View {
     @State private var openWeeklyGoal = false
     
     var body: some View {
-        NavigationStack{
+        NavigationStack(path: $navigationPath){
             
             VStack{
                 HStack{
@@ -27,7 +30,7 @@ struct HomeView: View {
                         Image(systemName: "pause")
                             .rotationEffect(.degrees(90))
                             .font(.title)
-                            .foregroundStyle(Color("SafeBlack"))
+                            .foregroundStyle(.safeBlack)
                             .padding(30)
                             .padding(.top,10)
                     }
@@ -38,10 +41,13 @@ struct HomeView: View {
                         .font(.custom("Lobster", size: 35))
                     
                     Spacer()
-                    Button(action: {openCreateSessions = true}){
+                    Button(action: {
+                        openCreateSessions = true
+                        showNav = false
+                    }){
                         Image(systemName: "plus")
                             .font(.title)
-                            .foregroundStyle(Color("SafeBlack"))
+                            .foregroundStyle(.safeBlack)
                             .padding(30)
                             .padding(.top,10)
                     }
@@ -79,17 +85,14 @@ struct HomeView: View {
 //
 //                        Spacer()
 //                        NavBarView()
-                        Spacer()
+                        //TODO: new implementation gets rid of the above problem. Now the navbar is rendered in the mainview (overlayed on top of whatever is underneath it so it doesnt get disturbed by other ui elements)
                         Group{
                             HomeCardView(title: "View your Previous Sessions", action: {self.openPreviousSessions = true})
                             HomeCardView(title: "Set a Weekly Goal", action: {self.openWeeklyGoal = true})
-                            ActionButton(title: "Start a Session", isArrowButton: false, isBig: true, action: {self.openCreateSessions = true})
-                            
-                            NavBarView(user: user, isAccount:false, isHome: true)
+                            ActionButton(title: "Start a Session", isArrowButton: false, isBig: true, action: {self.openCreateSessions = true; self.showNav = false})
                         }
-                        .frame(maxHeight: .infinity, alignment: .bottom)
-                        .ignoresSafeArea()
-                        .padding(.top)
+                        .padding(.top, 15)
+                        Spacer()
                     }
                 }
             }.ignoresSafeArea()
@@ -99,12 +102,29 @@ struct HomeView: View {
             }
             .navigationDestination(isPresented: $openPreviousSessions){
                 PreviousSessionView(user: user)
+                    .environment(\.managedObjectContext, viewContext)
             }
             .navigationDestination(isPresented: $openWeeklyGoal){
                 WeeklyGoalView(user: user)
             }
             .navigationBarBackButtonHidden(true)
+            .onAppear{
+                showNav = true
+            }
+            .onChange(of: resetBools){
+                if resetBools {
+                    resetNavigationBooleans()
+                }
+            }
         }
+    }
+    
+    func resetNavigationBooleans() {
+        openCreateSessions = false
+        openPreviousSessions = false
+        openSideMenu = false
+        openWeeklyGoal = false
+        resetBools = false
     }
 }
     

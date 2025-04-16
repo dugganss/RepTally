@@ -17,7 +17,7 @@ struct RepTallyApp: App {
     var body: some Scene {
         WindowGroup {
             if let user = loggedInUser {
-                HomeView(user: user)
+                MainView(user: user)
                 //code adapted from Apple (n.d.) (setting up a core data stack)
                     .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
                     .implementPopupView()

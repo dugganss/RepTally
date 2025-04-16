@@ -24,8 +24,9 @@ struct HomeCardView: View{
                 ActionButton(title: "Go", isArrowButton: true, isBig: false, action: self.action)
             }
         }
-        .frame(width: UIScreen.main.bounds.width-80, height: UIScreen.main.bounds.height-660)
-        .cornerRadius(10)
+        .frame(width: UIScreen.main.bounds.width-65, height: UIScreen.main.bounds.height-680)
+        .cornerRadius(8)
+        .padding(5)
         
     }
 }

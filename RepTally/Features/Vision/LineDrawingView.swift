@@ -19,7 +19,7 @@ class LineDrawingView: UIView {
         
         path.close() //finish adding points to path
         
-        UIColor.white.set() //set line colour
+        UIColor.safeBlack.set() //set line colour
         path.lineWidth = 2.0 //set line width
         
         path.stroke() //draw line as configured above

@@ -18,72 +18,107 @@ struct SessionView: View {
     @State private var currentRep = 0 //counter of completed reps for current set
     @State private var noRepeats = 0 //number of repeats of current set
     @State private var subset = 0 //current subset
+    @StateObject var popUpDetector = PopUpDetectionModel()
+    @State var popupCounter: Int = 0
+    var setComplete: Bool {
+        guard !sets.isEmpty else { return false }
+        return currentRep >= sets[setIndex].reps
+    }
     var body: some View {
         NavigationStack{
             if !sets.isEmpty{
-                VStack{
-                    Text("Set \(sets[setIndex].num).\(subset)")
-                        .font(.title)
-                    Spacer().frame(height: 20)
-                    Text(sets[setIndex].workout!)
-                        .font(.custom("Wesker", size: 40))
-                        .bold()
-                    HStack{
+                ZStack{
+                    VStack{
+                        Spacer().frame(height: 90)
+                        HStack{
+                            Spacer()
+                            CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: VisionOverlayController())
+                                .frame(width: 100, height: 150)
+                                .padding(.trailing, 30)
+                        }
                         Spacer()
-                        CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: VisionOverlayController())
-                            .frame(width: 60, height: 90)
-                            .padding(.trailing, 60)
                     }
-                    Spacer().frame(height: 30)
-                    Text("Rep")
-                        .font(.custom("Wesker", size: 35))
-                    Spacer().frame(height: 30)
-                    Text("\(currentRep)")
-                        .font(.custom("Wesker", size: 110))
-                        .padding(.leading,-80)
-                    Text("/")
-                        .font(.custom("Wesker", size: 60))
-                        .padding(.top,-90)
-                        .padding(.leading, 30)
-                    Text("\(sets[setIndex].reps)")
-                        .font(.custom("Wesker", size: 50))
-                        .padding(.leading, 105)
-                        .padding(.top, -90)
-                    Spacer()
-                    Button(action: {
-                        if currentRep < sets[setIndex].reps{
-                            currentRep += 1
-                            if currentRep == sets[setIndex].reps {
-                                if noRepeats > 0{
-                                    currentRep = 0
-                                    noRepeats -= 1
-                                    subset += 1
+                    
+                    VStack{
+                        Text("Set \(sets[setIndex].num).\(subset)")
+                            .font(.title)
+                        Spacer().frame(height: 20)
+                        Text(sets[setIndex].workout!)
+                            .font(.custom("Wesker", size: 40))
+                            .bold()
+                        
+                        Circle()
+                            .strokeBorder(lineWidth: 24)
+                            .overlay {
+                                VStack{
+                                    Text("Rep")
+                                        .font(.custom("Wesker", size: 35))
+                                    Spacer().frame(height:25)
+                                    HStack{
+                                        Text("\(currentRep)")
+                                            .font(.custom("Wesker", size: 110))
+                                        Text("/")
+                                            .font(.custom("Wesker", size: 60))
+                                            .padding(.top,30)
+                                        Text("\(sets[setIndex].reps)")
+                                            .font(.custom("Wesker", size: 50))
+                                            .padding(.top, 30)
+                                    }
+                                    Spacer().frame(height: 5)
                                 }
-                                else if setIndex < sets.count - 1 {
-                                    currentRep = 0
-                                    setIndex += 1
-                                    noRepeats = Int(sets[setIndex].repeats)
-                                    subset = 0
+                                
+                            }
+                            .overlay{
+                                if currentRep > 0{
+                                    ForEach((0...currentRep-1), id: \.self) {i in
+                                        ProgressBar(rep: i, totalReps: Int(sets[setIndex].reps))
+                                            .rotation(Angle(degrees: -90))
+                                            .stroke(.backgroundColour, lineWidth: 15)
+                                    }
+                                }
+                                
+                                
+                            }
+                            .padding(.horizontal)
+                        
+                        ActionButton(title: "Finish Set", isArrowButton: false, isBig: true, action: {
+                            if !setComplete{
+                                currentRep += 1
+                                if currentRep == sets[setIndex].reps {
+                                    if noRepeats > 0{
+                                        currentRep = 0
+                                        noRepeats -= 1
+                                        subset += 1
+                                    }
+                                    else if setIndex < sets.count - 1 {
+                                        currentRep = 0
+                                        setIndex += 1
+                                        noRepeats = Int(sets[setIndex].repeats)
+                                        subset = 0
+                                    }
                                 }
                             }
-                        }
                         })
-                    {
-                        Text("increment reps")
-                            .font(.title)
+                        
+                        Spacer()
+                        Button(action: {
+                            isGoingHome = true
+                        })
+                        {
+                            Text("End Session")
+                                .font(.title3)
+                                .foregroundStyle(.red)
+                        }
+                        .padding(.vertical, 15)
+                        Spacer()
                     }
-                    Spacer()
-                    Button(action: {
-                        isGoingHome = true
-                    })
-                    {
-                        Text("End Session")
-                            .font(.title)
+                    
+                    if (setComplete && popupCounter < 1){
+                        ConfigurableCentrePopup(popUpDetector: popUpDetector, title: "Session is Complete!", buttonText: "Return Home",line2: "Good Effort!", dismissable: false, eventFlagBoolean: $isGoingHome).showAndStack()
                     }
-                    Spacer()
                 }
                 .navigationDestination(isPresented: $isGoingHome){
-                    HomeView(user: user)
+                    MainView(user: user)
                         .environment(\.managedObjectContext, viewContext)
                 }
             }else{
@@ -93,7 +128,7 @@ struct SessionView: View {
         }
         .navigationBarBackButtonHidden(true)
         .onAppear{
-            getSetInfoFromMostRecentSession()
+            sets = DataFetcher(user: user, viewContext: viewContext).getSetsFromMostRecentSession()
             cameraManagerModel.isDisplayCameraFeed = false //causes camera to not be displayed in the cameraView
             if !sets.isEmpty{
                 noRepeats = Int(sets[setIndex].repeats)
@@ -107,40 +142,8 @@ struct SessionView: View {
 //                sets.append(set)
 //            }
         }
-    }
-    
-    func getSetInfoFromMostRecentSession(){
-        //code adapted from Hudson (n.d.) https://www.hackingwithswift.com/read/38/5/loading-core-data-objects-using-nsfetchrequest-and-nssortdescriptor
-        //create request
-        let request = Session.fetchRequest()
-        
-        //define request
-        request.predicate = NSPredicate(format: "user == %@", user) //only give results for current user
-        request.sortDescriptors = [NSSortDescriptor(key: "timestamp", ascending: false)] //sort by most recent
-        request.fetchLimit = 1 //retrieve only 1 result
-        
-        //safely perform request
-        var mostRecentSession: Session?
-        do {
-            let sessions = try viewContext.fetch(request)
-            mostRecentSession = sessions.first ?? nil  //return the most recent session
-        } catch {
-            print("Error fetching most recent session: \(error)")
-            return
-        }
-        //end of adatped code
-        //retrieve sets from session
-        if mostRecentSession != nil{
-            /*
-             mostRecentSession.sets is an NSSet (unordered). The implementation requires
-             indexing as well as an order, therefore this code casts the NSSet to a set
-             then sorts it by the SetData.num property. By calling sorted(), it automatically
-             casts the collection to an Array.
-             */
-            sets = ((mostRecentSession?.sets as? Set<SetData>) ?? [])
-                .sorted { $0.num < $1.num }
-        }else{
-            print("No sessions were returned from request")
+        .onChange(of: setComplete){
+            popupCounter += 1
         }
     }
 }

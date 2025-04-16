@@ -15,6 +15,7 @@
 import SwiftUI
 import AVFoundation
 import Accelerate
+import CoreML
 
 class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBufferDelegate {
     var cameraManagerModel: CameraManagerModel?
@@ -23,7 +24,6 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
     private let videoOutputQueue = DispatchQueue(label: "videoOutputQueue")
     var poseEstimator: PoseEstimator?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCameraInputOutput()
@@ -62,8 +62,6 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
                   connection.isVideoMirroringSupported else {return}
             //end of adapted code
             connection.videoRotationAngle = 90
-            
-            
         }
     }
     
@@ -92,11 +90,11 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
         _ output: AVCaptureOutput,
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection){
-            guard let frame = CMSampleBufferGetImageBuffer(sampleBuffer) else{
-                debugPrint("unable to get image from sample buffer")
-                return
-            }
-            poseEstimator?.detectBody(in: frame)
+        guard let frame = CMSampleBufferGetImageBuffer(sampleBuffer) else{
+            debugPrint("unable to get image from sample buffer")
+            return
         }
+        poseEstimator?.detectBody(in: frame)
+    }
     
 }
