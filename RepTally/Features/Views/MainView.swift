@@ -22,7 +22,7 @@ struct MainView: View {
                     HomeView(navigationPath: $homePath, showNav: $showNav , resetBools: $resetBools, user: user)
                         .transition(.identity)
                 } else if selectedTab == 1 {
-                    AccountView(user: user)
+                    SettingsView(user: user)
                         .transition(.identity)
                 }
             }

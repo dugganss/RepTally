@@ -12,6 +12,7 @@ protocol PoseEstimator: UIViewController {
     var overlayView: UIView {get}
     var pointNameToLocationMapping : [String: CGPoint] {get set}
     var skeletonMapping : [(String, String)] {get}
+    var name: String {get}
     func detectBody(in image: CVPixelBuffer)
     
 }

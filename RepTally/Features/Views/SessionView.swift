@@ -32,7 +32,7 @@ struct SessionView: View {
                         Spacer().frame(height: 90)
                         HStack{
                             Spacer()
-                            CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: VisionOverlayController())
+                            CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: ModelSwitcher.shared.currentModel)
                                 .frame(width: 100, height: 150)
                                 .padding(.trailing, 30)
                         }

@@ -40,7 +40,7 @@ struct NavBarView: View {
                             selectedTab = 1
                         }
                     }){
-                        Image(systemName: "person")
+                        Image(systemName: "gearshape")
                             .padding(.trailing, 50)
                             .padding(.bottom, 10)
                             .font(.title)

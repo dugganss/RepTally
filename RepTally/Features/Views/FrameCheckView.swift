@@ -23,7 +23,7 @@ struct FrameCheckView: View {
     
     var body: some View{
         NavigationStack{
-            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: MoveNetOverlayController())
+            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: ModelSwitcher.shared.currentModel)
                 .clipShape(RoundedRectangle(cornerRadius: 55, style: .continuous))
                 .overlay(
                     RoundedRectangle(cornerRadius: 55, style: .continuous)

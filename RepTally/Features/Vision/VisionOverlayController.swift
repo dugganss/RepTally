@@ -14,6 +14,7 @@ import UIKit
 import Vision
 
 class VisionOverlayController : UIViewController, PoseEstimator{
+    var name = "Vision"
     var cameraManagerModel: CameraManagerModel?
     let overlayView = UIView()
     var pointNameToLocationMapping : [String: CGPoint] = [:]

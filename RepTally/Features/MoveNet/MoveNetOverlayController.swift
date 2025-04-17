@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreML
+import CoreVideo
+import Accelerate
 /*
  The TensorFlow2 version of MoveNet Thunder was converted to a CoreML readable .mlpackage so that the inference could be made directly using the CoreMl API
  
@@ -16,7 +18,8 @@ import CoreML
  */
 
 class MoveNetOverlayController: UIViewController, PoseEstimator{
-    var pointNameToLocationMapping: [String : CGPoint] = [:] //this should get populated in detectBody after results are fetched
+    var name = "MoveNet Lightning"
+    var pointNameToLocationMapping: [String : CGPoint] = [:]
     let skeletonMapping: [(String, String)] = [
         ("nose","left_eye"),
         ("nose","right_eye"),
@@ -35,8 +38,6 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         ("left_knee","left_ankle"),
         ("right_knee","right_ankle")
     ]
-    var output: [String: [Float?]] = [:]
-    var points: [CGPoint] = []
     let outputOrder: [String] = [
         "nose",
         "left_eye",
@@ -59,8 +60,8 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
     
     var cameraManagerModel: CameraManagerModel?
     let overlayView = UIView()
-    
-    var moveNet: movenetLightningFull? {
+    let context = CIContext()
+    var moveNet: movenetLightningFull? { //computed property to load in the model
         do{
             let config = MLModelConfiguration()
             return try movenetLightningFull(configuration: config)
@@ -71,67 +72,45 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         }
     }
     
+    //Handles prediction and output processing
     func detectBody(in image: CVPixelBuffer) {
-        guard let inputArray = multiArrayFromPixelBuffer(image, width: 192, height: 192)else {
+        guard let inputArray = convertResizePixelBufferAsMultiArray(image, width: 192, height: 192)else {
             print("failed to convert pixel buffer to multiarray")
             return
         }
         
         do {
-            points.removeAll()
+            if !pointNameToLocationMapping.isEmpty{
+                pointNameToLocationMapping.removeAll()
+            }
             let prediction = try moveNet?.prediction(input: inputArray)
             
-            let output = prediction?.Identity
-            //extracts the keypoints and confidence scores to a list
+            let output = prediction?.IdentityShapedArray
             
-            
+            //look at each keypoint location and confidence
             for i in 0..<outputOrder.count {
-                // Construct multi-dimensional indices.
-                let yIndex: [NSNumber] = [0, 0, NSNumber(value: i), 0]  // y coordinate
-                let xIndex: [NSNumber] = [0, 0, NSNumber(value: i), 1]  // x coordinate
-                let confidenceIndex: [NSNumber] = [0, 0, NSNumber(value: i), 2]  // confidence
+                let yResult: Float = output![0,0,i,0].scalar!
+                let xResult: Float = output![0,0,i,1].scalar!
+                let confidence: Float = output![0,0,i,2].scalar!
                 
-                // Retrieve values from the MLMultiArray. These are stored as NSNumber.
-                guard let yNumber = output![yIndex] as? NSNumber,
-                      let xNumber = output![xIndex] as? NSNumber,
-                      let confidenceNumber = output![confidenceIndex] as? NSNumber else {
-                    print("Error accessing multiarray values for joint \(outputOrder[i])")
-                    continue
-                }
-                
-                let y = yNumber.floatValue
-                let x = xNumber.floatValue
-                let confidence = confidenceNumber.floatValue
-                
-                // Filter out keypoints with confidence less than threshold.
+                //scale points to screen and map to name when confidence above threshold
                 if confidence >= 0.3 {
-                    // Multiply normalized coordinates (assumed to be 0-1) by original dimensions.
-                    let actualX = CGFloat(1 - x) * CGFloat(view.bounds.width)
-                    let actualY = CGFloat(y) * CGFloat(view.bounds.width)
-                    points.append(CGPoint(x: actualX, y: actualY))
+                    let actualX = CGFloat(1 - xResult) * CGFloat(view.bounds.width)
+                    let actualY = CGFloat(yResult) * CGFloat(view.bounds.height)
+                    let pointOnScreen = CGPoint(x: actualX, y: actualY)
+                    pointNameToLocationMapping[outputOrder[i]] = pointOnScreen
                 }
-                
-                
             }
-            drawPoints()
+            self.cameraManagerModel?.isBodyDetected = !pointNameToLocationMapping.isEmpty
             
-            /*
-            var i: Int = -1
-            for name in outputOrder {
-                i += 1
-                var values: [Float?] = []
-                for j in 0..<3 {
-                    values.append(shapedArrayOutput?[0, 0, i, j].scalar)
-                }
-                output[name] = values
+            if self.cameraManagerModel!.isDisplaySkeleton{
+                drawPoints()
+                drawLines()
             }
-            for a in output{
-                print(a)
-            }
-             */
         }
         catch{
             print("movenet prediction failed: \(error)")
+            cameraManagerModel?.isBodyDetected = false
         }
     }
     
@@ -139,9 +118,9 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         DispatchQueue.main.async{
             //remove previously drawn points
             self.view.subviews.forEach{ $0.removeFromSuperview()}
-            if !self.points.isEmpty{
+            if !self.pointNameToLocationMapping.isEmpty{
                 //draw a square at every point within view
-                self.points.forEach{ point in
+                for (_, point) in self.pointNameToLocationMapping{
                     let pointView = UIView()
                     pointView.frame = CGRect(x: point.x
                                              - 2.5, y: point.y - 2.5, width: 5, height: 5)
@@ -153,78 +132,98 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         
     }
     
-    func resizePixelBuffer(_ pixelBuffer: CVPixelBuffer, width: Int, height: Int) -> CVPixelBuffer? {
-        let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
-        let scaleX = CGFloat(width) / CGFloat(CVPixelBufferGetWidth(pixelBuffer))
-        let scaleY = CGFloat(height) / CGFloat(CVPixelBufferGetHeight(pixelBuffer))
-        let resizedImage = ciImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
-        
-        //code adapted from MLBoy (2020)https://rockyshikoku.medium.com/ciimage-to-cvpixelbuffer-93b0a639ab32
-        var resizedPixelBuffer: CVPixelBuffer?
-        let attrs: [CFString: Any] = [
-            kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue as Any,
-            kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue as Any
-        ]
-        CVPixelBufferCreate(kCFAllocatorDefault,
-                                     width,
-                                     height,
-                                     CVPixelBufferGetPixelFormatType(pixelBuffer),
-                                     attrs as CFDictionary,
-                                     &resizedPixelBuffer)
-        
-        let context = CIContext()
-        if let resizedPixelBuffer = resizedPixelBuffer {
-            context.render(resizedImage, to: resizedPixelBuffer)
-            return resizedPixelBuffer
+    internal func drawLines(){
+        DispatchQueue.main.async{
+            //iterates through the skeletonMapping array which defines which points (by name) should be connected to each other
+            for connection in self.skeletonMapping{
+                //checks both the points exist
+                if self.pointNameToLocationMapping.keys.contains(connection.0) && self.pointNameToLocationMapping.keys.contains(connection.1){
+                    //draws BezierPath between the two point's locations using LineDrawingView
+                    let lineView = LineDrawingView(frame: self.view.bounds)
+                    lineView.backgroundColor = .clear
+                    guard let startPoint = self.pointNameToLocationMapping[connection.0] else {
+                        return
+                    }
+                    guard let endPoint = self.pointNameToLocationMapping[connection.1] else {
+                        return
+                    }
+                    lineView.startPoint = startPoint
+                    lineView.endPoint = endPoint
+                    self.view.addSubview(lineView)
+                }
+            }
         }
-        //end of adapted code
         
-        return nil
     }
-
+    
     /*
-     Converts the CVPixelBuffer from the camera output to a MLMultiArray of type Int32 to be readable by the model.
+     Converts and resizes the CVPixelBuffer from the camera output to a MLMultiArray of type Int32 to be readable by the model.
      
-     Apple (n.d.) describes CVPixelBuffer to be 'an image buffer that holds pixels in main memory' meaning it would be
-     possible to iterate over the pixels as they are stored in memory and append them to a corresponding MLMultiArray
-     of the same shape. (converting them into Int32)
+     Apple (n.d.) describes CVPixelBuffer to be 'an image buffer that holds pixels in main memory' meaning it would be possible to iterate over the pixels as they are stored in memory and append them to a corresponding MLMultiArray of the same shape. (converting them into Int32)
+     
+     hxo (2017) overviews a method to efficiently resize the CVPixelBuffer using the same principle by utilising accelerate and vImage buffer
      
      CVPixelBuffer has an API allowing the inspection of the pixels as they are stored in memory which makes this possible
      https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e
      */
-    func multiArrayFromPixelBuffer(_ pixelBuffer: CVPixelBuffer, width: Int, height: Int) -> MLMultiArray? {
-        //Resize the pixel buffer to match the shape of the expected input of the model.
-        guard let resizedBuffer = resizePixelBuffer(pixelBuffer, width: width, height: height) else {
-            print("Failed to resize pixel buffer.")
+    internal func convertResizePixelBufferAsMultiArray(_ pixelBuffer: CVPixelBuffer, width: Int, height: Int) -> MLMultiArray? {
+        
+        //code adapted from Swift Package Index (n.d) and Apple (n.d.)  https://swiftpackageindex.com/computer-graphics-tools/core-video-tools/main/documentation/corevideotools/workingwithcvpixelbuffer
+        //The documentation mentions that pixel buffers must be locked to read only when inspecting it to ensure safe access in memory.
+        CVPixelBufferLockBaseAddress(pixelBuffer, .readOnly)
+        defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly) }
+        
+        guard let srcBaseAddress = CVPixelBufferGetBaseAddress(pixelBuffer) else {
+            print("Unable to get base address from source pixel buffer")
             return nil
         }
+        
+        let srcWidth = CVPixelBufferGetWidth(pixelBuffer)
+        let srcHeight = CVPixelBufferGetHeight(pixelBuffer)
+        let srcBytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)
+        //end of adapted code
+        
+        //code adapted from hxo (2017) & Stoneage (2017) https://developer.apple.com/forums/thread/90801
+        //allocate memory for the resulting vImage buffer (resized CVPixelBuffer)
+        let destBytesPerRow = width * 4
+        guard let destData = malloc(height * destBytesPerRow) else {
+            print("Unable to allocate memory for destination buffer")
+            return nil
+        }
+        
+        //create vImage buffer for the source (original dimensions)
+        var srcBuffer = vImage_Buffer(data: srcBaseAddress,
+                                      height: vImagePixelCount(srcHeight),
+                                      width: vImagePixelCount(srcWidth),
+                                      rowBytes: srcBytesPerRow)
+        
+        //create vImage buffer for the result (desired dimensions)
+        var destBuffer = vImage_Buffer(data: destData,
+                                       height: vImagePixelCount(height),
+                                       width: vImagePixelCount(width),
+                                       rowBytes: destBytesPerRow)
+        
+        //scale the source buffer to the destination buffer
+        let error = vImageScale_ARGB8888(&srcBuffer, &destBuffer, nil, vImage_Flags(0))
+        if error != kvImageNoError {
+            print("vImageScale_ARGB8888 error:", error)
+            free(destData)
+            return nil
+        }
+        //end of adapted code
         
         //Create an MLMultiArray, the same shape as the expected input of the model.
         let shape: [NSNumber] = [1, NSNumber(value: height), NSNumber(value: width), 3]
         guard let multiArray = try? MLMultiArray(shape: shape, dataType: .int32) else {
             print("Failed to create MLMultiArray.")
-            return nil
-        }
-        
-        //code adapted from Swift Package Index (n.d) and Apple (n.d.) * https://swiftpackageindex.com/computer-graphics-tools/core-video-tools/main/documentation/corevideotools/workingwithcvpixelbuffer
-        //The documentation mentions that pixel buffers must be locked to read only when inspecting it to ensure safe access in memory.
-        CVPixelBufferLockBaseAddress(resizedBuffer, .readOnly)
-        defer { CVPixelBufferUnlockBaseAddress(resizedBuffer, .readOnly) }
-        
-        guard let baseAddress = CVPixelBufferGetBaseAddress(resizedBuffer) else {
-            print("Unable to access pixel buffer base address.")
+            free(destData)
             return nil
         }
         
         //code adapted from Alvarez (2018) ** https://stackoverflow.com/questions/51537698/how-can-i-read-individual-pixels-from-a-cvpixelbuffer
-        let bytesPerRow = CVPixelBufferGetBytesPerRow(resizedBuffer)
-        let widthResized = CVPixelBufferGetWidth(resizedBuffer)
-        let heightResized = CVPixelBufferGetHeight(resizedBuffer)
-        // end of adapted code *
-        
-        //Converts the baseAddress pointer to UInt8 instead of raw memory address
+        //Converts the pointer to the destination buffer to UInt8 instead of a raw memory address
         //(this will assist in iterating through the pixels in memory)
-        let bufferPointer = baseAddress.assumingMemoryBound(to: UInt8.self)
+        let destPtr = destBuffer.data.assumingMemoryBound(to: UInt8.self)
         
         //Iterate over each pixel based on the location of the first pixel using Alvarez's method
         /*
@@ -238,9 +237,9 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
          index 2 correlates to the red channel
          index 3 correlates to the alpha channel, hence it being ignored
          */
-        for y in 0..<heightResized {
-            for x in 0..<widthResized {
-                let pixelAddress = bufferPointer + (y * bytesPerRow) + (x * 4)
+        for y in 0..<height {
+            for x in 0..<width {
+                let pixelAddress = destPtr + (y * destBuffer.rowBytes) + (x * 4)
                 let b = Int32(pixelAddress[0])
                 let g = Int32(pixelAddress[1])
                 let r = Int32(pixelAddress[2])
@@ -251,7 +250,11 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
                 multiArray[[0, NSNumber(value: y), NSNumber(value: x), 2]] = NSNumber(value: b)
             }
         }
-        //end of adapted code **
+        //end of adapted code
+        free(destData)
         return multiArray
     }
+
+    
+    
 }
