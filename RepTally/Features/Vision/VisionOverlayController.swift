@@ -41,9 +41,8 @@ class VisionOverlayController : UIViewController, PoseEstimator{
     
     internal func drawPoints(at points: [CGPoint]){
         DispatchQueue.main.async{
-            //remove previously drawn points
+            //remove previously drawn points and lines
             self.view.subviews.forEach{ $0.removeFromSuperview()}
-            
             //draw a square at every point within view
             points.forEach{ point in
                 let pointView = UIView()
@@ -120,8 +119,8 @@ class VisionOverlayController : UIViewController, PoseEstimator{
                     self.pointNameToLocationMapping.removeAll()
                     
                 }
-                
                 let mappedPoints = self.mapPointsToOverlay(at: points, in: image)
+                
                 if self.cameraManagerModel!.isDisplaySkeleton{
                     self.drawPoints(at: mappedPoints)
                     self.drawLines(in: image)

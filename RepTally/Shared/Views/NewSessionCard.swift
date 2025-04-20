@@ -21,9 +21,9 @@ struct NewSessionCard: View{
             
             //Allows to set the workout for the set
             Menu{
-                Button("Squats"){set.workout = "Squats"}
-                Button("Press Ups"){set.workout = "Press Ups"}
-                Button("Bicep Curls"){set.workout = "Bicep Curls"}
+                ForEach(Exercise.allCases, id: \.self) { exercise in
+                    Button(exercise.description) {set.workout = exercise.description}
+                }
             } label: {
                 //Shows default text if not chosen an option
                 Text(set.workout.isEmpty ? "Select A Workout" : set.workout)

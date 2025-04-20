@@ -14,7 +14,7 @@ struct FrameCheckView: View {
     @ObservedObject var user: User
     @StateObject var cameraInfoModel = CameraManagerModel() //Observable object to track whether someone's been detected on camera
     @StateObject var popUpDetector = PopUpDetectionModel()
-    @State private var timeDetected = 2 //Amount of time someone needs to be detected on camera
+    @State private var timeDetected = 5 //Amount of time someone needs to be detected on camera
     @State private var validDetection = false //flag for when timeDetected reaches 0
     var colors = [Color.red, Color.green] //colours for border
     //code adapted from Hudson (2023) https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-a-timer-with-swiftui
@@ -35,7 +35,7 @@ struct FrameCheckView: View {
                     if cameraInfoModel.isBodyDetected && !popUpDetector.isPopUpShowing{ //only decrements timer when someone in frame
                         timeDetected -= 1
                     }else{  //otherwise resets timer
-                        timeDetected = 2
+                        timeDetected = 5
                     }
                     if timeDetected <= 0 {
                         validDetection = true

@@ -96,7 +96,9 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
             
             applyAccuracyPostProcessing()
             
-            self.cameraManagerModel?.isBodyDetected = !pointNameToLocationMapping.isEmpty
+            DispatchQueue.main.async{
+                self.cameraManagerModel?.isBodyDetected = !self.pointNameToLocationMapping.isEmpty
+            }
             
             if self.cameraManagerModel!.isDisplaySkeleton{
                 drawPoints()
@@ -115,7 +117,7 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
          
          The heatmap array consists of a heatmap grid for each respective keypoint in the shape [17,33,33] where the 33x33 heatmap is a majorly scaled down array representing the input image. This means finding the point with the highest confidence and using its location in the array allows the calculation of where it would be in the image.
          
-         the offset array consists of offsets for each x and y coordinate for each keypoint in the shape [34,33,33]. the first 17 refer to the width, with the following 17 refering to the height. so the correlating y to an x coordinate is found at (n + number of joints).
+         the offset array consists of offsets for each x and y coordinate for each keypoint in the shape [34,33,33]. the first 17 refer to the height, with the following 17 refering to the width. so the correlating x to an y coordinate is found at (n + number of joints).
          
          Applying these values together should allow for pixel level accuracy of keypoints.
          */
@@ -143,11 +145,13 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
             }
             // code adapted from Apple (2024) (PoseBuilder)
             //Find the offset for the optimal point in the heatmap and ignore the value if it doesn't exist
-            guard let offsetX = offsetShapedArray[i,bestHeight,bestWidth].scalar,
-                  let offsetY = offsetShapedArray[i + outputOrder.count, bestHeight, bestWidth].scalar else {
+            guard let offsetY = offsetShapedArray[i,bestHeight,bestWidth].scalar,
+                  var offsetX = offsetShapedArray[i + outputOrder.count, bestHeight, bestWidth].scalar else {
                 pointNameToLocationMapping.removeValue(forKey: outputOrder[i])
                 continue
             }
+            offsetX = 1 - offsetX
+            
             pointOffset = CGVector(dx: CGFloat(offsetX), dy: CGFloat(offsetY))
             // end of adapted code
             
@@ -155,12 +159,13 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
             
             //scale the approximate values to the screen and apply the correlated offset when the confidence if above the threshold, also link it to it named target.
             if heatmapMax >= 0.3 {
-                let coarseX = CGFloat(view.bounds.width) * (1.0 - CGFloat(bestWidth) / 33.0)
+                let coarseX = CGFloat(bestWidth) * (CGFloat(view.bounds.width) / 33.0)
                 let coarseY = CGFloat(bestHeight) * (CGFloat(view.bounds.height) / 33.0)
                 //code adapted from Apple (2024) (PoseBuilder)
                 var position = CGPoint(x: coarseX, y: coarseY)
                 position += pointOffset!
                 //end of adapted code
+                position.x = view.bounds.width - position.x
                 pointNameToLocationMapping[outputOrder[i]] = position
             }
             else{
@@ -210,20 +215,18 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
     
     internal func drawPoints(){
         DispatchQueue.main.async{
-            //remove previously drawn points
+            //remove previously drawn points and lines
             self.view.subviews.forEach{ $0.removeFromSuperview()}
             if !self.pointNameToLocationMapping.isEmpty{
                 //draw a square at every point within view
                 for (_, point) in self.pointNameToLocationMapping{
                     let pointView = UIView()
-                    pointView.frame = CGRect(x: point.x
-                                             - 2.5, y: point.y - 2.5, width: 5, height: 5)
+                    pointView.frame = CGRect(x: point.x, y: point.y, width: 5, height: 5)
                     pointView.backgroundColor = .red
                     self.view.addSubview(pointView)
                 }
             }
         }
-        
     }
     
     internal func drawLines(){
@@ -247,50 +250,5 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
                 }
             }
         }
-        
     }
-    
-    func extractKeypointLocations(from heatmap: MLMultiArray, inputSize: CGSize, threshold: Float = 0.2){
-      // number of keypoints, rows, cols
-      let K = heatmap.shape[0].intValue
-      let H = heatmap.shape[1].intValue
-      let W = heatmap.shape[2].intValue
-
-      // stride to map 33×33 back to your image size
-      let strideX = inputSize.width  / CGFloat(W)
-      let strideY = inputSize.height / CGFloat(H)
-
-      var result: [String: CGPoint] = [:]
-
-      for k in 0..<K {
-          var bestVal: Float = -Float.infinity
-          var bestY = 0, bestX = 0
-
-          for y in 0..<H {
-              for x in 0..<W {
-                  // multiDim indexing: [k, y, x]
-                  let idx = [NSNumber(value: k),
-                             NSNumber(value: y),
-                             NSNumber(value: x)]
-                  let val = heatmap[idx].floatValue
-                  if val > bestVal {
-                      bestVal = val
-                      bestY = y
-                      bestX = x
-                  }
-              }
-          }
-
-          // only accept if above your threshold
-          if bestVal >= threshold {
-              // compute actual image coords
-              let px = CGFloat(bestX) * strideX
-              let py = CGFloat(bestY) * strideY
-              result[outputOrder[k]] = CGPoint(x: px, y: py)
-          }
-      }
-
-    pointNameToLocationMapping = result
-    }
-
 }

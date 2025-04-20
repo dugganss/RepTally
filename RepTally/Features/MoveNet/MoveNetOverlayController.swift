@@ -94,14 +94,17 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
                 let confidence: Float = output![0,0,i,2].scalar!
                 
                 //scale points to screen and map to name when confidence above threshold
-                if confidence >= 0.3 {
+                if confidence >= 0.2 {
                     let actualX = CGFloat(1 - xResult) * CGFloat(view.bounds.width)
                     let actualY = CGFloat(yResult) * CGFloat(view.bounds.height)
                     let pointOnScreen = CGPoint(x: actualX, y: actualY)
                     pointNameToLocationMapping[outputOrder[i]] = pointOnScreen
                 }
             }
-            self.cameraManagerModel?.isBodyDetected = !pointNameToLocationMapping.isEmpty
+            
+            DispatchQueue.main.async{
+                self.cameraManagerModel?.isBodyDetected = !self.pointNameToLocationMapping.isEmpty
+            }
             
             if self.cameraManagerModel!.isDisplaySkeleton{
                 drawPoints()
@@ -116,7 +119,7 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
     
     internal func drawPoints(){
         DispatchQueue.main.async{
-            //remove previously drawn points
+            //remove previously drawn points and lines
             self.view.subviews.forEach{ $0.removeFromSuperview()}
             if !self.pointNameToLocationMapping.isEmpty{
                 //draw a square at every point within view

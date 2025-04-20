@@ -13,20 +13,15 @@ struct SessionView: View {
     @ObservedObject var user: User
     @StateObject var cameraManagerModel = CameraManagerModel()
     @State private var isGoingHome = false //flag to return home (temporary)
-    @State private var sets: [SetData] = [] //workout related data for current session
-    @State private var setIndex = 0 //index in sets (current workout)
-    @State private var currentRep = 0 //counter of completed reps for current set
-    @State private var noRepeats = 0 //number of repeats of current set
-    @State private var subset = 0 //current subset
     @StateObject var popUpDetector = PopUpDetectionModel()
     @State var popupCounter: Int = 0
-    var setComplete: Bool {
-        guard !sets.isEmpty else { return false }
-        return currentRep >= sets[setIndex].reps
-    }
+    @State private var isPaused = false
+    @State private var countDown = 3
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         NavigationStack{
-            if !sets.isEmpty{
+            if !SetTracker.shared.sets.isEmpty{
                 ZStack{
                     VStack{
                         Spacer().frame(height: 90)
@@ -40,10 +35,10 @@ struct SessionView: View {
                     }
                     
                     VStack{
-                        Text("Set \(sets[setIndex].num).\(subset)")
+                        Text("Set \(SetTracker.shared.currentSet()!.num).\(SetTracker.shared.subset)")
                             .font(.title)
                         Spacer().frame(height: 20)
-                        Text(sets[setIndex].workout!)
+                        Text(SetTracker.shared.currentSet()!.workout!)
                             .font(.custom("Wesker", size: 40))
                             .bold()
                         
@@ -55,12 +50,12 @@ struct SessionView: View {
                                         .font(.custom("Wesker", size: 35))
                                     Spacer().frame(height:25)
                                     HStack{
-                                        Text("\(currentRep)")
+                                        Text("\(SetTracker.shared.currentRep)")
                                             .font(.custom("Wesker", size: 110))
                                         Text("/")
                                             .font(.custom("Wesker", size: 60))
                                             .padding(.top,30)
-                                        Text("\(sets[setIndex].reps)")
+                                        Text("\(SetTracker.shared.currentSet()!.reps)")
                                             .font(.custom("Wesker", size: 50))
                                             .padding(.top, 30)
                                     }
@@ -69,36 +64,22 @@ struct SessionView: View {
                                 
                             }
                             .overlay{
-                                if currentRep > 0{
-                                    ForEach((0...currentRep-1), id: \.self) {i in
-                                        ProgressBar(rep: i, totalReps: Int(sets[setIndex].reps))
+                                if SetTracker.shared.currentRep > 0{
+                                    ForEach((0...SetTracker.shared.currentRep-1), id: \.self) {i in
+                                        ProgressBar(rep: i, totalReps: Int(SetTracker.shared.currentSet()!.reps))
                                             .rotation(Angle(degrees: -90))
                                             .stroke(.backgroundColour, lineWidth: 15)
                                     }
                                 }
-                                
-                                
                             }
                             .padding(.horizontal)
                         
                         ActionButton(title: "Finish Set", isArrowButton: false, isBig: true, action: {
-                            if !setComplete{
-                                currentRep += 1
-                                if currentRep == sets[setIndex].reps {
-                                    if noRepeats > 0{
-                                        currentRep = 0
-                                        noRepeats -= 1
-                                        subset += 1
-                                    }
-                                    else if setIndex < sets.count - 1 {
-                                        currentRep = 0
-                                        setIndex += 1
-                                        noRepeats = Int(sets[setIndex].repeats)
-                                        subset = 0
-                                    }
-                                }
-                            }
+                            isPaused = true
+                            countDown = 4
                         })
+                        .disabled(SetTracker.shared.lastSet())
+                        .opacity(SetTracker.shared.lastSet() ? 0.5 : 1.0)
                         
                         Spacer()
                         Button(action: {
@@ -113,9 +94,58 @@ struct SessionView: View {
                         Spacer()
                     }
                     
-                    if (setComplete && popupCounter < 1){
+                    if (SetTracker.shared.workoutComplete() && popupCounter < 1){
                         ConfigurableCentrePopup(popUpDetector: popUpDetector, title: "Session is Complete!", buttonText: "Return Home",line2: "Good Effort!", dismissable: false, eventFlagBoolean: $isGoingHome).showAndStack()
                     }
+                    
+                    if isPaused {
+                        Color.black.opacity(0.7)
+                            .ignoresSafeArea()
+
+                        VStack() {
+                            if countDown == 4 {
+                                Text("Set Break")
+                                    .font(.custom("Wesker", size: 40))
+                                    .bold()
+                                Spacer().frame(height: 50)
+                                Text("Tap anywhere to continue your workout")
+                                    .multilineTextAlignment(.center)
+                                    .font(.custom("Wesker", size: 25))
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal, 15)
+                                Spacer().frame(height: 70)
+                                Text("Next workout: \(SetTracker.shared.nextWorkout() ?? "None")")
+                                    .font(.title)
+                                    .padding(.horizontal, 15)
+                            } else if countDown > 0 {
+                                Text("\(countDown)")
+                                    .font(.system(size: 100, weight: .bold))
+                                    .foregroundColor(.white)
+                            } else {
+                                Text("Go!")
+                                    .font(.system(size: 60, weight: .semibold))
+                                    .foregroundColor(.white)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            if countDown == 4 {
+                                countDown = 3
+                            }
+                        }
+                        .onReceive(timer) { _ in
+                            guard isPaused else { return }
+                            if countDown > 0 && countDown < 4 {
+                                countDown -= 1
+                            } else if countDown == 0 {
+                                isPaused = false
+                                SetTracker.shared.isPaused = isPaused
+                                SetTracker.shared.moveToNextSet()
+                            }
+                        }
+                    }
+
                 }
                 .navigationDestination(isPresented: $isGoingHome){
                     MainView(user: user)
@@ -128,22 +158,21 @@ struct SessionView: View {
         }
         .navigationBarBackButtonHidden(true)
         .onAppear{
-            sets = DataFetcher(user: user, viewContext: viewContext).getSetsFromMostRecentSession()
-            cameraManagerModel.isDisplayCameraFeed = false //causes camera to not be displayed in the cameraView
-            if !sets.isEmpty{
-                noRepeats = Int(sets[setIndex].repeats)
-            }
-//            for i in 1...3 { // temporary for preview to work
-//                let set = SetData(context: viewContext)
-//                set.num = Int32(i)
-//                set.workout = "Workout \(i)"
-//                set.reps = Int32(10 + i)
-//                set.repeats = Int32(2)
-//                sets.append(set)
-//            }
+            SetTracker.shared.updateSetData(from: user, viewContext: viewContext)
+            cameraManagerModel.isDisplayCameraFeed = false
         }
-        .onChange(of: setComplete){
+        .onChange(of: SetTracker.shared.workoutComplete()){
             popupCounter += 1
+        }
+        .onChange(of: SetTracker.shared.setComplete()){ complete in
+            if complete {
+                isPaused = true
+                countDown = 4
+                SetTracker.shared.isPaused = isPaused
+            }
+        }
+        .onDisappear{
+            SetTracker.shared.hardReset()
         }
     }
 }

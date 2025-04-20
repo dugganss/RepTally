@@ -90,7 +90,6 @@ struct ConfigurableCentrePopup: CentrePopup{
         popup
             .backgroundColour(.safeWhite)
             .horizontalPadding(28)
-            .tapOutsideToDismiss(dismissable)
     }
 }
 //end of adapted code

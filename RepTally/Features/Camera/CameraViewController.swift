@@ -23,6 +23,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
     private var videoDataOutput = AVCaptureVideoDataOutput()
     private let videoOutputQueue = DispatchQueue(label: "videoOutputQueue")
     var poseEstimator: PoseEstimator?
+    private let exerciseDetector = ExerciseDetector()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +96,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
             return
         }
         poseEstimator?.detectBody(in: frame)
+        exerciseDetector.detectExercise()
     }
     
 }
