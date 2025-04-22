@@ -6,6 +6,7 @@
 //
 import UIKit
 import CoreData
+import AudioToolbox
 
 class SetTracker: ObservableObject {
     static let shared = SetTracker()
@@ -16,6 +17,16 @@ class SetTracker: ObservableObject {
     @Published var noRepeats = 0 //number of repeats of current set
     @Published var subset = 0 //current subset
     var isPaused = false
+    
+    private let soundID: SystemSoundID = {
+        //code adapted from Jain (2016) https://stackoverflow.com/questions/35595342/audioservicescreatesystemsoundid-only-once-in-application-and-play-sound-from-an
+        var id: SystemSoundID = 0
+        if let url = Bundle.main.url(forResource: "beep", withExtension: "mp3") {
+            AudioServicesCreateSystemSoundID(url as CFURL, &id)
+        }
+        //end of adapted code
+        return id
+    }()
     
     func currentSet() -> SetData? {
         guard !sets.isEmpty else { return nil }
@@ -80,8 +91,9 @@ class SetTracker: ObservableObject {
     }
     
     func incrementRep(){
-        if !setComplete() && !isPaused{
+        if !setComplete() && !workoutComplete() && !isPaused{
             currentRep += 1
+            AudioServicesPlaySystemSound(soundID)
         }
     }
 }

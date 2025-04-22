@@ -91,24 +91,27 @@ class ExerciseDetector{
         }
         
         if isLeft {
-            if angleBetween(pointA: leftHip, pointB: leftKnee, pointC: leftAnkle) > 80{
+            if angleBetween(pointA: leftHip, pointB: leftKnee, pointC: leftAnkle) < 130{
                 let angleLeft = angleBetween(pointA: leftShoulder, pointB: leftHip, pointC: leftKnee)
-                stateMachine(startAngle: 100, finishAngle: 80, measuredAngle: angleLeft, side: "left")
+                stateMachine(startAngle: 120, finishAngle: 65, measuredAngle: angleLeft, side: "left")
             }
         }
         
         if isRight {
-            if angleBetween(pointA: rightHip, pointB: rightKnee, pointC: rightAnkle) > 80{
+            if angleBetween(pointA: rightHip, pointB: rightKnee, pointC: rightAnkle) < 130{
                 let angleRight = angleBetween(pointA: rightShoulder, pointB: rightHip, pointC: rightKnee)
-                stateMachine(startAngle: 100, finishAngle: 80, measuredAngle: angleRight, side: "right")
+                stateMachine(startAngle: 120, finishAngle: 65, measuredAngle: angleRight, side: "right")
             }
         }
         
-        if endLeft {
+        if endLeft || endRight {
             SetTracker.shared.incrementRep()
             startLeft = false
+            startRight = false
             midLeft = false
+            midRight = false
             endLeft = false
+            endRight = false
         }
     }
     
@@ -142,26 +145,26 @@ class ExerciseDetector{
         
         if isLeft {
             let angleLeft = angleBetween(pointA: leftShoulder, pointB: leftElbow, pointC: leftWrist)
-            stateMachine(startAngle: 120, finishAngle: 60, measuredAngle: angleLeft, side: "left")
+            stateMachine(startAngle: 135, finishAngle: 50, measuredAngle: angleLeft, side: "left")
         }
         
         if isRight {
             let angleRight = angleBetween(pointA: rightShoulder, pointB: rightElbow, pointC: rightWrist)
-            stateMachine(startAngle: 120, finishAngle: 60, measuredAngle: angleRight, side: "right")
+            stateMachine(startAngle: 135, finishAngle: 50, measuredAngle: angleRight, side: "right")
         }
         
         if endLeft || endRight {
             SetTracker.shared.incrementRep()
             if endLeft {
                 startLeft = false
-                midLeft = false
-                endLeft = false
             }
-            if endRight {
+            if endRight{
                 startRight = false
-                midRight = false
-                endRight = false
             }
+            midLeft = false
+            endLeft = false
+            midRight = false
+            endRight = false
         }
     }
     
@@ -203,14 +206,25 @@ class ExerciseDetector{
         if isRight {
 
             let angleRight = angleBetween(pointA: rightHip, pointB: rightKnee, pointC: rightAnkle)
-            stateMachine(startAngle: 160.0, finishAngle: 95.0, measuredAngle: angleRight, side: "left")
+            stateMachine(startAngle: 160.0, finishAngle: 95.0, measuredAngle: angleRight, side: "right")
         }
         
-        if endLeft {
-            SetTracker.shared.incrementRep()
+        if endRight || endLeft {
+            if isRight && isLeft && endLeft && endRight {
+                SetTracker.shared.incrementRep()
+            }
+            else if isRight && !isLeft && !endLeft && endRight {
+                SetTracker.shared.incrementRep()
+            }
+            else if !isRight && isLeft && endLeft && !endRight {
+                SetTracker.shared.incrementRep()
+            }
             startLeft = false
+            startRight = false
             midLeft = false
+            midRight = false
             endLeft = false
+            endRight = false
         }
     }
     
