@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//TODO: need to add action so that the button does something, style the font
-
 ///This is a reusable button element that allows for fast implementation of styled buttons.
 ///Allows for fast editing, instantiating the button requires parameters which can be set to
 ///quickly adjust the button to fit the styles as follows:
@@ -59,6 +57,3 @@ struct ActionButton:View {
     }
 }
 
-//#Preview {
-//    ActionButton(title: "Go", isArrowButton: true, isBig: false)
-//}

@@ -68,24 +68,6 @@ struct HomeView: View {
                 ZStack{
                     Color("BackgroundColour")
                     VStack{
-                        //TODO: talk about this in your implementation section, you struggled to find a solution to get the navbar to stick to the bottom of the screen because padding and spacers werent working and are not reliable if i want the app to be responsive.
-                        ///below is the original implementation but you tried some other things such as .safeareainset
-                        ///and playing around with padding but adding the action button forced it up
-                        ///solution is found at https://stackoverflow.com/questions/65135725/how-to-position-my-button-to-the-bottom-of-the-screen-swiftui
-                        ///where they use a Group with some modifiers
-//                        Spacer()
-//                        HomeCardView(title: "View your Previous Sessions")
-//                           
-//                        Spacer()
-//                        HomeCardView(title: "Set a Weekly Goal")
-//                        
-//                        //adding the action button here for some reason, shifts up the nav bar?
-//                        Spacer()
-//                        ActionButton(title: "Start a Session", isArrowButton: false, isBig: true)
-//
-//                        Spacer()
-//                        NavBarView()
-                        //TODO: new implementation gets rid of the above problem. Now the navbar is rendered in the mainview (overlayed on top of whatever is underneath it so it doesnt get disturbed by other ui elements)
                         Group{
                             HomeCardView(title: "View your Previous Sessions", action: {self.openPreviousSessions = true})
                             HomeCardView(title: "Set a Weekly Goal", action: {self.openWeeklyGoal = true})

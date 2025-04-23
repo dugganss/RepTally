@@ -105,6 +105,7 @@ struct SessionView: View {
                         VStack() {
                             if countDown == 4 {
                                 Text("Set Break")
+                                    .foregroundColor(.white)
                                     .font(.custom("Wesker", size: 40))
                                     .bold()
                                 Spacer().frame(height: 50)
@@ -115,6 +116,7 @@ struct SessionView: View {
                                     .padding(.horizontal, 15)
                                 Spacer().frame(height: 70)
                                 Text("Next workout: \(SetTracker.shared.nextWorkout() ?? "None")")
+                                    .foregroundColor(.white)
                                     .font(.title)
                                     .padding(.horizontal, 15)
                             } else if countDown > 0 {

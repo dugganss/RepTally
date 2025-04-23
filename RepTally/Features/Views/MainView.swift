@@ -17,6 +17,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
+            //design pattern adapted from App Dev Insights https://medium.com/%40appdevinsights/building-a-custom-tabbar-in-swiftui-862636475151
             Group {
                 if selectedTab == 0 {
                     HomeView(navigationPath: $homePath, showNav: $showNav , resetBools: $resetBools, user: user)
@@ -33,6 +34,5 @@ struct MainView: View {
             }
         }
         .ignoresSafeArea()
-        
     }
 }
