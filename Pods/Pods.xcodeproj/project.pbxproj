@@ -6,243 +6,158 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 636D81D05741D892734E9C70745D0DB7 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */;
-			buildPhases = (
-				E428E9B2EB9A04CAA5BA04B652A1082B /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = TensorFlowLiteC;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		0348F66638FDDBA0E9E58604CF6DC150 /* TensorFlowLiteSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A958D06C0C430CB4BA35564C014A5159 /* TensorFlowLiteSwift-dummy.m */; };
-		09B7E269F208579DC13010437BDF8ACF /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE66D818CDC0C29F345887EED1BC06C /* GlobalConfig.swift */; };
-		1B6CF03A9C55714980247C01B3A11F15 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0DB9700621E457B7B6675FF2370C3E /* PopupManager.swift */; };
-		2311D2CD572F19F8A8EBA9A24DEE0239 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80A508B7ADD153C10C7BA3C4E919E7 /* Shadow.swift */; };
-		237872C1C4ECD4B6BF3B5FF6E58997C6 /* Pods-RepTally-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15987C12E2199B18A9F3E48B35BAA51F /* Pods-RepTally-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27CCF9C1788CC3BDF85DAD4DBDC5498A /* PopupStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9EF15735CA7E5B31E22D77774C619A /* PopupStack.swift */; };
-		296B11A85AA6344174B36FF437CBBC27 /* LocalConfig.TopPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C989C92320E9CE8E0F55BC8D7EA67 /* LocalConfig.TopPopup.swift */; };
-		2ECD499977DD56562D00031342A7EE46 /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58DDDF9D686613F2131F44BD78C2D9 /* View++.swift */; };
-		39F609B427D91A849A15E0EB4721AA14 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A48A21FF3A8EACDBB03C29C23936 /* PopupView.swift */; };
-		3DDCD29E7BC0EB9AF74CD6BA8CEFBC39 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD254207CB25ED66A2B9B73125D3FC56 /* Interpreter.swift */; };
-		4227B568D9267425D94CD52A53D7FA65 /* GlobalConfig.Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD7041D807FDC2BE12CC764E0F8974 /* GlobalConfig.Bottom.swift */; };
-		4360E3DF2EBD02B1806AE3168D841507 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785FA3146257C60F89914D3CBF54D926 /* ID.swift */; };
-		4FEA76DA9D957724DB3446A8A0ADB5F6 /* GlobalConfig.Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE283BFA3B35DDFF3D912265D0D355 /* GlobalConfig.Top.swift */; };
-		5130028101105D26EBF694E34367A400 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19D9827FD62EC326B5A534D7DC44AAA /* Model.swift */; };
-		53806A47BB53D8B3CED0C59DE3474CC2 /* Public+PopupSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443FEB565B73F000198E2AF4D7DC55B /* Public+PopupSceneDelegate.swift */; };
-		5A38B37B2D54A2F709F9B55275FE4A1C /* View.ScreenManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6EEEC3863976E05985BB90657B4475 /* View.ScreenManager++.swift */; };
-		5AE561DA6EB95A19073F6A7CBB1899F0 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050220F447F16018478CF7994F8AE6D /* Popup.swift */; };
+		06A0310E21D422E5A5C03F6694CC4319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		09B7E269F208579DC13010437BDF8ACF /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409EEAA16DC3B2D28CCFEE045F940F5 /* GlobalConfig.swift */; };
+		190C104E72F1295283D4F70376A992CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		1B6CF03A9C55714980247C01B3A11F15 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5E475C3AA34B2EE4DBF55A7248CA6 /* PopupManager.swift */; };
+		2311D2CD572F19F8A8EBA9A24DEE0239 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CA0FB77CD4AB62725864F328F64C63 /* Shadow.swift */; };
+		27CCF9C1788CC3BDF85DAD4DBDC5498A /* PopupStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E16BC6BD9B3D0114818A958F9BF69 /* PopupStack.swift */; };
+		296B11A85AA6344174B36FF437CBBC27 /* LocalConfig.TopPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E09A08541FC0D7BBE91988E2C478A /* LocalConfig.TopPopup.swift */; };
+		2ECD499977DD56562D00031342A7EE46 /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E1290378BA9931F29489B0BADB307 /* View++.swift */; };
+		39F609B427D91A849A15E0EB4721AA14 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAB375B280E53B55C71EFDBF39D78F /* PopupView.swift */; };
+		4227B568D9267425D94CD52A53D7FA65 /* GlobalConfig.Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E9E42CDE75F2BAB9D2C3D1F34E6C9 /* GlobalConfig.Bottom.swift */; };
+		4360E3DF2EBD02B1806AE3168D841507 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589306B7BA5CF3C72786D746836BA02A /* ID.swift */; };
+		4FEA76DA9D957724DB3446A8A0ADB5F6 /* GlobalConfig.Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF281BEE5A4B973B84EC4D36E0728CE /* GlobalConfig.Top.swift */; };
+		53806A47BB53D8B3CED0C59DE3474CC2 /* Public+PopupSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D826C898890FD5C8B0EEBBFBFD2A6 /* Public+PopupSceneDelegate.swift */; };
+		5A38B37B2D54A2F709F9B55275FE4A1C /* View.ScreenManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87929AEEE355863329A8A3C2A95255E3 /* View.ScreenManager++.swift */; };
+		5AC94F1A5267865D03BBEDCE412E861B /* Pods-RepTally-RepTallyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D92B6E396B8ED0D717104A24D57CC2 /* Pods-RepTally-RepTallyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AE561DA6EB95A19073F6A7CBB1899F0 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C340A791DCE8A7DC0C31F56F46AA66 /* Popup.swift */; };
 		5DFB2FA08A1EEE99486D0C31123BDD67 /* Pods-RepTallyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F528A087B6733F08C7DE5074ED23F743 /* Pods-RepTallyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A4CB864E6DD30656DA4216EFA6C8E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		6E78F4FCCBE95E7E403FFED2697A943B /* Public+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB52786DD46CFE6C675C06F43D36807 /* Public+Popup.swift */; };
-		71ED894E2EBA489A29548F58EB297755 /* AnyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095F51AA1B29EBC8C0601DD6439F840 /* AnyPopup.swift */; };
-		79066BA7AFC2CB7E819CF754DC2849B8 /* PopupCentreStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CF4608F2AB7671D1881092DF8C83C3 /* PopupCentreStackView.swift */; };
-		7CE87EB696018642DD67C929A5B6B134 /* Pods-RepTally-RepTallyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D92B6E396B8ED0D717104A24D57CC2 /* Pods-RepTally-RepTallyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E8A61BF7671494DDD1F611B508A2033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		83E071669DEAE122B241D9BD094267B0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177128FE9B1639B9A7F52CBD17F7FC7 /* RoundedCorner.swift */; };
-		8AFB148C49E5712BA3D9AD718E4289CE /* Public+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12F4137123E655BB79E113154717F0 /* Public+View.swift */; };
-		935A13FDECE13FDAB65C511892B09652 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAAD058DF00D13335D1C8865192542 /* KeyboardManager.swift */; };
-		946C79675FE43E16148486DF4A695267 /* HeightReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F109AAA794EE73B4204D1536ADDDA /* HeightReader.swift */; };
-		9E3163F72FCC2B8D631D695F3E6B0563 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E5C4D8090AA29898825C9290D2ED60 /* TensorFlowLite.swift */; };
-		A06E14EB0D98F9ED5A8EC2F78417F6F7 /* PopupTopStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD99938F328E0B95C695199964D4F /* PopupTopStackView.swift */; };
-		A38EC85A957FCEB313F7EC741D3A567E /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BE2A0933B6D53BF03AECD8EA2B916 /* QuantizationParameters.swift */; };
-		A89E69F3DCEAB657E5749267F33E8B13 /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8E53EE955C40E29A853E6BEB33A9F /* Pods-RepTally-RepTallyUITests-dummy.m */; };
-		AA0399D62928DBA68204F2AFBF364990 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591BD9E913D69E20BC5CC142C200B527 /* ScreenManager.swift */; };
-		AD8574E44ADE8EE6BE37C06553AFFE8C /* TensorFlowLiteSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E3BD8F7496CC7A44A9705AF439DDFF /* TensorFlowLiteSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFC92DEEA5D4FA3EAE8F86BB1C587CC7 /* LocalConfig.CentrePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD80C4F3F6954FF7DC777888635E08 /* LocalConfig.CentrePopup.swift */; };
-		B16505DB1E267A43ECDB610AA3471486 /* Int++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423B68FA44070CBF9B2B290FA6124FF /* Int++.swift */; };
-		B851F3E6DF9D1FF69FB7E0C6D7248756 /* MijickPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C45C05FE8A1D1C2248BBDCC61B03788 /* MijickPopupView-dummy.m */; };
-		BB605892C85EA65BD48686F372B23A79 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18427B4D1BB297DC1BE451E3C7052A36 /* Configurable.swift */; };
-		BC4AFBE7EC276BF64573F80890549845 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF75E27B5D4B22E4C5096B74C843EB /* InterpreterError.swift */; };
-		C67A739EF4943BC738377640EE250FB1 /* MijickPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE8853F06D1F26E1D2EDACB062511EC /* MijickPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C850386EC5944D928573E5BCAAB657A9 /* PopupBottomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2149F5FC835C3EEFB689C0CE8A670 /* PopupBottomStackView.swift */; };
-		D1628E8AA1EFEA2F79C0B18523230E61 /* Public+PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728223909D9BE730CC4FFEAEFFFBE6F /* Public+PopupManager.swift */; };
-		D1A6966E12CE99B52A34FF665D3B4235 /* Public+DragDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612751AC0D9886FCDEF45295176CA291 /* Public+DragDetent.swift */; };
-		D269A63118A1AEF2A3AC487DF625B665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		6E78F4FCCBE95E7E403FFED2697A943B /* Public+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC14FEDA14A240D35E811157ECBF4A /* Public+Popup.swift */; };
+		71ED894E2EBA489A29548F58EB297755 /* AnyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E3E5F6B5D94C297C6B29DA560C916 /* AnyPopup.swift */; };
+		727021771E6C1E3E19298092E839389C /* Pods-RepTally-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81852D7B9AC121C3E91AFAB5A6E61340 /* Pods-RepTally-dummy.m */; };
+		79066BA7AFC2CB7E819CF754DC2849B8 /* PopupCentreStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A849F2B9635B494E86EE2E1A811C9075 /* PopupCentreStackView.swift */; };
+		8073ECEFCB919DF24D04924A9B13BAFF /* Pods-RepTally-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15987C12E2199B18A9F3E48B35BAA51F /* Pods-RepTally-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E071669DEAE122B241D9BD094267B0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6338BDA9435A894EA693DB4792D46 /* RoundedCorner.swift */; };
+		8AFB148C49E5712BA3D9AD718E4289CE /* Public+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564FCD253FBA6864AA4BEA5B34EC6C53 /* Public+View.swift */; };
+		935A13FDECE13FDAB65C511892B09652 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8334A35B4076075F83E69115B61A3E7 /* KeyboardManager.swift */; };
+		946C79675FE43E16148486DF4A695267 /* HeightReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84D8B8A82D35B4E4DBA16F2B511689 /* HeightReader.swift */; };
+		A06E14EB0D98F9ED5A8EC2F78417F6F7 /* PopupTopStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1EB981B723D27B0AC7C1E8419CE1F1 /* PopupTopStackView.swift */; };
+		AA0399D62928DBA68204F2AFBF364990 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B8B5B7983D952F39E2675BEAD313DE /* ScreenManager.swift */; };
+		AFC92DEEA5D4FA3EAE8F86BB1C587CC7 /* LocalConfig.CentrePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF69786AD3384B3F23761968DE3A52E /* LocalConfig.CentrePopup.swift */; };
+		B0D77BE53CA6B18DDEBA5925DD0793EB /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8E53EE955C40E29A853E6BEB33A9F /* Pods-RepTally-RepTallyUITests-dummy.m */; };
+		B16505DB1E267A43ECDB610AA3471486 /* Int++.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC59A7ABDC3A648BE65EE093C14C2D46 /* Int++.swift */; };
+		B851F3E6DF9D1FF69FB7E0C6D7248756 /* MijickPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03613CC7E36C609C23D06AFAAD4C79FB /* MijickPopupView-dummy.m */; };
+		BB605892C85EA65BD48686F372B23A79 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8376221BCE35F6EBEBBEDEFAC230C /* Configurable.swift */; };
+		C67A739EF4943BC738377640EE250FB1 /* MijickPopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2560C9994331EEB058A0CA6ED2046D8 /* MijickPopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C850386EC5944D928573E5BCAAB657A9 /* PopupBottomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6EC5A5582F9BDD295818D5B9481A5 /* PopupBottomStackView.swift */; };
+		D1628E8AA1EFEA2F79C0B18523230E61 /* Public+PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977ED403E0C0D37038959993FF29F68F /* Public+PopupManager.swift */; };
+		D1A6966E12CE99B52A34FF665D3B4235 /* Public+DragDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED663CF87CBC621337CA82E6358817E /* Public+DragDetent.swift */; };
 		D280A3EB8BAE39A3D83FE476B1D233EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		D38E8EF03D4B80D04B51BC76E16CEE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		D7E00744F53A9317B1A8F151386D8D19 /* LocalConfig.BottomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA603EACC41DCCB6EFABD6AE65832EE /* LocalConfig.BottomPopup.swift */; };
-		DD135B000989429BE9F8AD8FB1C331C3 /* DispatchSource++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC708459E7B566465B864A7E289EDCCA /* DispatchSource++.swift */; };
-		DDDE02FBA414BFB6D896C9A860984085 /* Pods-RepTally-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81852D7B9AC121C3E91AFAB5A6E61340 /* Pods-RepTally-dummy.m */; };
-		DE836AE60716DE43BCE51E9820008597 /* GlobalConfig.Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27109C07AEEF13D59F46497B5211285 /* GlobalConfig.Common.swift */; };
-		E819320C72ADDE2241622378BF4528AA /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76FA06BC56CB7B4B429C77229A57B68 /* AnimationType.swift */; };
+		D7E00744F53A9317B1A8F151386D8D19 /* LocalConfig.BottomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5487B53359AA4678CC32E7404D7CADC /* LocalConfig.BottomPopup.swift */; };
+		DD135B000989429BE9F8AD8FB1C331C3 /* DispatchSource++.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B58CE1E6DC5E75FDBDF7068BB966C /* DispatchSource++.swift */; };
+		DE836AE60716DE43BCE51E9820008597 /* GlobalConfig.Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1163BABEA8D9F66649CD235223A8F /* GlobalConfig.Common.swift */; };
+		E819320C72ADDE2241622378BF4528AA /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36DE11497784CA8F2C1E45E92DEFC4D /* AnimationType.swift */; };
 		EF12A4DB819D923C42D9037781FDE9FE /* Pods-RepTallyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D57E8D225A0F58F12381CC103D2FC40 /* Pods-RepTallyTests-dummy.m */; };
-		F09EB87AE77A7A73EE937915124881FC /* View.Gestures++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8DF7C3A5BDE64A3EC185BA8C91EFF /* View.Gestures++.swift */; };
-		F275216661DC8F99CE31BF33354F2748 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7B0A4F4F3EB17BAEE3B6B9730AB84 /* Delegate.swift */; };
-		F63CA9A8F8D54C6133BB41CC50171CBD /* Array++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDABFBEE902A9F2B40BE3B520840545 /* Array++.swift */; };
-		F7254C0B2C3C8FA844B35CCEF93A9B72 /* GlobalConfig.Centre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662813444FA8E9A6137E92875DD40CC /* GlobalConfig.Centre.swift */; };
-		F9B905ED717C160D35D8D7B4081BCAB5 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134026538D9B11CFDF31A3821F16ECF /* Tensor.swift */; };
-		FBF7C5E6BCF0E2567FE3B1938311EAD3 /* Animation++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89B9688CE08145FF4D07A782D4BD3AB /* Animation++.swift */; };
+		F09EB87AE77A7A73EE937915124881FC /* View.Gestures++.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B92D9EF8A7DF838E728CB533B1A0D /* View.Gestures++.swift */; };
+		F63CA9A8F8D54C6133BB41CC50171CBD /* Array++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CE07772391CFA850C3936AEA9F2732 /* Array++.swift */; };
+		F7254C0B2C3C8FA844B35CCEF93A9B72 /* GlobalConfig.Centre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B266E57C3AE642583741B9632AEEB84 /* GlobalConfig.Centre.swift */; };
+		FBF7C5E6BCF0E2567FE3B1938311EAD3 /* Animation++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B7E749647B2A29436E93956E69EFD /* Animation++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		263DE620DE8D12BAD916F21A72883B88 /* PBXContainerItemProxy */ = {
+		6B790D94DD72C9B2473F81261E245E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F43B0F4F894278E76BC922B52FAFE130;
+			remoteInfo = MijickPopupView;
+		};
+		768E15FECB6AA242D6E7311F2027F30F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AF54A9CBA216C3BC19391BEDA9843B3F;
 			remoteInfo = "Pods-RepTally";
 		};
-		2FC906213E8A25F2F796488F5035F109 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
-			remoteInfo = TensorFlowLiteSwift;
-		};
-		48FEF7570082E573AC1CD5E7AA459E9E /* PBXContainerItemProxy */ = {
+		B940028A993B76C38EFD87EC7592786B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F43B0F4F894278E76BC922B52FAFE130;
 			remoteInfo = MijickPopupView;
-		};
-		6FEA3A3F76532A6E611ACB583BAA4F1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
-		};
-		7EFC12A2BFCF41D27BD338D614B79B27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F43B0F4F894278E76BC922B52FAFE130;
-			remoteInfo = MijickPopupView;
-		};
-		A7F8CDC2ABE038D5E32131FA9ECB9177 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
-		};
-		E9BC95610EBAD500F717A094CB37E27C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10418167F619D6DA72BADAD10F9EC02B;
-			remoteInfo = TensorFlowLiteSwift;
-		};
-		FBA555BA65B17C01229A5646AE7E43ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC559E53E13B6FBEF4F5CC310A73AFE6;
-			remoteInfo = TensorFlowLiteC;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0134026538D9B11CFDF31A3821F16ECF /* Tensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tensor.swift; path = tensorflow/lite/swift/Sources/Tensor.swift; sourceTree = "<group>"; };
-		023C4AE253BE4D1920B52C8ABC6B03F7 /* TensorFlowLiteC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.release.xcconfig; sourceTree = "<group>"; };
-		0423B68FA44070CBF9B2B290FA6124FF /* Int++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int++.swift"; path = "Sources/Internal/Extensions/Int++.swift"; sourceTree = "<group>"; };
+		03613CC7E36C609C23D06AFAAD4C79FB /* MijickPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MijickPopupView-dummy.m"; sourceTree = "<group>"; };
 		04CCC6361D33C889DD9F217135B1C951 /* Pods-RepTally-RepTallyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-RepTallyUITests-Info.plist"; sourceTree = "<group>"; };
 		07BB9815E0A0249264D6626ED03F8274 /* Pods-RepTally-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-acknowledgements.plist"; sourceTree = "<group>"; };
 		082B6A274D2C6812DA1C0C944E031B12 /* Pods-RepTallyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTallyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0B0DB9700621E457B7B6675FF2370C3E /* PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupManager.swift; path = Sources/Internal/Managers/PopupManager.swift; sourceTree = "<group>"; };
-		0C4F8B1525D842C50C79CC2FA11F50CE /* TensorFlowLiteSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-prefix.pch"; sourceTree = "<group>"; };
-		0DD92A4F9B2617EEA96A25D6D48F8D4E /* MijickPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MijickPopupView-Info.plist"; sourceTree = "<group>"; };
-		1443FEB565B73F000198E2AF4D7DC55B /* Public+PopupSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupSceneDelegate.swift"; path = "Sources/Public/Delegates/Public+PopupSceneDelegate.swift"; sourceTree = "<group>"; };
+		12CA0FB77CD4AB62725864F328F64C63 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = Sources/Internal/Other/Shadow.swift; sourceTree = "<group>"; };
+		13848AE9C6D5DF14D44274B3756A5D9F /* MijickPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-prefix.pch"; sourceTree = "<group>"; };
 		15987C12E2199B18A9F3E48B35BAA51F /* Pods-RepTally-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTally-umbrella.h"; sourceTree = "<group>"; };
-		17FD80C4F3F6954FF7DC777888635E08 /* LocalConfig.CentrePopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.CentrePopup.swift; path = Sources/Public/Configurables/LocalConfig.CentrePopup.swift; sourceTree = "<group>"; };
-		18427B4D1BB297DC1BE451E3C7052A36 /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/Internal/Protocols/Configurable.swift; sourceTree = "<group>"; };
 		1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RepTallyTests"; path = Pods_RepTallyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EDABFBEE902A9F2B40BE3B520840545 /* Array++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array++.swift"; path = "Sources/Internal/Extensions/Array++.swift"; sourceTree = "<group>"; };
+		234E1290378BA9931F29489B0BADB307 /* View++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View++.swift"; path = "Sources/Internal/Extensions/View++.swift"; sourceTree = "<group>"; };
+		23BAB375B280E53B55C71EFDBF39D78F /* PopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = Sources/Internal/Views/PopupView.swift; sourceTree = "<group>"; };
+		27C6338BDA9435A894EA693DB4792D46 /* RoundedCorner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCorner.swift; path = "Sources/Internal/View Modifiers/RoundedCorner.swift"; sourceTree = "<group>"; };
 		27CFBC2ACC7E8B2BAAA2C5E39EC6B21D /* Pods-RepTallyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTallyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29D92B6E396B8ED0D717104A24D57CC2 /* Pods-RepTally-RepTallyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTally-RepTallyUITests-umbrella.h"; sourceTree = "<group>"; };
+		2B266E57C3AE642583741B9632AEEB84 /* GlobalConfig.Centre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Centre.swift; path = Sources/Public/Configurables/GlobalConfig.Centre.swift; sourceTree = "<group>"; };
 		2E14C16CA7AD220CC8567C169EDE249D /* Pods-RepTallyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTallyTests.modulemap"; sourceTree = "<group>"; };
-		2E1539018EB10FE30A73C8B21AA451C0 /* MijickPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.debug.xcconfig; sourceTree = "<group>"; };
-		3287A48A21FF3A8EACDBB03C29C23936 /* PopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = Sources/Internal/Views/PopupView.swift; sourceTree = "<group>"; };
-		3662813444FA8E9A6137E92875DD40CC /* GlobalConfig.Centre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Centre.swift; path = Sources/Public/Configurables/GlobalConfig.Centre.swift; sourceTree = "<group>"; };
+		30C340A791DCE8A7DC0C31F56F46AA66 /* Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popup.swift; path = Sources/Internal/Protocols/Popup.swift; sourceTree = "<group>"; };
+		32CE07772391CFA850C3936AEA9F2732 /* Array++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array++.swift"; path = "Sources/Internal/Extensions/Array++.swift"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		39CD7041D807FDC2BE12CC764E0F8974 /* GlobalConfig.Bottom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Bottom.swift; path = Sources/Public/Configurables/GlobalConfig.Bottom.swift; sourceTree = "<group>"; };
-		3E7EE70BE78F05CA5B90645A139E584D /* TensorFlowLiteC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = TensorFlowLiteC.xcframework; path = Frameworks/TensorFlowLiteC.xcframework; sourceTree = "<group>"; };
-		4050220F447F16018478CF7994F8AE6D /* Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popup.swift; path = Sources/Internal/Protocols/Popup.swift; sourceTree = "<group>"; };
-		4177128FE9B1639B9A7F52CBD17F7FC7 /* RoundedCorner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCorner.swift; path = "Sources/Internal/View Modifiers/RoundedCorner.swift"; sourceTree = "<group>"; };
-		49EE283BFA3B35DDFF3D912265D0D355 /* GlobalConfig.Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Top.swift; path = Sources/Public/Configurables/GlobalConfig.Top.swift; sourceTree = "<group>"; };
+		3A40F1B2E5CA39071C24A86D88CB9093 /* MijickPopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.debug.xcconfig; sourceTree = "<group>"; };
+		4AF281BEE5A4B973B84EC4D36E0728CE /* GlobalConfig.Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Top.swift; path = Sources/Public/Configurables/GlobalConfig.Top.swift; sourceTree = "<group>"; };
+		51F5E475C3AA34B2EE4DBF55A7248CA6 /* PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupManager.swift; path = Sources/Internal/Managers/PopupManager.swift; sourceTree = "<group>"; };
 		52ADCA9CAC0ECB9F30413202BAA2CBA8 /* Pods-RepTallyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTallyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		591BD9E913D69E20BC5CC142C200B527 /* ScreenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenManager.swift; path = Sources/Internal/Managers/ScreenManager.swift; sourceTree = "<group>"; };
-		593BE2A0933B6D53BF03AECD8EA2B916 /* QuantizationParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuantizationParameters.swift; path = tensorflow/lite/swift/Sources/QuantizationParameters.swift; sourceTree = "<group>"; };
+		553E3E5F6B5D94C297C6B29DA560C916 /* AnyPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPopup.swift; path = Sources/Internal/Other/AnyPopup.swift; sourceTree = "<group>"; };
+		564FCD253FBA6864AA4BEA5B34EC6C53 /* Public+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+View.swift"; path = "Sources/Public/Extensions/Public+View.swift"; sourceTree = "<group>"; };
+		589306B7BA5CF3C72786D746836BA02A /* ID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID.swift; path = Sources/Internal/Other/ID.swift; sourceTree = "<group>"; };
 		5BBF2F9EC375B4674F759AA1AD573FF2 /* Pods-RepTally-RepTallyUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RepTally-RepTallyUITests"; path = Pods_RepTally_RepTallyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1A971BEFA08A4F5F14D2C7E0829D15 /* Pods-RepTally-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTally-acknowledgements.markdown"; sourceTree = "<group>"; };
-		612751AC0D9886FCDEF45295176CA291 /* Public+DragDetent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+DragDetent.swift"; path = "Sources/Public/Utilities/Public+DragDetent.swift"; sourceTree = "<group>"; };
-		652D90905D993AB8A7254B770E5C605A /* TensorFlowLiteC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteC.debug.xcconfig; sourceTree = "<group>"; };
-		67E2149F5FC835C3EEFB689C0CE8A670 /* PopupBottomStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupBottomStackView.swift; path = Sources/Internal/Views/PopupBottomStackView.swift; sourceTree = "<group>"; };
+		66E1163BABEA8D9F66649CD235223A8F /* GlobalConfig.Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Common.swift; path = Sources/Public/Configurables/GlobalConfig.Common.swift; sourceTree = "<group>"; };
+		672E16BC6BD9B3D0114818A958F9BF69 /* PopupStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupStack.swift; path = Sources/Internal/Protocols/PopupStack.swift; sourceTree = "<group>"; };
 		6A7F495B22F9389B44B2A548230AD06D /* Pods-RepTally.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTally.modulemap"; sourceTree = "<group>"; };
-		6C45C05FE8A1D1C2248BBDCC61B03788 /* MijickPopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MijickPopupView-dummy.m"; sourceTree = "<group>"; };
 		6D57E8D225A0F58F12381CC103D2FC40 /* Pods-RepTallyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTallyTests-dummy.m"; sourceTree = "<group>"; };
-		6EE66D818CDC0C29F345887EED1BC06C /* GlobalConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.swift; path = Sources/Internal/Other/GlobalConfig.swift; sourceTree = "<group>"; };
+		6D9E9E42CDE75F2BAB9D2C3D1F34E6C9 /* GlobalConfig.Bottom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Bottom.swift; path = Sources/Public/Configurables/GlobalConfig.Bottom.swift; sourceTree = "<group>"; };
 		6FD8633E0796B8E95CBAEB98E824A4E8 /* Pods-RepTally-RepTallyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-RepTallyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7095F51AA1B29EBC8C0601DD6439F840 /* AnyPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPopup.swift; path = Sources/Internal/Other/AnyPopup.swift; sourceTree = "<group>"; };
 		70D1E9C230FF4F73918FBCF307D2B860 /* Pods-RepTally-RepTallyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RepTally-RepTallyUITests.modulemap"; sourceTree = "<group>"; };
-		785FA3146257C60F89914D3CBF54D926 /* ID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID.swift; path = Sources/Internal/Other/ID.swift; sourceTree = "<group>"; };
 		7BFC54A280B12CA892A302ECD23D108D /* Pods-RepTally-RepTallyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally-RepTallyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7FF2FDD14A646362F2497DF40A781B58 /* TensorFlowLiteSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TensorFlowLiteSwift.modulemap; sourceTree = "<group>"; };
 		806099B73D6228786D40C75E339001A9 /* Pods-RepTally */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RepTally"; path = Pods_RepTally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81852D7B9AC121C3E91AFAB5A6E61340 /* Pods-RepTally-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTally-dummy.m"; sourceTree = "<group>"; };
-		8728223909D9BE730CC4FFEAEFFFBE6F /* Public+PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupManager.swift"; path = "Sources/Public/Extensions/Public+PopupManager.swift"; sourceTree = "<group>"; };
-		8859734BB1D9386928015A9C5A717C44 /* TensorFlowLiteSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.release.xcconfig; sourceTree = "<group>"; };
-		8DDAAD058DF00D13335D1C8865192542 /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = Sources/Internal/Managers/KeyboardManager.swift; sourceTree = "<group>"; };
+		8409EEAA16DC3B2D28CCFEE045F940F5 /* GlobalConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.swift; path = Sources/Internal/Other/GlobalConfig.swift; sourceTree = "<group>"; };
+		84406368CC0A79F8D42D37CA6AC2A419 /* MijickPopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MijickPopupView-Info.plist"; sourceTree = "<group>"; };
+		87929AEEE355863329A8A3C2A95255E3 /* View.ScreenManager++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.ScreenManager++.swift"; path = "Sources/Internal/Extensions/View.ScreenManager++.swift"; sourceTree = "<group>"; };
+		8AEC14FEDA14A240D35E811157ECBF4A /* Public+Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+Popup.swift"; path = "Sources/Public/Extensions/Public+Popup.swift"; sourceTree = "<group>"; };
+		977ED403E0C0D37038959993FF29F68F /* Public+PopupManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupManager.swift"; path = "Sources/Public/Extensions/Public+PopupManager.swift"; sourceTree = "<group>"; };
 		9796A7E59D5810CF5B6D3F41AA11ED84 /* Pods-RepTallyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTallyTests.release.xcconfig"; sourceTree = "<group>"; };
-		9B9EF15735CA7E5B31E22D77774C619A /* PopupStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupStack.swift; path = Sources/Internal/Protocols/PopupStack.swift; sourceTree = "<group>"; };
 		9D4F6D300D67ED8F61E88D67A5EF333C /* Pods-RepTally-RepTallyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RepTally-RepTallyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E6DAB141A864DBB5BE62282A191B5F6 /* Pods-RepTallyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTallyTests-Info.plist"; sourceTree = "<group>"; };
-		9F12F4137123E655BB79E113154717F0 /* Public+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+View.swift"; path = "Sources/Public/Extensions/Public+View.swift"; sourceTree = "<group>"; };
-		9F802C4266AD205B379B7366F3E522CF /* MijickPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MijickPopupView.modulemap; sourceTree = "<group>"; };
-		A16C989C92320E9CE8E0F55BC8D7EA67 /* LocalConfig.TopPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.TopPopup.swift; path = Sources/Public/Configurables/LocalConfig.TopPopup.swift; sourceTree = "<group>"; };
-		A2CF4608F2AB7671D1881092DF8C83C3 /* PopupCentreStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupCentreStackView.swift; path = Sources/Internal/Views/PopupCentreStackView.swift; sourceTree = "<group>"; };
-		A2E5C4D8090AA29898825C9290D2ED60 /* TensorFlowLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TensorFlowLite.swift; path = tensorflow/lite/swift/Sources/TensorFlowLite.swift; sourceTree = "<group>"; };
-		A89B9688CE08145FF4D07A782D4BD3AB /* Animation++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Animation++.swift"; path = "Sources/Internal/Extensions/Animation++.swift"; sourceTree = "<group>"; };
-		A958D06C0C430CB4BA35564C014A5159 /* TensorFlowLiteSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TensorFlowLiteSwift-dummy.m"; sourceTree = "<group>"; };
+		A849F2B9635B494E86EE2E1A811C9075 /* PopupCentreStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupCentreStackView.swift; path = Sources/Internal/Views/PopupCentreStackView.swift; sourceTree = "<group>"; };
+		A9B8B5B7983D952F39E2675BEAD313DE /* ScreenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenManager.swift; path = Sources/Internal/Managers/ScreenManager.swift; sourceTree = "<group>"; };
 		AAD8E53EE955C40E29A853E6BEB33A9F /* Pods-RepTally-RepTallyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RepTally-RepTallyUITests-dummy.m"; sourceTree = "<group>"; };
-		AC708459E7B566465B864A7E289EDCCA /* DispatchSource++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchSource++.swift"; path = "Sources/Internal/Extensions/DispatchSource++.swift"; sourceTree = "<group>"; };
-		AD254207CB25ED66A2B9B73125D3FC56 /* Interpreter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpreter.swift; path = tensorflow/lite/swift/Sources/Interpreter.swift; sourceTree = "<group>"; };
-		B19D9827FD62EC326B5A534D7DC44AAA /* Model.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Model.swift; path = tensorflow/lite/swift/Sources/Model.swift; sourceTree = "<group>"; };
 		B34B02112496E0B68ADF66128A3C4D50 /* Pods-RepTally-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RepTally-Info.plist"; sourceTree = "<group>"; };
-		BA6EEEC3863976E05985BB90657B4475 /* View.ScreenManager++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.ScreenManager++.swift"; path = "Sources/Internal/Extensions/View.ScreenManager++.swift"; sourceTree = "<group>"; };
-		BB58DDDF9D686613F2131F44BD78C2D9 /* View++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View++.swift"; path = "Sources/Internal/Extensions/View++.swift"; sourceTree = "<group>"; };
-		BDDFEE493D2ED670B7232CC532BBE73E /* TensorFlowLiteSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TensorFlowLiteSwift.debug.xcconfig; sourceTree = "<group>"; };
+		B84B58CE1E6DC5E75FDBDF7068BB966C /* DispatchSource++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchSource++.swift"; path = "Sources/Internal/Extensions/DispatchSource++.swift"; sourceTree = "<group>"; };
+		B9F8376221BCE35F6EBEBBEDEFAC230C /* Configurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configurable.swift; path = Sources/Internal/Protocols/Configurable.swift; sourceTree = "<group>"; };
+		BE9E09A08541FC0D7BBE91988E2C478A /* LocalConfig.TopPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.TopPopup.swift; path = Sources/Public/Configurables/LocalConfig.TopPopup.swift; sourceTree = "<group>"; };
+		BF4D826C898890FD5C8B0EEBBFBFD2A6 /* Public+PopupSceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+PopupSceneDelegate.swift"; path = "Sources/Public/Delegates/Public+PopupSceneDelegate.swift"; sourceTree = "<group>"; };
 		BF6F234587A9EE04B98D0FCFC5D0D14D /* Pods-RepTally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally.release.xcconfig"; sourceTree = "<group>"; };
+		C52B92D9EF8A7DF838E728CB533B1A0D /* View.Gestures++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.Gestures++.swift"; path = "Sources/Internal/Extensions/View.Gestures++.swift"; sourceTree = "<group>"; };
+		C5487B53359AA4678CC32E7404D7CADC /* LocalConfig.BottomPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.BottomPopup.swift; path = Sources/Public/Configurables/LocalConfig.BottomPopup.swift; sourceTree = "<group>"; };
 		C600B2CE6EB583D16E65F7BC795FDDAE /* Pods-RepTally-RepTallyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally-RepTallyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CAA603EACC41DCCB6EFABD6AE65832EE /* LocalConfig.BottomPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.BottomPopup.swift; path = Sources/Public/Configurables/LocalConfig.BottomPopup.swift; sourceTree = "<group>"; };
-		CEAF75E27B5D4B22E4C5096B74C843EB /* InterpreterError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpreterError.swift; path = tensorflow/lite/swift/Sources/InterpreterError.swift; sourceTree = "<group>"; };
-		CFB4E70C09DF24D432B2178362443A48 /* TensorFlowLiteSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TensorFlowLiteSwift-Info.plist"; sourceTree = "<group>"; };
-		CFFE5D1499ED357B1F82F3A9BF8835B2 /* TensorFlowLiteC-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TensorFlowLiteC-xcframeworks.sh"; sourceTree = "<group>"; };
-		D6E8DF7C3A5BDE64A3EC185BA8C91EFF /* View.Gestures++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View.Gestures++.swift"; path = "Sources/Internal/Extensions/View.Gestures++.swift"; sourceTree = "<group>"; };
+		CC1EB981B723D27B0AC7C1E8419CE1F1 /* PopupTopStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupTopStackView.swift; path = Sources/Internal/Views/PopupTopStackView.swift; sourceTree = "<group>"; };
+		CCB01F58B689102F0802223413303C52 /* MijickPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MijickPopupView.modulemap; sourceTree = "<group>"; };
+		D29B7E749647B2A29436E93956E69EFD /* Animation++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Animation++.swift"; path = "Sources/Internal/Extensions/Animation++.swift"; sourceTree = "<group>"; };
+		D3E6EC5A5582F9BDD295818D5B9481A5 /* PopupBottomStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupBottomStackView.swift; path = Sources/Internal/Views/PopupBottomStackView.swift; sourceTree = "<group>"; };
+		D5DD0F790BEDC362DB258EF9D995B5C3 /* MijickPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.release.xcconfig; sourceTree = "<group>"; };
 		D9C5EA71D851C0EBA7E66A9D3163528A /* MijickPopupView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MijickPopupView; path = MijickPopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCB52786DD46CFE6C675C06F43D36807 /* Public+Popup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+Popup.swift"; path = "Sources/Public/Extensions/Public+Popup.swift"; sourceTree = "<group>"; };
-		DFA7B0A4F4F3EB17BAEE3B6B9730AB84 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = tensorflow/lite/swift/Sources/Delegate.swift; sourceTree = "<group>"; };
-		E04A2A249E4C9E786864E74681240A5A /* MijickPopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-prefix.pch"; sourceTree = "<group>"; };
-		E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLiteSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TensorFlowLiteSwift; path = TensorFlowLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E27109C07AEEF13D59F46497B5211285 /* GlobalConfig.Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalConfig.Common.swift; path = Sources/Public/Configurables/GlobalConfig.Common.swift; sourceTree = "<group>"; };
-		E8E3BD8F7496CC7A44A9705AF439DDFF /* TensorFlowLiteSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TensorFlowLiteSwift-umbrella.h"; sourceTree = "<group>"; };
-		EB0F109AAA794EE73B4204D1536ADDDA /* HeightReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightReader.swift; path = "Sources/Internal/View Modifiers/HeightReader.swift"; sourceTree = "<group>"; };
+		DDF69786AD3384B3F23761968DE3A52E /* LocalConfig.CentrePopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalConfig.CentrePopup.swift; path = Sources/Public/Configurables/LocalConfig.CentrePopup.swift; sourceTree = "<group>"; };
+		E36DE11497784CA8F2C1E45E92DEFC4D /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Internal/Other/AnimationType.swift; sourceTree = "<group>"; };
+		E8334A35B4076075F83E69115B61A3E7 /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = Sources/Internal/Managers/KeyboardManager.swift; sourceTree = "<group>"; };
+		EC59A7ABDC3A648BE65EE093C14C2D46 /* Int++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int++.swift"; path = "Sources/Internal/Extensions/Int++.swift"; sourceTree = "<group>"; };
+		F2560C9994331EEB058A0CA6ED2046D8 /* MijickPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-umbrella.h"; sourceTree = "<group>"; };
 		F528A087B6733F08C7DE5074ED23F743 /* Pods-RepTallyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RepTallyTests-umbrella.h"; sourceTree = "<group>"; };
-		F76FA06BC56CB7B4B429C77229A57B68 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Internal/Other/AnimationType.swift; sourceTree = "<group>"; };
 		F9989D78093C470EC24C43D3DD946502 /* Pods-RepTally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RepTally.debug.xcconfig"; sourceTree = "<group>"; };
-		FBBDD99938F328E0B95C695199964D4F /* PopupTopStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupTopStackView.swift; path = Sources/Internal/Views/PopupTopStackView.swift; sourceTree = "<group>"; };
-		FCE8853F06D1F26E1D2EDACB062511EC /* MijickPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MijickPopupView-umbrella.h"; sourceTree = "<group>"; };
-		FD80A508B7ADD153C10C7BA3C4E919E7 /* Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = Sources/Internal/Other/Shadow.swift; sourceTree = "<group>"; };
-		FE418BA84B49180FCB9225CE9F03EE94 /* MijickPopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MijickPopupView.release.xcconfig; sourceTree = "<group>"; };
+		FC84D8B8A82D35B4E4DBA16F2B511689 /* HeightReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightReader.swift; path = "Sources/Internal/View Modifiers/HeightReader.swift"; sourceTree = "<group>"; };
+		FED663CF87CBC621337CA82E6358817E /* Public+DragDetent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Public+DragDetent.swift"; path = "Sources/Public/Utilities/Public+DragDetent.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09F8F12C12117634C75EC3FA50B9A718 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D38E8EF03D4B80D04B51BC76E16CEE42 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		12758A9F6276744A5890B03EBE56B63D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,19 +166,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1719D8F833D7C1A56973C307116D1B61 /* Frameworks */ = {
+		52E74155A699C6634AB45495F66A7B60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D269A63118A1AEF2A3AC487DF625B665 /* Foundation.framework in Frameworks */,
+				06A0310E21D422E5A5C03F6694CC4319 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		709A93EF0A2AB9E85F065C5335FEAF85 /* Frameworks */ = {
+		6F02C46A97B234708AFA8120D881787C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8A61BF7671494DDD1F611B508A2033 /* Foundation.framework in Frameworks */,
+				190C104E72F1295283D4F70376A992CA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,16 +193,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		236B7CEFDFB2684356E9BDB47475B8DB /* TensorFlowLiteSwift */ = {
-			isa = PBXGroup;
-			children = (
-				F0A89C2E6E0A80CD25A7FA971C2A83F9 /* Core */,
-				57EF238FB3E6D693B68E1FAF8C39A522 /* Support Files */,
-			);
-			name = TensorFlowLiteSwift;
-			path = TensorFlowLiteSwift;
-			sourceTree = "<group>";
-		};
 		2583B83A13A5C5545EE6CC1876D4E67A /* Pods-RepTallyTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,47 +209,15 @@
 			path = "Target Support Files/Pods-RepTallyTests";
 			sourceTree = "<group>";
 		};
-		354F0902B176E616DD6B5BC953848F42 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E7EE70BE78F05CA5B90645A139E584D /* TensorFlowLiteC.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		57EF238FB3E6D693B68E1FAF8C39A522 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7FF2FDD14A646362F2497DF40A781B58 /* TensorFlowLiteSwift.modulemap */,
-				A958D06C0C430CB4BA35564C014A5159 /* TensorFlowLiteSwift-dummy.m */,
-				CFB4E70C09DF24D432B2178362443A48 /* TensorFlowLiteSwift-Info.plist */,
-				0C4F8B1525D842C50C79CC2FA11F50CE /* TensorFlowLiteSwift-prefix.pch */,
-				E8E3BD8F7496CC7A44A9705AF439DDFF /* TensorFlowLiteSwift-umbrella.h */,
-				BDDFEE493D2ED670B7232CC532BBE73E /* TensorFlowLiteSwift.debug.xcconfig */,
-				8859734BB1D9386928015A9C5A717C44 /* TensorFlowLiteSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteSwift";
-			sourceTree = "<group>";
-		};
-		71919DC4CE62660527A57B064D6CB72B /* Products */ = {
+		2EF4CA2FFB1B2DF587345E2F8B1BAA5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				D9C5EA71D851C0EBA7E66A9D3163528A /* MijickPopupView */,
 				806099B73D6228786D40C75E339001A9 /* Pods-RepTally */,
 				5BBF2F9EC375B4674F759AA1AD573FF2 /* Pods-RepTally-RepTallyUITests */,
 				1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */,
-				E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLiteSwift */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8871FBBF7E10BF44917248119B9765EB /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				354F0902B176E616DD6B5BC953848F42 /* Frameworks */,
-			);
-			name = Core;
 			sourceTree = "<group>";
 		};
 		89F8919635AB60487F74FF639156F445 /* Pods-RepTally */ = {
@@ -363,6 +236,21 @@
 			path = "Target Support Files/Pods-RepTally";
 			sourceTree = "<group>";
 		};
+		8CBB3EE9FA4AF7A628F74B8A55126CD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCB01F58B689102F0802223413303C52 /* MijickPopupView.modulemap */,
+				03613CC7E36C609C23D06AFAAD4C79FB /* MijickPopupView-dummy.m */,
+				84406368CC0A79F8D42D37CA6AC2A419 /* MijickPopupView-Info.plist */,
+				13848AE9C6D5DF14D44274B3756A5D9F /* MijickPopupView-prefix.pch */,
+				F2560C9994331EEB058A0CA6ED2046D8 /* MijickPopupView-umbrella.h */,
+				3A40F1B2E5CA39071C24A86D88CB9093 /* MijickPopupView.debug.xcconfig */,
+				D5DD0F790BEDC362DB258EF9D995B5C3 /* MijickPopupView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MijickPopupView";
+			sourceTree = "<group>";
+		};
 		8E146B259F14AB66FDE8031BC67F96B0 /* Pods-RepTally-RepTallyUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,15 +267,57 @@
 			path = "Target Support Files/Pods-RepTally-RepTallyUITests";
 			sourceTree = "<group>";
 		};
-		ABF4EDB2B4C0D1A404405401ADE14FA7 /* Support Files */ = {
+		9BFF51AE73132D376DF2329166A8FC95 /* MijickPopupView */ = {
 			isa = PBXGroup;
 			children = (
-				CFFE5D1499ED357B1F82F3A9BF8835B2 /* TensorFlowLiteC-xcframeworks.sh */,
-				652D90905D993AB8A7254B770E5C605A /* TensorFlowLiteC.debug.xcconfig */,
-				023C4AE253BE4D1920B52C8ABC6B03F7 /* TensorFlowLiteC.release.xcconfig */,
+				D29B7E749647B2A29436E93956E69EFD /* Animation++.swift */,
+				E36DE11497784CA8F2C1E45E92DEFC4D /* AnimationType.swift */,
+				553E3E5F6B5D94C297C6B29DA560C916 /* AnyPopup.swift */,
+				32CE07772391CFA850C3936AEA9F2732 /* Array++.swift */,
+				B9F8376221BCE35F6EBEBBEDEFAC230C /* Configurable.swift */,
+				B84B58CE1E6DC5E75FDBDF7068BB966C /* DispatchSource++.swift */,
+				8409EEAA16DC3B2D28CCFEE045F940F5 /* GlobalConfig.swift */,
+				6D9E9E42CDE75F2BAB9D2C3D1F34E6C9 /* GlobalConfig.Bottom.swift */,
+				2B266E57C3AE642583741B9632AEEB84 /* GlobalConfig.Centre.swift */,
+				66E1163BABEA8D9F66649CD235223A8F /* GlobalConfig.Common.swift */,
+				4AF281BEE5A4B973B84EC4D36E0728CE /* GlobalConfig.Top.swift */,
+				FC84D8B8A82D35B4E4DBA16F2B511689 /* HeightReader.swift */,
+				589306B7BA5CF3C72786D746836BA02A /* ID.swift */,
+				EC59A7ABDC3A648BE65EE093C14C2D46 /* Int++.swift */,
+				E8334A35B4076075F83E69115B61A3E7 /* KeyboardManager.swift */,
+				C5487B53359AA4678CC32E7404D7CADC /* LocalConfig.BottomPopup.swift */,
+				DDF69786AD3384B3F23761968DE3A52E /* LocalConfig.CentrePopup.swift */,
+				BE9E09A08541FC0D7BBE91988E2C478A /* LocalConfig.TopPopup.swift */,
+				30C340A791DCE8A7DC0C31F56F46AA66 /* Popup.swift */,
+				D3E6EC5A5582F9BDD295818D5B9481A5 /* PopupBottomStackView.swift */,
+				A849F2B9635B494E86EE2E1A811C9075 /* PopupCentreStackView.swift */,
+				51F5E475C3AA34B2EE4DBF55A7248CA6 /* PopupManager.swift */,
+				672E16BC6BD9B3D0114818A958F9BF69 /* PopupStack.swift */,
+				CC1EB981B723D27B0AC7C1E8419CE1F1 /* PopupTopStackView.swift */,
+				23BAB375B280E53B55C71EFDBF39D78F /* PopupView.swift */,
+				FED663CF87CBC621337CA82E6358817E /* Public+DragDetent.swift */,
+				8AEC14FEDA14A240D35E811157ECBF4A /* Public+Popup.swift */,
+				977ED403E0C0D37038959993FF29F68F /* Public+PopupManager.swift */,
+				BF4D826C898890FD5C8B0EEBBFBFD2A6 /* Public+PopupSceneDelegate.swift */,
+				564FCD253FBA6864AA4BEA5B34EC6C53 /* Public+View.swift */,
+				27C6338BDA9435A894EA693DB4792D46 /* RoundedCorner.swift */,
+				A9B8B5B7983D952F39E2675BEAD313DE /* ScreenManager.swift */,
+				12CA0FB77CD4AB62725864F328F64C63 /* Shadow.swift */,
+				234E1290378BA9931F29489B0BADB307 /* View++.swift */,
+				C52B92D9EF8A7DF838E728CB533B1A0D /* View.Gestures++.swift */,
+				87929AEEE355863329A8A3C2A95255E3 /* View.ScreenManager++.swift */,
+				8CBB3EE9FA4AF7A628F74B8A55126CD9 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TensorFlowLiteC";
+			name = MijickPopupView;
+			path = MijickPopupView;
+			sourceTree = "<group>";
+		};
+		AF1DB60C8C0FB952BF80F6B831B117D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BFF51AE73132D376DF2329166A8FC95 /* MijickPopupView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -395,8 +325,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F98BDCAE6BED4B1DFDD28A9A7E7C288D /* Pods */,
-				71919DC4CE62660527A57B064D6CB72B /* Products */,
+				AF1DB60C8C0FB952BF80F6B831B117D4 /* Pods */,
+				2EF4CA2FFB1B2DF587345E2F8B1BAA5B /* Products */,
 				F901AEA9B7D74AC88E01DF83A8C034EB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -409,51 +339,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D261A3C091569C93E5DE833177C11D4E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9F802C4266AD205B379B7366F3E522CF /* MijickPopupView.modulemap */,
-				6C45C05FE8A1D1C2248BBDCC61B03788 /* MijickPopupView-dummy.m */,
-				0DD92A4F9B2617EEA96A25D6D48F8D4E /* MijickPopupView-Info.plist */,
-				E04A2A249E4C9E786864E74681240A5A /* MijickPopupView-prefix.pch */,
-				FCE8853F06D1F26E1D2EDACB062511EC /* MijickPopupView-umbrella.h */,
-				2E1539018EB10FE30A73C8B21AA451C0 /* MijickPopupView.debug.xcconfig */,
-				FE418BA84B49180FCB9225CE9F03EE94 /* MijickPopupView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MijickPopupView";
-			sourceTree = "<group>";
-		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		F0A89C2E6E0A80CD25A7FA971C2A83F9 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				DFA7B0A4F4F3EB17BAEE3B6B9730AB84 /* Delegate.swift */,
-				AD254207CB25ED66A2B9B73125D3FC56 /* Interpreter.swift */,
-				CEAF75E27B5D4B22E4C5096B74C843EB /* InterpreterError.swift */,
-				B19D9827FD62EC326B5A534D7DC44AAA /* Model.swift */,
-				593BE2A0933B6D53BF03AECD8EA2B916 /* QuantizationParameters.swift */,
-				0134026538D9B11CFDF31A3821F16ECF /* Tensor.swift */,
-				A2E5C4D8090AA29898825C9290D2ED60 /* TensorFlowLite.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		F5155B5F5321F2EFF882A2A6175F6D4D /* TensorFlowLiteC */ = {
-			isa = PBXGroup;
-			children = (
-				8871FBBF7E10BF44917248119B9765EB /* Core */,
-				ABF4EDB2B4C0D1A404405401ADE14FA7 /* Support Files */,
-			);
-			name = TensorFlowLiteC;
-			path = TensorFlowLiteC;
 			sourceTree = "<group>";
 		};
 		F901AEA9B7D74AC88E01DF83A8C034EB /* Targets Support Files */ = {
@@ -466,77 +357,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F98BDCAE6BED4B1DFDD28A9A7E7C288D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FFB004B931C215D5B9FDD35C66EBD4FF /* MijickPopupView */,
-				F5155B5F5321F2EFF882A2A6175F6D4D /* TensorFlowLiteC */,
-				236B7CEFDFB2684356E9BDB47475B8DB /* TensorFlowLiteSwift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FFB004B931C215D5B9FDD35C66EBD4FF /* MijickPopupView */ = {
-			isa = PBXGroup;
-			children = (
-				A89B9688CE08145FF4D07A782D4BD3AB /* Animation++.swift */,
-				F76FA06BC56CB7B4B429C77229A57B68 /* AnimationType.swift */,
-				7095F51AA1B29EBC8C0601DD6439F840 /* AnyPopup.swift */,
-				1EDABFBEE902A9F2B40BE3B520840545 /* Array++.swift */,
-				18427B4D1BB297DC1BE451E3C7052A36 /* Configurable.swift */,
-				AC708459E7B566465B864A7E289EDCCA /* DispatchSource++.swift */,
-				6EE66D818CDC0C29F345887EED1BC06C /* GlobalConfig.swift */,
-				39CD7041D807FDC2BE12CC764E0F8974 /* GlobalConfig.Bottom.swift */,
-				3662813444FA8E9A6137E92875DD40CC /* GlobalConfig.Centre.swift */,
-				E27109C07AEEF13D59F46497B5211285 /* GlobalConfig.Common.swift */,
-				49EE283BFA3B35DDFF3D912265D0D355 /* GlobalConfig.Top.swift */,
-				EB0F109AAA794EE73B4204D1536ADDDA /* HeightReader.swift */,
-				785FA3146257C60F89914D3CBF54D926 /* ID.swift */,
-				0423B68FA44070CBF9B2B290FA6124FF /* Int++.swift */,
-				8DDAAD058DF00D13335D1C8865192542 /* KeyboardManager.swift */,
-				CAA603EACC41DCCB6EFABD6AE65832EE /* LocalConfig.BottomPopup.swift */,
-				17FD80C4F3F6954FF7DC777888635E08 /* LocalConfig.CentrePopup.swift */,
-				A16C989C92320E9CE8E0F55BC8D7EA67 /* LocalConfig.TopPopup.swift */,
-				4050220F447F16018478CF7994F8AE6D /* Popup.swift */,
-				67E2149F5FC835C3EEFB689C0CE8A670 /* PopupBottomStackView.swift */,
-				A2CF4608F2AB7671D1881092DF8C83C3 /* PopupCentreStackView.swift */,
-				0B0DB9700621E457B7B6675FF2370C3E /* PopupManager.swift */,
-				9B9EF15735CA7E5B31E22D77774C619A /* PopupStack.swift */,
-				FBBDD99938F328E0B95C695199964D4F /* PopupTopStackView.swift */,
-				3287A48A21FF3A8EACDBB03C29C23936 /* PopupView.swift */,
-				612751AC0D9886FCDEF45295176CA291 /* Public+DragDetent.swift */,
-				DCB52786DD46CFE6C675C06F43D36807 /* Public+Popup.swift */,
-				8728223909D9BE730CC4FFEAEFFFBE6F /* Public+PopupManager.swift */,
-				1443FEB565B73F000198E2AF4D7DC55B /* Public+PopupSceneDelegate.swift */,
-				9F12F4137123E655BB79E113154717F0 /* Public+View.swift */,
-				4177128FE9B1639B9A7F52CBD17F7FC7 /* RoundedCorner.swift */,
-				591BD9E913D69E20BC5CC142C200B527 /* ScreenManager.swift */,
-				FD80A508B7ADD153C10C7BA3C4E919E7 /* Shadow.swift */,
-				BB58DDDF9D686613F2131F44BD78C2D9 /* View++.swift */,
-				D6E8DF7C3A5BDE64A3EC185BA8C91EFF /* View.Gestures++.swift */,
-				BA6EEEC3863976E05985BB90657B4475 /* View.ScreenManager++.swift */,
-				D261A3C091569C93E5DE833177C11D4E /* Support Files */,
-			);
-			name = MijickPopupView;
-			path = MijickPopupView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		06819E9499B792BB6FB63ADD4064155E /* Headers */ = {
+		256B41BAF71ACAA1B93BBE761F30D733 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8574E44ADE8EE6BE37C06553AFFE8C /* TensorFlowLiteSwift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2139E61D16688F0ED18C78CCC962D901 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CE87EB696018642DD67C929A5B6B134 /* Pods-RepTally-RepTallyUITests-umbrella.h in Headers */,
+				5AC94F1A5267865D03BBEDCE412E861B /* Pods-RepTally-RepTallyUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,19 +376,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73F65848CCCD5386E4F2413877948111 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				237872C1C4ECD4B6BF3B5FF6E58997C6 /* Pods-RepTally-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		92EA4C27944BF005D644EAD7DBDD1335 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5DFB2FA08A1EEE99486D0C31123BDD67 /* Pods-RepTallyTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AD966630042399290D01233B9C1C29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8073ECEFCB919DF24D04924A9B13BAFF /* Pods-RepTally-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,47 +407,26 @@
 			buildRules = (
 			);
 			dependencies = (
-				ACB19622DBD2F2B699F15359D1280473 /* PBXTargetDependency */,
+				20789D43D655427F55563BE47B6B49C6 /* PBXTargetDependency */,
 			);
 			name = "Pods-RepTallyTests";
 			productName = Pods_RepTallyTests;
 			productReference = 1E9B73A88FAE0FB92CFCFC29ED77187A /* Pods-RepTallyTests */;
 			productType = "com.apple.product-type.framework";
 		};
-		10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 707ADF4962C8AEE7DCDEDB91BE139786 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */;
-			buildPhases = (
-				06819E9499B792BB6FB63ADD4064155E /* Headers */,
-				3DA6F28999BB09FE99FBD42EBBC42809 /* Sources */,
-				1719D8F833D7C1A56973C307116D1B61 /* Frameworks */,
-				04FF6B695CC255F2241B3139572AFDB6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC60A39417363EE8B6BFDCF6B76E5E02 /* PBXTargetDependency */,
-			);
-			name = TensorFlowLiteSwift;
-			productName = TensorFlowLite;
-			productReference = E0B71FE13AA6B05010059EB4B8D87919 /* TensorFlowLiteSwift */;
-			productType = "com.apple.product-type.framework";
-		};
 		AF54A9CBA216C3BC19391BEDA9843B3F /* Pods-RepTally */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD933B5C65124C2D772BEC904DD51EDB /* Build configuration list for PBXNativeTarget "Pods-RepTally" */;
+			buildConfigurationList = CA4B56BDEB494AC38D900F778769FC1F /* Build configuration list for PBXNativeTarget "Pods-RepTally" */;
 			buildPhases = (
-				73F65848CCCD5386E4F2413877948111 /* Headers */,
-				B5C5AC75B0448339BD19D70EA78ADB40 /* Sources */,
-				09F8F12C12117634C75EC3FA50B9A718 /* Frameworks */,
-				7101723016BF447DD6498B7930B7CA3F /* Resources */,
+				F9AD966630042399290D01233B9C1C29 /* Headers */,
+				B1D51FB84AD728F795E483FE583795F7 /* Sources */,
+				52E74155A699C6634AB45495F66A7B60 /* Frameworks */,
+				433EA9FF1D3D7C8B2578E11CAF2108FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1E3E4A919565765980C53E0B9B4138AE /* PBXTargetDependency */,
-				909A8E28DF4B87B29E48C54A529B0DAC /* PBXTargetDependency */,
-				9738C50EEE11D91375025841A2E64D8E /* PBXTargetDependency */,
+				4A8708A9C5CEE5D26C75A562056550A7 /* PBXTargetDependency */,
 			);
 			name = "Pods-RepTally";
 			productName = Pods_RepTally;
@@ -628,19 +435,17 @@
 		};
 		D1CF13B23541FF2AC7A616D1FD8F32BD /* Pods-RepTally-RepTallyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DA9EF3FCEBD8A8B7F631C94D665849A /* Build configuration list for PBXNativeTarget "Pods-RepTally-RepTallyUITests" */;
+			buildConfigurationList = D190F8A64B4F5D0C6316CD34C787B74A /* Build configuration list for PBXNativeTarget "Pods-RepTally-RepTallyUITests" */;
 			buildPhases = (
-				2139E61D16688F0ED18C78CCC962D901 /* Headers */,
-				89D064CB476FD998F169BD1F876F51A1 /* Sources */,
-				709A93EF0A2AB9E85F065C5335FEAF85 /* Frameworks */,
-				41CD4A9BE602EFA93E2E16ED3CD22FA0 /* Resources */,
+				256B41BAF71ACAA1B93BBE761F30D733 /* Headers */,
+				18552A5B31C979FCA9A86130F65A9FC4 /* Sources */,
+				6F02C46A97B234708AFA8120D881787C /* Frameworks */,
+				CC1E4713A6984F16BFC37E595A0397DD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				91DF41EE371D65C19051AB2E7B3D3678 /* PBXTargetDependency */,
-				FFFCC0A4681850DEA550D22C7E8FCCF3 /* PBXTargetDependency */,
-				0C1693D57B977D36FBADABB4D7318EC1 /* PBXTargetDependency */,
+				898EB7A065D327CBE785214C9C35FFB4 /* PBXTargetDependency */,
 			);
 			name = "Pods-RepTally-RepTallyUITests";
 			productName = Pods_RepTally_RepTallyUITests;
@@ -685,7 +490,7 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 71919DC4CE62660527A57B064D6CB72B /* Products */;
+			productRefGroup = 2EF4CA2FFB1B2DF587345E2F8B1BAA5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -693,20 +498,11 @@
 				AF54A9CBA216C3BC19391BEDA9843B3F /* Pods-RepTally */,
 				D1CF13B23541FF2AC7A616D1FD8F32BD /* Pods-RepTally-RepTallyUITests */,
 				091C4610415F1C722B997154BC1BC7E7 /* Pods-RepTallyTests */,
-				AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */,
-				10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		04FF6B695CC255F2241B3139572AFDB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		39911004F1CCC417510404F4F7BE33F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -714,7 +510,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41CD4A9BE602EFA93E2E16ED3CD22FA0 /* Resources */ = {
+		433EA9FF1D3D7C8B2578E11CAF2108FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -728,7 +524,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7101723016BF447DD6498B7930B7CA3F /* Resources */ = {
+		CC1E4713A6984F16BFC37E595A0397DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -736,26 +532,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E428E9B2EB9A04CAA5BA04B652A1082B /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0346BD87196DE3DA11A3404F3D08F361 /* Sources */ = {
@@ -810,151 +586,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DA6F28999BB09FE99FBD42EBBC42809 /* Sources */ = {
+		18552A5B31C979FCA9A86130F65A9FC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F275216661DC8F99CE31BF33354F2748 /* Delegate.swift in Sources */,
-				3DDCD29E7BC0EB9AF74CD6BA8CEFBC39 /* Interpreter.swift in Sources */,
-				BC4AFBE7EC276BF64573F80890549845 /* InterpreterError.swift in Sources */,
-				5130028101105D26EBF694E34367A400 /* Model.swift in Sources */,
-				A38EC85A957FCEB313F7EC741D3A567E /* QuantizationParameters.swift in Sources */,
-				F9B905ED717C160D35D8D7B4081BCAB5 /* Tensor.swift in Sources */,
-				9E3163F72FCC2B8D631D695F3E6B0563 /* TensorFlowLite.swift in Sources */,
-				0348F66638FDDBA0E9E58604CF6DC150 /* TensorFlowLiteSwift-dummy.m in Sources */,
+				B0D77BE53CA6B18DDEBA5925DD0793EB /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89D064CB476FD998F169BD1F876F51A1 /* Sources */ = {
+		B1D51FB84AD728F795E483FE583795F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A89E69F3DCEAB657E5749267F33E8B13 /* Pods-RepTally-RepTallyUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5C5AC75B0448339BD19D70EA78ADB40 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DDDE02FBA414BFB6D896C9A860984085 /* Pods-RepTally-dummy.m in Sources */,
+				727021771E6C1E3E19298092E839389C /* Pods-RepTally-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C1693D57B977D36FBADABB4D7318EC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteSwift;
-			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
-			targetProxy = 2FC906213E8A25F2F796488F5035F109 /* PBXContainerItemProxy */;
-		};
-		1E3E4A919565765980C53E0B9B4138AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MijickPopupView;
-			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
-			targetProxy = 7EFC12A2BFCF41D27BD338D614B79B27 /* PBXContainerItemProxy */;
-		};
-		909A8E28DF4B87B29E48C54A529B0DAC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteC;
-			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = A7F8CDC2ABE038D5E32131FA9ECB9177 /* PBXContainerItemProxy */;
-		};
-		91DF41EE371D65C19051AB2E7B3D3678 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MijickPopupView;
-			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
-			targetProxy = 48FEF7570082E573AC1CD5E7AA459E9E /* PBXContainerItemProxy */;
-		};
-		9738C50EEE11D91375025841A2E64D8E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TensorFlowLiteSwift;
-			target = 10418167F619D6DA72BADAD10F9EC02B /* TensorFlowLiteSwift */;
-			targetProxy = E9BC95610EBAD500F717A094CB37E27C /* PBXContainerItemProxy */;
-		};
-		ACB19622DBD2F2B699F15359D1280473 /* PBXTargetDependency */ = {
+		20789D43D655427F55563BE47B6B49C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RepTally";
 			target = AF54A9CBA216C3BC19391BEDA9843B3F /* Pods-RepTally */;
-			targetProxy = 263DE620DE8D12BAD916F21A72883B88 /* PBXContainerItemProxy */;
+			targetProxy = 768E15FECB6AA242D6E7311F2027F30F /* PBXContainerItemProxy */;
 		};
-		EC60A39417363EE8B6BFDCF6B76E5E02 /* PBXTargetDependency */ = {
+		4A8708A9C5CEE5D26C75A562056550A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TensorFlowLiteC;
-			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = 6FEA3A3F76532A6E611ACB583BAA4F1E /* PBXContainerItemProxy */;
+			name = MijickPopupView;
+			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
+			targetProxy = B940028A993B76C38EFD87EC7592786B /* PBXContainerItemProxy */;
 		};
-		FFFCC0A4681850DEA550D22C7E8FCCF3 /* PBXTargetDependency */ = {
+		898EB7A065D327CBE785214C9C35FFB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TensorFlowLiteC;
-			target = AC559E53E13B6FBEF4F5CC310A73AFE6 /* TensorFlowLiteC */;
-			targetProxy = FBA555BA65B17C01229A5646AE7E43ED /* PBXContainerItemProxy */;
+			name = MijickPopupView;
+			target = F43B0F4F894278E76BC922B52FAFE130 /* MijickPopupView */;
+			targetProxy = 6B790D94DD72C9B2473F81261E245E49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02C2058118E51124F725675C580AA98D /* Release */ = {
+		35A56EAFE14DD7D59466F847409E334E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 023C4AE253BE4D1920B52C8ABC6B03F7 /* TensorFlowLiteC.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1AB226C38A22A31DBD2EEB4D4497F39C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BFC54A280B12CA892A302ECD23D108D /* Pods-RepTally-RepTallyUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2A9275E3F4A413BDD5E5FA16B8CCC167 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9989D78093C470EC24C43D3DD946502 /* Pods-RepTally.debug.xcconfig */;
+			baseConfigurationReference = BF6F234587A9EE04B98D0FCFC5D0D14D /* Pods-RepTally.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -985,46 +659,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		472F19522DB5F8BDD857F09408A1CD6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8859734BB1D9386928015A9C5A717C44 /* TensorFlowLiteSwift.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
-				PRODUCT_MODULE_NAME = TensorFlowLite;
-				PRODUCT_NAME = TensorFlowLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1070,46 +704,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		5D564ADC34ABBF0B38E130DA9FA24B2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C600B2CE6EB583D16E65F7BC795FDDAE /* Pods-RepTally-RepTallyUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8C9963745FD01B6B3EF95F9CE58D9F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1177,10 +771,11 @@
 			};
 			name = Debug;
 		};
-		8F8BD9AD33DC27D8BB2EA2C4EEF19EE0 /* Debug */ = {
+		963FD5371904CB3C384A8F10CA1ECFF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDDFEE493D2ED670B7232CC532BBE73E /* TensorFlowLiteSwift.debug.xcconfig */;
+			baseConfigurationReference = C600B2CE6EB583D16E65F7BC795FDDAE /* Pods-RepTally-RepTallyUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1192,25 +787,63 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap";
-				PRODUCT_MODULE_NAME = TensorFlowLite;
-				PRODUCT_NAME = TensorFlowLite;
+				MODULEMAP_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FE3E2E7170A177EAD2536807BC4B2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFC54A280B12CA892A302ECD23D108D /* Pods-RepTally-RepTallyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RepTally-RepTallyUITests/Pods-RepTally-RepTallyUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1256,6 +889,45 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		ACADC388B325FA316AF1E88CFF19056A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9989D78093C470EC24C43D3DD946502 /* Pods-RepTally.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-RepTally/Pods-RepTally-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RepTally/Pods-RepTally.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B9F3557045385CA606F5AF548D58B58A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1321,7 +993,7 @@
 		};
 		CC9A3FE868B960308B05409EEBDE715F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE418BA84B49180FCB9225CE9F03EE94 /* MijickPopupView.release.xcconfig */;
+			baseConfigurationReference = D5DD0F790BEDC362DB258EF9D995B5C3 /* MijickPopupView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1353,46 +1025,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D4EA0BDBFFABF05A318295FB499FBBAF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF6F234587A9EE04B98D0FCFC5D0D14D /* Pods-RepTally.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-RepTally/Pods-RepTally-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RepTally/Pods-RepTally.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1402,7 +1034,7 @@
 		};
 		DADE6C43ECC23239AE93C3E4F60FABEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E1539018EB10FE30A73C8B21AA451C0 /* MijickPopupView.debug.xcconfig */;
+			baseConfigurationReference = 3A40F1B2E5CA39071C24A86D88CB9093 /* MijickPopupView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1437,23 +1069,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FB8162D9D845539F90D662331AE9284C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 652D90905D993AB8A7254B770E5C605A /* TensorFlowLiteC.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1487,38 +1102,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		636D81D05741D892734E9C70745D0DB7 /* Build configuration list for PBXAggregateTarget "TensorFlowLiteC" */ = {
+		CA4B56BDEB494AC38D900F778769FC1F /* Build configuration list for PBXNativeTarget "Pods-RepTally" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB8162D9D845539F90D662331AE9284C /* Debug */,
-				02C2058118E51124F725675C580AA98D /* Release */,
+				ACADC388B325FA316AF1E88CFF19056A /* Debug */,
+				35A56EAFE14DD7D59466F847409E334E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		707ADF4962C8AEE7DCDEDB91BE139786 /* Build configuration list for PBXNativeTarget "TensorFlowLiteSwift" */ = {
+		D190F8A64B4F5D0C6316CD34C787B74A /* Build configuration list for PBXNativeTarget "Pods-RepTally-RepTallyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F8BD9AD33DC27D8BB2EA2C4EEF19EE0 /* Debug */,
-				472F19522DB5F8BDD857F09408A1CD6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9DA9EF3FCEBD8A8B7F631C94D665849A /* Build configuration list for PBXNativeTarget "Pods-RepTally-RepTallyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AB226C38A22A31DBD2EEB4D4497F39C /* Debug */,
-				5D564ADC34ABBF0B38E130DA9FA24B2A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BD933B5C65124C2D772BEC904DD51EDB /* Build configuration list for PBXNativeTarget "Pods-RepTally" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A9275E3F4A413BDD5E5FA16B8CCC167 /* Debug */,
-				D4EA0BDBFFABF05A318295FB499FBBAF /* Release */,
+				9FE3E2E7170A177EAD2536807BC4B2CF /* Debug */,
+				963FD5371904CB3C384A8F10CA1ECFF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
