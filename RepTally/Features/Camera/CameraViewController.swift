@@ -9,8 +9,10 @@
  It essentially starts an AVCaptureSession and configures an input, an output and a PreviewLayer for the session.
  This provides a live feed of the front camera, which can be translated into a SwiftUI View.
  
- It also holds an instance of an visionOverlayController and applies its methods here. (this module is responsible
- for the Vision pose estimation model logic.)
+ This is dependant on containing a Pose Estimator, used to infer poses from the output. It also instantiates an
+ Exercise Detector that tracks exercises once a pose has been inferred.
+ 
+ This implementation could adhere more closely to the SOLID principles, however this wasn't a priority during development.
 */
 import SwiftUI
 import AVFoundation
@@ -39,7 +41,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
     private func setupCameraInputOutput() {
         self.captureSession.sessionPreset = .high
         
-        DispatchQueue.global(qos: .userInitiated).async { [weak self] in //runs on seperate thread with high priority and ensures safety when using properties from the CameraViewController class
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
             
             //code adapted from Apple (n.d) (Setting Up a Capture Session)

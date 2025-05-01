@@ -82,18 +82,6 @@ struct CreateSessionView:View{
                     if(!incorrectDataEntry){
                         openFrameCheck = true
                     }
-                    //outputs sessions and sets to console
-                    //                if let sessions = user.sessions as? Set<Session> {
-                    //                    for session in sessions {
-                    //                        print("Session id: \(session.sessionID)")
-                    //                        // session.sets is also an NSSet or Swift Set<SetData>
-                    //                        if let sets = session.sets as? Set<SetData> {
-                    //                            for setData in sets {
-                    //                                print("Workout: \(setData.workout ?? "N/A"), Reps: \(setData.reps)")
-                    //                            }
-                    //                        }
-                    //                    }
-                    //                    }
                 })
                 .padding(.bottom, 20)
                 

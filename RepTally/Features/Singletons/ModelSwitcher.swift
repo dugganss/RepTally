@@ -6,6 +6,10 @@
 //
 import Combine
 
+/*
+ Globally maintains the current model selected, making them easily hot swappable
+ */
+
 class ModelSwitcher : ObservableObject {
     static let shared = ModelSwitcher()
     

@@ -91,15 +91,3 @@ struct NewSessionCard: View{
         .background(.backgroundColour)
     }
 }
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        var set = IntermediateSet(id: 1)
-        NewSessionCard(set: Binding(get: {return set}, set: { Value in
-            set = Value
-        })) {
-            var hi:Int = 0
-        }
-    }
-}

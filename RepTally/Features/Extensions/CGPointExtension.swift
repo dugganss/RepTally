@@ -14,4 +14,5 @@ extension CGPoint {
         lhs.x += rhs.dx
         lhs.y += rhs.dy
     }
+    //end of adapted code
 }

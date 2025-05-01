@@ -19,6 +19,7 @@ class ExerciseDetector{
     var endRight: Bool = false
     
     func detectExercise(){
+        //Exercise tracking is currently disabled for Vision due to its irrelevance in the study.
         if poseEstimator.name != "Vision" && !SetTracker.shared.sets.isEmpty{
             switch (SetTracker.shared.currentSet()!.workout!){
             case Exercise.situp.description: detectSitup()
@@ -38,7 +39,7 @@ class ExerciseDetector{
         let vectorBA = CGVector(dx: pointA.x - pointB.x, dy: pointA.y - pointB.y)
         let vectorBC = CGVector(dx: pointC.x - pointB.x, dy: pointC.y - pointB.y)
         
-        //formula, where x is the angle, a . b is the dot product and |y| refers to magnitude:
+        //formula, where x is the angle, a . b is the dot product and |n| refers to magnitude:
         // cos x = ( a . b ) / ( |a| |b| )
         
         let dotProd = vectorBA.dx * vectorBC.dx + vectorBA.dy * vectorBC.dy
@@ -58,6 +59,7 @@ class ExerciseDetector{
         //end of adapted formula
     }
     
+    //Finds sit ups by applying the state machine to the angle at the hip and ensuring angle at the knee is within a reasonable range (not straight)
     func detectSitup() {
         var isLeft: Bool
         var isRight: Bool
@@ -104,6 +106,7 @@ class ExerciseDetector{
             }
         }
         
+        // Counts either side and resets everything.
         if endLeft || endRight {
             SetTracker.shared.incrementRep()
             startLeft = false
@@ -115,6 +118,7 @@ class ExerciseDetector{
         }
     }
     
+    // Finds bicep curls by applying the state machine to the angle at the elbow
     func detectBicepCurl(){
         var isLeft: Bool
         var isRight: Bool
@@ -153,6 +157,7 @@ class ExerciseDetector{
             stateMachine(startAngle: 135, finishAngle: 50, measuredAngle: angleRight, side: "right")
         }
         
+        // Counts rep for one arm at a time or both arms at a time. Resets mid and end for both arms regardless to prevent double counting.
         if endLeft || endRight {
             SetTracker.shared.incrementRep()
             if endLeft {
@@ -168,12 +173,12 @@ class ExerciseDetector{
         }
     }
     
+    // Finds squats by applying the state machine to the angle at the knee.
     func detectSquat(){
         var isLeft: Bool
         var isRight: Bool
         var leftHip: CGPoint = CGPoint(x: 0, y: 0)
         var leftKnee: CGPoint = CGPoint(x: 0, y: 0)
-        var rightShoulder: CGPoint = CGPoint(x: 0, y: 0)
         var rightHip: CGPoint = CGPoint(x: 0, y: 0)
         var rightKnee: CGPoint = CGPoint(x: 0, y: 0)
         var leftAnkle: CGPoint = CGPoint(x: 0, y: 0)
@@ -209,6 +214,7 @@ class ExerciseDetector{
             stateMachine(startAngle: 160.0, finishAngle: 95.0, measuredAngle: angleRight, side: "right")
         }
         
+        //ensures that if both legs are visible, both legs must have completed the rep for it to count
         if endRight || endLeft {
             if isRight && isLeft && endLeft && endRight {
                 SetTracker.shared.incrementRep()
@@ -228,6 +234,7 @@ class ExerciseDetector{
         }
     }
     
+    // General state machine for tracking an exercise rep, both for left and right.
     func stateMachine(startAngle: CGFloat, finishAngle: CGFloat, measuredAngle: CGFloat, side: String){
         switch (side){
         case "right":

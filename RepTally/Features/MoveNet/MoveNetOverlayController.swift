@@ -10,10 +10,10 @@ import CoreML
 import CoreVideo
 import Accelerate
 /*
- The TensorFlow2 version of MoveNet Thunder was converted to a CoreML readable .mlpackage so that the inference could be made directly using the CoreMl API
+ The TensorFlow2 version of MoveNet Lightning was converted to a CoreML readable .mlpackage so that the inference could be made directly using the Core ML API
  
- Due to MoveNet taking an input of type Int32, the conversion was unable to attach an image input type (CoreML expects the input to be Float32) and unfortunately
- converting the model to take a Float32 input seemed to cause the model to become confused. Thus, the model had to resort to taking an MLMultiArray as an input
+ Due to the TensorFlow2 version taking an input of type Int32, the conversion was unable to attach an image input type (coremltools expects the input to be Float32) and unfortunately
+ converting the model to take a Float32 input seemed to corrupt the model. Thus, the model had to resort to taking an MLMultiArray as an input
  which meant that the CVPixelBuffer created from the camera had to be converted to an MLMultiArray. This process is described below.
  */
 
@@ -57,36 +57,51 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         "left_ankle",
         "right_ankle"
     ]
+    var refreshCounter = 0
     
     var cameraManagerModel: CameraManagerModel?
     let overlayView = UIView()
     let context = CIContext()
-    var moveNet: movenetLightningFull? { //computed property to load in the model
+    var moveNet: movenetLightningFull?
+
+    override func viewDidLoad() {
         do{
             let config = MLModelConfiguration()
-            return try movenetLightningFull(configuration: config)
+            config.computeUnits = .all
+            moveNet = try movenetLightningFull(configuration: config)
         }
         catch{
             print("error loading movenet \(error)")
-            return nil
+            moveNet = nil
         }
+        
     }
     
     //Handles prediction and output processing
     func detectBody(in image: CVPixelBuffer) {
+        refreshCounter += 1
+        if refreshCounter != 3 {
+            return
+        }
+        else {
+            refreshCounter = 0
+        }
+        let preprocessingStartTime = Date()
         guard let inputArray = convertResizePixelBufferAsMultiArray(image, width: 192, height: 192)else {
             print("failed to convert pixel buffer to multiarray")
             return
         }
-        
+        print("MoveNet Preprocessing time: \( Date().timeIntervalSince(preprocessingStartTime))")
         do {
             if !pointNameToLocationMapping.isEmpty{
                 pointNameToLocationMapping.removeAll()
             }
+            let inferenceStartTime = Date()
             let prediction = try moveNet?.prediction(input: inputArray)
-            
+            print("MoveNet inference time: \( Date().timeIntervalSince(inferenceStartTime))")
             let output = prediction?.IdentityShapedArray
             
+            let postprocessingStartTime = Date()
             //look at each keypoint location and confidence
             for i in 0..<outputOrder.count {
                 let yResult: Float = output![0,0,i,0].scalar!
@@ -101,7 +116,7 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
                     pointNameToLocationMapping[outputOrder[i]] = pointOnScreen
                 }
             }
-            
+            print("MoveNet inference time: \( Date().timeIntervalSince(postprocessingStartTime))")
             DispatchQueue.main.async{
                 self.cameraManagerModel?.isBodyDetected = !self.pointNameToLocationMapping.isEmpty
             }
@@ -117,47 +132,7 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         }
     }
     
-    internal func drawPoints(){
-        DispatchQueue.main.async{
-            //remove previously drawn points and lines
-            self.view.subviews.forEach{ $0.removeFromSuperview()}
-            if !self.pointNameToLocationMapping.isEmpty{
-                //draw a square at every point within view
-                for (_, point) in self.pointNameToLocationMapping{
-                    let pointView = UIView()
-                    pointView.frame = CGRect(x: point.x
-                                             - 2.5, y: point.y - 2.5, width: 5, height: 5)
-                    pointView.backgroundColor = .red
-                    self.view.addSubview(pointView)
-                }
-            }
-        }
-        
-    }
     
-    internal func drawLines(){
-        DispatchQueue.main.async{
-            //iterates through the skeletonMapping array which defines which points (by name) should be connected to each other
-            for connection in self.skeletonMapping{
-                //checks both the points exist
-                if self.pointNameToLocationMapping.keys.contains(connection.0) && self.pointNameToLocationMapping.keys.contains(connection.1){
-                    //draws BezierPath between the two point's locations using LineDrawingView
-                    let lineView = LineDrawingView(frame: self.view.bounds)
-                    lineView.backgroundColor = .clear
-                    guard let startPoint = self.pointNameToLocationMapping[connection.0] else {
-                        return
-                    }
-                    guard let endPoint = self.pointNameToLocationMapping[connection.1] else {
-                        return
-                    }
-                    lineView.startPoint = startPoint
-                    lineView.endPoint = endPoint
-                    self.view.addSubview(lineView)
-                }
-            }
-        }
-        
-    }
     
     /*
      Converts and resizes the CVPixelBuffer from the camera output to a MLMultiArray of type Int32 to be readable by the model.
@@ -261,3 +236,5 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
     
     
 }
+
+

@@ -60,21 +60,34 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
     ]
     
     var name = "PoseNet"
+    var refreshCounter = 0
     
-    var poseNet: PoseNetMobileNet075S16FP16? {
+    var poseNet: PoseNetMobileNet075S16FP16? 
+    
+    override func viewDidLoad() {
         do{
             let config = MLModelConfiguration()
-            return try PoseNetMobileNet075S16FP16(configuration: config)
+            config.computeUnits = .all
+            poseNet = try PoseNetMobileNet075S16FP16(configuration: config)
         }
         catch{
             print("error loading poseNet \(error)")
-            return nil
+            poseNet = nil
         }
     }
     
     func detectBody(in image: CVPixelBuffer) {
+        refreshCounter += 1
+        if refreshCounter != 3 {
+            return
+        }
+        else {
+            refreshCounter = 0
+        }
         //code adapted from Apple (n.d.) https://developer.apple.com/documentation/coreml/detecting-human-body-poses-in-an-image
         //Apple provided a sample project implementing PoseNet, the model has been configured to accept an image input (automatic preprocessing)
+        let preprocessingStartTime = Date()
+        
         guard CVPixelBufferLockBaseAddress(image, .readOnly) == kCVReturnSuccess else {
             return
         }
@@ -84,17 +97,22 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
         VTCreateCGImageFromCVPixelBuffer(image, options: nil, imageOut: &cgImage)
         CVPixelBufferUnlockBaseAddress(image, .readOnly)
         
+        print("PoseNet preprocessing time: \( Date().timeIntervalSince(preprocessingStartTime))")
         do{
             let input = try PoseNetMobileNet075S16FP16Input(imageWith: cgImage!)
+            let inferenceStartTime = Date()
             guard let prediction = try? self.poseNet?.prediction(input: input) else{
                 print("poseNet prediction failed")
                 return
             }
             //end of adapted code
-            
+            print("PoseNet inference time: \(Date().timeIntervalSince(inferenceStartTime))")
+    
+            let postprocessingStartTime = Date()
             applyKeypointDefinitionPostProcessing(to: prediction)
             
             applyAccuracyPostProcessing()
+            print("PoseNet postprocessing time: \(Date().timeIntervalSince(postprocessingStartTime))")
             
             DispatchQueue.main.async{
                 self.cameraManagerModel?.isBodyDetected = !self.pointNameToLocationMapping.isEmpty
@@ -179,23 +197,19 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
         
         //swap left and right shoulders if PoseNet hallucinates that they are on opposite sides
         if let left = pointNameToLocationMapping["left_shoulder"], let right = pointNameToLocationMapping["right_shoulder"], left.x > right.x {
-            if heatmapScores["left_shoulder"]! < heatmapScores["right_shoulder"]! {
-                let temp: CGPoint = pointNameToLocationMapping["left_shoulder"]!
-                pointNameToLocationMapping["left_shoulder"] = pointNameToLocationMapping["right_shoulder"]
-                pointNameToLocationMapping["right_shoulder"] = temp
-            }
+            let temp: CGPoint = pointNameToLocationMapping["left_shoulder"]!
+            pointNameToLocationMapping["left_shoulder"] = pointNameToLocationMapping["right_shoulder"]
+            pointNameToLocationMapping["right_shoulder"] = temp
         }
         
         //swap left and right hips if PoseNet hallucinates that they are on opposite sides
         if let left = pointNameToLocationMapping["left_hip"], let right = pointNameToLocationMapping["right_hip"], left.x > right.x {
-            if heatmapScores["right_hip"]! < heatmapScores["left_hip"]! {
-                let temp: CGPoint = pointNameToLocationMapping["left_hip"]!
-                pointNameToLocationMapping["left_hip"] = pointNameToLocationMapping["right_hip"]
-                pointNameToLocationMapping["right_hip"] = temp
-            }
+            let temp: CGPoint = pointNameToLocationMapping["left_hip"]!
+            pointNameToLocationMapping["left_hip"] = pointNameToLocationMapping["right_hip"]
+            pointNameToLocationMapping["right_hip"] = temp
         }
         
-        //Apply single exponential smoothing from the previous prediction to prevent jitter and sudden changes in prediction (minor false positives)
+        //Apply exponential smoothing from the previous prediction to prevent jitter and sudden changes in prediction (minor false positives)
         var smoothedPoints: [String: CGPoint] = [:]
         let a: CGFloat = 0.4
         for (joint, point) in pointNameToLocationMapping {
@@ -211,44 +225,5 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
         }
         pointNameToLocationMapping = smoothedPoints
         oldMapping = smoothedPoints
-    }
-    
-    internal func drawPoints(){
-        DispatchQueue.main.async{
-            //remove previously drawn points and lines
-            self.view.subviews.forEach{ $0.removeFromSuperview()}
-            if !self.pointNameToLocationMapping.isEmpty{
-                //draw a square at every point within view
-                for (_, point) in self.pointNameToLocationMapping{
-                    let pointView = UIView()
-                    pointView.frame = CGRect(x: point.x, y: point.y, width: 5, height: 5)
-                    pointView.backgroundColor = .red
-                    self.view.addSubview(pointView)
-                }
-            }
-        }
-    }
-    
-    internal func drawLines(){
-        DispatchQueue.main.async{
-            //iterates through the skeletonMapping array which defines which points (by name) should be connected to each other
-            for connection in self.skeletonMapping{
-                //checks both the points exist
-                if self.pointNameToLocationMapping.keys.contains(connection.0) && self.pointNameToLocationMapping.keys.contains(connection.1){
-                    //draws BezierPath between the two point's locations using LineDrawingView
-                    let lineView = LineDrawingView(frame: self.view.bounds)
-                    lineView.backgroundColor = .clear
-                    guard let startPoint = self.pointNameToLocationMapping[connection.0] else {
-                        return
-                    }
-                    guard let endPoint = self.pointNameToLocationMapping[connection.1] else {
-                        return
-                    }
-                    lineView.startPoint = startPoint
-                    lineView.endPoint = endPoint
-                    self.view.addSubview(lineView)
-                }
-            }
-        }
     }
 }
