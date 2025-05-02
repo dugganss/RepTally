@@ -84,7 +84,7 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
         else {
             refreshCounter = 0
         }
-        //code adapted from Apple (n.d.) https://developer.apple.com/documentation/coreml/detecting-human-body-poses-in-an-image
+        //code adapted from Apple (2024)
         //Apple provided a sample project implementing PoseNet, the model has been configured to accept an image input (automatic preprocessing)
         let preprocessingStartTime = Date()
         
@@ -161,7 +161,7 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
                     }
                 }
             }
-            // code adapted from Apple (2024) (PoseBuilder)
+            // code adapted from Apple (2024)
             //Find the offset for the optimal point in the heatmap and ignore the value if it doesn't exist
             guard let offsetY = offsetShapedArray[i,bestHeight,bestWidth].scalar,
                   var offsetX = offsetShapedArray[i + outputOrder.count, bestHeight, bestWidth].scalar else {
@@ -179,7 +179,7 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
             if heatmapMax >= 0.3 {
                 let coarseX = CGFloat(bestWidth) * (CGFloat(view.bounds.width) / 33.0)
                 let coarseY = CGFloat(bestHeight) * (CGFloat(view.bounds.height) / 33.0)
-                //code adapted from Apple (2024) (PoseBuilder)
+                //code adapted from Apple (2024)
                 var position = CGPoint(x: coarseX, y: coarseY)
                 position += pointOffset!
                 //end of adapted code
@@ -214,7 +214,7 @@ class PoseNetOverlayController: UIViewController, PoseEstimator {
         let a: CGFloat = 0.4
         for (joint, point) in pointNameToLocationMapping {
             if let oldP = oldMapping[joint] {
-                //formula adapted from GeeksForGeeks (2024) https://www.geeksforgeeks.org/exponential-smoothing-forecast-formula/
+                //formula adapted from GeeksForGeeks (2024)
                 let x = oldP.x * (1 - a) + point.x * a
                 let y = oldP.y * (1 - a) + point.y * a
                 //end of adapted formula

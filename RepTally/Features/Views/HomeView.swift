@@ -14,7 +14,7 @@ struct HomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
     
-    //navigation destination using booleans retrieved from https://medium.com/@fsamuelsmartins/how-to-use-the-swiftuis-navigationstack-79f32ada7c69
+    //code adapted from Martins (2023)
     @State private var openCreateSessions = false
     @State private var openPreviousSessions = false
     @State private var openSideMenu = false
@@ -22,7 +22,7 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack(path: $navigationPath){
-            
+        //end of adapted code
             VStack{
                 HStack{
                     

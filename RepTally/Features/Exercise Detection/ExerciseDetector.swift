@@ -35,7 +35,7 @@ class ExerciseDetector{
      angle between them, where pointB is the point of the angle.
      */
     func angleBetween(pointA: CGPoint, pointB: CGPoint, pointC: CGPoint) -> CGFloat {
-        //formula adapted from Cuemath (n.d.) https://www.cuemath.com/geometry/angle-between-vectors/
+        //formula adapted from Cuemath (n.d.) 
         let vectorBA = CGVector(dx: pointA.x - pointB.x, dy: pointA.y - pointB.y)
         let vectorBC = CGVector(dx: pointC.x - pointB.x, dy: pointC.y - pointB.y)
         

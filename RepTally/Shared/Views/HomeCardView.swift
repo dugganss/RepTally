@@ -31,6 +31,3 @@ struct HomeCardView: View{
     }
 }
 
-#Preview {
-    HomeCardView(title: "View your previous sessions", action: {})
-}

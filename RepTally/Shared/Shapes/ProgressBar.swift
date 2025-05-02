@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-//code adapted from Apple (n.d.) Scrumdinger tutorial
-//https://developer.apple.com/tutorials/app-dev-training/drawing-the-timer-view
+//code adapted from Apple (n.d.-d)
 struct ProgressBar: Shape {
     let rep: Int
     let totalReps: Int

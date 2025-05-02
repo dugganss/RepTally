@@ -12,7 +12,7 @@ class LineDrawingView: UIView {
     var endPoint: CGPoint = .zero
     
     override func draw(_ rect: CGRect) {
-        //code adapted from DZoki019 (2020) (StackOverflow) https://stackoverflow.com/questions/31569051/how-to-draw-a-line-in-the-simplest-way-in-swift
+        //code adapted from Epic Defeater (2015)
         let path = UIBezierPath()
         path.move(to: startPoint)
         path.addLine(to: endPoint)  //Create UIBezierPath object and set start and end point

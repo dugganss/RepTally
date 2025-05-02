@@ -24,7 +24,7 @@ class SetTracker: ObservableObject {
     var isPaused = false
     
     private let soundID: SystemSoundID = {
-        //code adapted from Jain (2016) https://stackoverflow.com/questions/35595342/audioservicescreatesystemsoundid-only-once-in-application-and-play-sound-from-an
+        //code adapted from Jain (2016) 
         var id: SystemSoundID = 0
         if let url = Bundle.main.url(forResource: "beep", withExtension: "mp3") {
             AudioServicesCreateSystemSoundID(url as CFURL, &id)

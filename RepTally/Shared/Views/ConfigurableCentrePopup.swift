@@ -8,7 +8,7 @@
 import MijickPopupView
 import SwiftUI
 
-//code adapted from Mijick (2024) https://medium.com/@mijick/present-popups-from-anywhere-with-swiftui-9cd57e98e945#:~:text=Presenting%20popups%20(a.k.a.%20sheets,in%20the%20view)%20and%20voila.
+//code adapted from Mijick (2024)
 /*
  This module represents the pop up that shows when opening the FrameCheckView
  it implements CentrePopup which is a protocol derived from the MijickPopupView library

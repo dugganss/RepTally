@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//TODO: also could find a way that displays a loading symbol or something that displays while the pose estimation is loading
-
 struct FrameCheckView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
@@ -17,7 +15,7 @@ struct FrameCheckView: View {
     @State private var timeDetected = 5 //Amount of time someone needs to be detected on camera
     @State private var validDetection = false //flag for when timeDetected reaches 0
     var colors = [Color.red, Color.green] //colours for border
-    //code adapted from Hudson (2023) https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-a-timer-with-swiftui
+    //code adapted from Hudson (2023)
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() //timer that updates every second
     //end of adapted code
     
@@ -29,7 +27,7 @@ struct FrameCheckView: View {
                     RoundedRectangle(cornerRadius: 55, style: .continuous)
                         .stroke(colors[cameraInfoModel.isBodyDetected ? 1 : 0], lineWidth: 20) //varying colour of border
                 )
-            //code adapted from Hudson (2023) ^
+            //code adapted from Hudson (2023)
                 .onReceive(timer){ _ in //runs code below after a whole second has passed
             //end of adapted code
                     if cameraInfoModel.isBodyDetected && !popUpDetector.isPopUpShowing{ //only decrements timer when someone in frame
@@ -44,7 +42,7 @@ struct FrameCheckView: View {
                 .ignoresSafeArea()
                 .navigationBarBackButtonHidden(true)
                 .navigationBarItems(leading: ReturnButton())
-                .onAppear{ //pop up shows at when view is openec
+                .onAppear{ //pop up shows at when view is open
                     cameraInfoModel.isDisplaySkeleton = false
                     ConfigurableCentrePopup(popUpDetector: popUpDetector, title: "Lets see where you are...", buttonText: "Understood", line1: "- Put your phone at a distance where your whole body is visible in the frame", line2: "- Center yourself within the frame and try to ensure that your body parts are visible (e.g. no objects obstructing view)", line3: "- The session will automatically start when you have been detected for a short period of time", dismissable: true).showAndStack()
                 }

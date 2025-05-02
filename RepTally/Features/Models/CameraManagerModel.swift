@@ -14,7 +14,7 @@ import Combine
  (Meaning the views can affect the behaviour of those modules and vice versa)
  
  */
-//code adapted from Hudson (2021) https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-observedobject-to-manage-state-from-external-objects
+//code adapted from Hudson (2021)
 class CameraManagerModel: ObservableObject{
     @Published var isBodyDetected: Bool = false
     @Published var isDisplayCameraFeed: Bool = true

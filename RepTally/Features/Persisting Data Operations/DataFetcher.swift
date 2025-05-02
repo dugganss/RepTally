@@ -11,7 +11,7 @@ struct DataFetcher{
     var viewContext: NSManagedObjectContext?
     
     func getSetsFromMostRecentSession() -> [SetData]{
-        //code adapted from Hudson (n.d.) https://www.hackingwithswift.com/read/38/5/loading-core-data-objects-using-nsfetchrequest-and-nssortdescriptor
+        //code adapted from Hudson (n.d.)
         //create request
         let request = Session.fetchRequest()
         

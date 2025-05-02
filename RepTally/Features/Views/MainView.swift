@@ -15,9 +15,10 @@ struct MainView: View {
     
     @ObservedObject var user: User
     
+    //renders the currently selected view underneath the nav bar if the screen displays a nav bar, this ensures that it is persistent.
     var body: some View {
         ZStack(alignment: .bottom) {
-            //design pattern adapted from App Dev Insights https://medium.com/%40appdevinsights/building-a-custom-tabbar-in-swiftui-862636475151
+            //design pattern adapted from App Dev Insights
             Group {
                 if selectedTab == 0 {
                     HomeView(navigationPath: $homePath, showNav: $showNav , resetBools: $resetBools, user: user)

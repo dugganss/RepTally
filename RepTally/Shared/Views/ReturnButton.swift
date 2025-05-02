@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReturnButton:View {
-    //code adapted from https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
+    //code adapted from Ashish (2019)
     @Environment(\.presentationMode) var presentationMode : Binding<PresentationMode>
     var body: some View {
         Button(action: {self.presentationMode.wrappedValue.dismiss()}){
@@ -23,6 +23,3 @@ struct ReturnButton:View {
     }
 }
 
-#Preview {
-    ReturnButton()
-}

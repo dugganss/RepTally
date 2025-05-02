@@ -76,6 +76,7 @@ struct LogInView: View {
     }
     
     private func logIn(){
+        //formats and logs in user if already existing, otherwise, creates new user
         isEmpty = false
         isTooLong = false
         let trimmedUsername = username.trimmingCharacters(in: .whitespaces)
@@ -111,11 +112,3 @@ struct LogInView: View {
         }
     }
 }
-
-
-
-//#Preview{
-//    let coreDataStack = CoreDataStack.shared
-//    let context = coreDataStack.persistentContainer.viewContext
-//    return LogInView().environment(\.managedObjectContext, context)
-//}

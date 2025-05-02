@@ -13,7 +13,7 @@ struct CreateSessionView:View{
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
     
-    @State private var sets: [IntermediateSet] = [IntermediateSet(id: 1)]
+    @State private var sets: [IntermediateSet] = [IntermediateSet(id: 1)] //list of the sets chosen by the user
     @State private var incorrectDataEntry = false
     
     @State private var openFrameCheck = false
@@ -34,6 +34,8 @@ struct CreateSessionView:View{
                 ScrollView{
                     VStack{
                         ForEach(sets){ set in
+                            //maintains the contents of each set, displaying it in a reusable UI component
+                            //passes the respective set with binding
                             NewSessionCard(set: Binding(
                                 get: {
                                     self.sets.first(where: {$0.id == set.id})!
@@ -87,7 +89,7 @@ struct CreateSessionView:View{
                 
                 Spacer()
             }.ignoresSafeArea()
-            //code adapted from Ashish (2019)https://stackoverflow.com/questions/56571349/custom-back-button-for-navigationviews-navigation-bar-in-swiftui
+            //code adapted from Ashish (2019)
             
                 .navigationBarBackButtonHidden(true)
                 .navigationBarItems(leading: ReturnButton())

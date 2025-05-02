@@ -116,7 +116,7 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
                     pointNameToLocationMapping[outputOrder[i]] = pointOnScreen
                 }
             }
-            print("MoveNet inference time: \( Date().timeIntervalSince(postprocessingStartTime))")
+            print("MoveNet postprocessing time: \( Date().timeIntervalSince(postprocessingStartTime))")
             DispatchQueue.main.async{
                 self.cameraManagerModel?.isBodyDetected = !self.pointNameToLocationMapping.isEmpty
             }
@@ -137,16 +137,15 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
     /*
      Converts and resizes the CVPixelBuffer from the camera output to a MLMultiArray of type Int32 to be readable by the model.
      
-     Apple (n.d.) describes CVPixelBuffer to be 'an image buffer that holds pixels in main memory' meaning it would be possible to iterate over the pixels as they are stored in memory and append them to a corresponding MLMultiArray of the same shape. (converting them into Int32)
+     Apple (n.d.-c) describes CVPixelBuffer to be 'an image buffer that holds pixels in main memory' meaning it would be possible to iterate over the pixels as they are stored in memory and append them to a corresponding MLMultiArray of the same shape. (converting them into Int32)
      
      hxo (2017) overviews a method to efficiently resize the CVPixelBuffer using the same principle by utilising accelerate and vImage buffer
      
      CVPixelBuffer has an API allowing the inspection of the pixels as they are stored in memory which makes this possible
-     https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e
      */
     internal func convertResizePixelBufferAsMultiArray(_ pixelBuffer: CVPixelBuffer, width: Int, height: Int) -> MLMultiArray? {
         
-        //code adapted from Swift Package Index (n.d) and Apple (n.d.)  https://swiftpackageindex.com/computer-graphics-tools/core-video-tools/main/documentation/corevideotools/workingwithcvpixelbuffer
+        //code adapted from Swift Package Index (n.d) and Apple (n.d.-c)
         //The documentation mentions that pixel buffers must be locked to read only when inspecting it to ensure safe access in memory.
         CVPixelBufferLockBaseAddress(pixelBuffer, .readOnly)
         defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly) }
@@ -161,7 +160,7 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         let srcBytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)
         //end of adapted code
         
-        //code adapted from hxo (2017) & Stoneage (2017) https://developer.apple.com/forums/thread/90801
+        //code adapted from hxo (2017) & Stoneage (2017)
         //allocate memory for the resulting vImage buffer (resized CVPixelBuffer)
         let destBytesPerRow = width * 4
         guard let destData = malloc(height * destBytesPerRow) else {
@@ -198,7 +197,7 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
             return nil
         }
         
-        //code adapted from Alvarez (2018) ** https://stackoverflow.com/questions/51537698/how-can-i-read-individual-pixels-from-a-cvpixelbuffer
+        //code adapted from Alvarez (2018)
         //Converts the pointer to the destination buffer to UInt8 instead of a raw memory address
         //(this will assist in iterating through the pixels in memory)
         let destPtr = destBuffer.data.assumingMemoryBound(to: UInt8.self)

@@ -10,7 +10,7 @@ import CoreData
 /*
  This is a singleton class that enables the use of the UserDataModel within the application
  */
-// code adapted from Apple (n.d.) (setting up a core data stack)
+// code adapted from Apple (n.d.-b)
 class CoreDataStack: ObservableObject{
     static let shared = CoreDataStack()
     

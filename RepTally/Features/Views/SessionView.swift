@@ -35,6 +35,7 @@ struct SessionView: View {
                     }
                     
                     VStack{
+                        //SetTracker holds the information for sets and has an API to perform the relevant functions, this displays the current set being performed
                         Text("Set \(SetTracker.shared.currentSet()!.num).\(SetTracker.shared.subset)")
                             .font(.title)
                         Spacer().frame(height: 20)
@@ -42,9 +43,11 @@ struct SessionView: View {
                             .font(.custom("Wesker", size: 40))
                             .bold()
                         
+                        //Circular progress bar.
                         Circle()
                             .strokeBorder(lineWidth: 24)
                             .overlay {
+                                //Centered numerical rep count
                                 VStack{
                                     Text("Rep")
                                         .font(.custom("Wesker", size: 35))
@@ -74,6 +77,7 @@ struct SessionView: View {
                             }
                             .padding(.horizontal)
                         
+                        //Skips the current set, disabled at the last set (pausing automatically moves to the next set)
                         ActionButton(title: "Finish Set", isArrowButton: false, isBig: true, action: {
                             isPaused = true
                             countDown = 4
@@ -82,6 +86,7 @@ struct SessionView: View {
                         .opacity(SetTracker.shared.lastSet() ? 0.5 : 1.0)
                         
                         Spacer()
+                        //Returns the user to the home screen.
                         Button(action: {
                             isGoingHome = true
                         })
@@ -94,15 +99,19 @@ struct SessionView: View {
                         Spacer()
                     }
                     
+                    //Show pop up when session has ended that only allows the user to return to the home screen. uses counter to ensure the pop up is only shown once
                     if (SetTracker.shared.workoutComplete() && popupCounter < 1){
                         ConfigurableCentrePopup(popUpDetector: popUpDetector, title: "Session is Complete!", buttonText: "Return Home",line2: "Good Effort!", dismissable: false, eventFlagBoolean: $isGoingHome).showAndStack()
                     }
                     
+                    //Pausing overlay
                     if isPaused {
                         Color.black.opacity(0.7)
                             .ignoresSafeArea()
 
                         VStack() {
+                            //Display instructions and next workout until user touches the screen.
+                            //Display 3 second countdown, then go and then start the next set.
                             if countDown == 4 {
                                 Text("Set Break")
                                     .foregroundColor(.white)
@@ -130,17 +139,17 @@ struct SessionView: View {
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .contentShape(Rectangle())
+                        .contentShape(Rectangle()) //make tap box stretch for the entire screen
                         .onTapGesture {
-                            if countDown == 4 {
+                            if countDown == 4 { // start countdown
                                 countDown = 3
                             }
                         }
-                        .onReceive(timer) { _ in
+                        .onReceive(timer) { _ in //decrement countdown every second when activated
                             guard isPaused else { return }
                             if countDown > 0 && countDown < 4 {
                                 countDown -= 1
-                            } else if countDown == 0 {
+                            } else if countDown == 0 { //start next set at end of timer.
                                 isPaused = false
                                 SetTracker.shared.isPaused = isPaused
                                 SetTracker.shared.moveToNextSet()
@@ -160,32 +169,22 @@ struct SessionView: View {
         }
         .navigationBarBackButtonHidden(true)
         .onAppear{
-            SetTracker.shared.updateSetData(from: user, viewContext: viewContext)
-            cameraManagerModel.isDisplayCameraFeed = false
+            SetTracker.shared.updateSetData(from: user, viewContext: viewContext)   //get the most recently created set for the current user.
+            cameraManagerModel.isDisplayCameraFeed = false  //remove camera feed display (only showing skeleton)
         }
-        .onChange(of: SetTracker.shared.workoutComplete()){
+        .onChange(of: SetTracker.shared.workoutComplete()){ //show popup when the session ends
             popupCounter += 1
         }
-        .onChange(of: SetTracker.shared.setComplete()){ complete in
+        .onChange(of: SetTracker.shared.setComplete()){ complete in //pause, when a set completes so that the next set can start
             if complete {
                 isPaused = true
                 countDown = 4
                 SetTracker.shared.isPaused = isPaused
             }
         }
-        .onDisappear{
+        .onDisappear{   //clears the settracker when the view closes (it is a singleton so needs to be emptied after sessions)
             SetTracker.shared.hardReset()
         }
     }
 }
 
-
-#Preview {
-    let coreDataStack = CoreDataStack.shared
-    let context = coreDataStack.persistentContainer.viewContext
-    // Create a mock user
-    let mockUser = User(context: context)
-    
-    SessionView(user: mockUser)
-        .environment(\.managedObjectContext, context)
-}

@@ -27,7 +27,6 @@ struct PreviousSessionView: View{
             
             ScrollView{
                 VStack{
-                    //getting bug that doesnt show dates when you click on account then go home then back (still shows the entries just not the date...???
                     ForEach(sessions, id: \.self) { session in
                         Button(action: {
                             print("pressed")
@@ -48,8 +47,6 @@ struct PreviousSessionView: View{
                         }
                         
                     }
-                    
-                    
                     //cards for previous sessions go here
                     //these cards will link to another screen that will display the data for the record chosen
                 }

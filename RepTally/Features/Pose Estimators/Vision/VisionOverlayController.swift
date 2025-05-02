@@ -49,8 +49,7 @@ class VisionOverlayController : UIViewController, PoseEstimator{
     }
     
     func detectBody(in image: CVPixelBuffer){
-        //code adapted from Tustanowski (2023) and Ajwani (2019) https://medium.com/@kamil.tustanowski/detecting-body-pose-using-vision-framework-caba5435796a
-        //https://medium.com/onfido-tech/live-face-tracking-on-ios-using-vision-framework-adf8a1799233
+        //code adapted from Tustanowski (2023) and Ajwani (2019) 
         let bodyPoseRequest = VNDetectHumanBodyPoseRequest(completionHandler: { (request: VNRequest, error: Error?) in
             DispatchQueue.main.async{
                 guard let results = request.results as? [VNHumanBodyPoseObservation]

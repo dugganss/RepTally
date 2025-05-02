@@ -18,7 +18,7 @@ struct RepTallyApp: App {
         WindowGroup {
             if let user = loggedInUser {
                 MainView(user: user)
-                //code adapted from Apple (n.d.) (setting up a core data stack)
+                //code adapted from Apple (n.d.-b)
                     .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
                     .implementPopupView()
                 //end of adapted code

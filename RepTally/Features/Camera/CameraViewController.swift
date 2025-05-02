@@ -44,7 +44,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
             
-            //code adapted from Apple (n.d) (Setting Up a Capture Session)
+            //code adapted from Apple (n.d.-a)
             guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front),//safe device setup
                   let videoInput = try? AVCaptureDeviceInput(device: videoDevice),
                   self.captureSession.canAddInput(videoInput) else {
@@ -55,7 +55,7 @@ class CameraViewController: UIViewController,  AVCaptureVideoDataOutputSampleBuf
             
             self.captureSession.addInput(videoInput) //adds input to capture session
             
-            //code adapted from Ajwani (2019) https://medium.com/onfido-tech/live-face-tracking-on-ios-using-vision-framework-adf8a1799233
+            //code adapted from Ajwani (2019) 
             self.videoDataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString) : NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
             self.videoDataOutput.alwaysDiscardsLateVideoFrames = true
             self.videoDataOutput.setSampleBufferDelegate(self, queue: self.videoOutputQueue)

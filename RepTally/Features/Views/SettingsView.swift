@@ -13,7 +13,7 @@ struct SettingsView: View{
     @ObservedObject var user: User
     @ObservedObject var modelSwitcher = ModelSwitcher.shared
     
-    //code adapted from Hudson (2022) https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfield
+    //code adapted from Hudson (2022)
     @FocusState private var nameIsFocused: Bool
     //end of adapted code
     @State private var alreadyExists = false
@@ -40,6 +40,7 @@ struct SettingsView: View{
                 }
                 .padding(.leading, 50)
                 Menu{
+                    //displays all available models, allows user to change selected model
                     ForEach(modelSwitcher.options, id: \.self) { model in
                         Button(model) {modelSwitcher.setModel(to: model)}
                     }
@@ -56,6 +57,7 @@ struct SettingsView: View{
                 
                 Spacer().frame(height: 40)
                 
+                //change username UI with validation
                 HStack{
                     Text("Change Username")
                         .font(.custom("Delta Block", size: 22))
@@ -96,6 +98,7 @@ struct SettingsView: View{
         .navigationBarItems(leading: ReturnButton())
     }
     
+    //formats and changes a user's username, alters booleans to trigger the UI to let the user know whether it was successful or the username already exists on the device.
     func changeUsername(){
         alreadyExists = false
         successfulChange = false
