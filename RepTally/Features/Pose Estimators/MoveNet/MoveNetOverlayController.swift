@@ -9,6 +9,7 @@ import UIKit
 import CoreML
 import CoreVideo
 import Accelerate
+import VideoToolbox
 /*
  The TensorFlow2 version of MoveNet Lightning was converted to a CoreML readable .mlpackage so that the inference could be made directly using the Core ML API
  
@@ -62,13 +63,13 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
     var cameraManagerModel: CameraManagerModel?
     let overlayView = UIView()
     let context = CIContext()
-    var moveNet: movenetLightningFull?
+    var moveNet: movenetfinal?
 
     override func viewDidLoad() {
         do{
             let config = MLModelConfiguration()
             config.computeUnits = .all
-            moveNet = try movenetLightningFull(configuration: config)
+            moveNet = try movenetfinal(configuration: config)
         }
         catch{
             print("error loading movenet \(error)")
@@ -79,26 +80,23 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
     
     //Handles prediction and output processing
     func detectBody(in image: CVPixelBuffer) {
-        refreshCounter += 1
-        if refreshCounter != 3 {
-            return
-        }
-        else {
-            refreshCounter = 0
-        }
         let preprocessingStartTime = Date()
-        guard let inputArray = convertResizePixelBufferAsMultiArray(image, width: 192, height: 192)else {
-            print("failed to convert pixel buffer to multiarray")
+        
+        guard let bgraBuffer = convertToBGRA(image),
+              let scaledImage = resizePixelBuffer(bgraBuffer, width: 192, height: 192) else {
+            print("Failed to preprocess pixel buffer")
             return
         }
-        print("MoveNet Preprocessing time: \( Date().timeIntervalSince(preprocessingStartTime))")
+        
+        //print("MoveNet Preprocessing time: \( Date().timeIntervalSince(preprocessingStartTime))")
         do {
             if !pointNameToLocationMapping.isEmpty{
                 pointNameToLocationMapping.removeAll()
             }
             let inferenceStartTime = Date()
-            let prediction = try moveNet?.prediction(input: inputArray)
-            print("MoveNet inference time: \( Date().timeIntervalSince(inferenceStartTime))")
+            let prediction = try moveNet?.prediction(input_image: scaledImage)
+            
+            //print("MoveNet inference time: \( Date().timeIntervalSince(inferenceStartTime))")
             let output = prediction?.IdentityShapedArray
             
             let postprocessingStartTime = Date()
@@ -107,16 +105,16 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
                 let yResult: Float = output![0,0,i,0].scalar!
                 let xResult: Float = output![0,0,i,1].scalar!
                 let confidence: Float = output![0,0,i,2].scalar!
-                
+                print(confidence)
                 //scale points to screen and map to name when confidence above threshold
-                if confidence >= 0.2 {
+                if confidence >= 0.3{
                     let actualX = CGFloat(1 - xResult) * CGFloat(view.bounds.width)
                     let actualY = CGFloat(yResult) * CGFloat(view.bounds.height)
                     let pointOnScreen = CGPoint(x: actualX, y: actualY)
                     pointNameToLocationMapping[outputOrder[i]] = pointOnScreen
                 }
             }
-            print("MoveNet postprocessing time: \( Date().timeIntervalSince(postprocessingStartTime))")
+            //print("MoveNet postprocessing time: \( Date().timeIntervalSince(postprocessingStartTime))")
             DispatchQueue.main.async{
                 self.cameraManagerModel?.isBodyDetected = !self.pointNameToLocationMapping.isEmpty
             }
@@ -132,108 +130,102 @@ class MoveNetOverlayController: UIViewController, PoseEstimator{
         }
     }
     
-    
-    
-    /*
-     Converts and resizes the CVPixelBuffer from the camera output to a MLMultiArray of type Int32 to be readable by the model.
-     
-     Apple (n.d.-c) describes CVPixelBuffer to be 'an image buffer that holds pixels in main memory' meaning it would be possible to iterate over the pixels as they are stored in memory and append them to a corresponding MLMultiArray of the same shape. (converting them into Int32)
-     
-     hxo (2017) overviews a method to efficiently resize the CVPixelBuffer using the same principle by utilising accelerate and vImage buffer
-     
-     CVPixelBuffer has an API allowing the inspection of the pixels as they are stored in memory which makes this possible
-     */
-    internal func convertResizePixelBufferAsMultiArray(_ pixelBuffer: CVPixelBuffer, width: Int, height: Int) -> MLMultiArray? {
-        
-        //code adapted from Swift Package Index (n.d) and Apple (n.d.-c)
-        //The documentation mentions that pixel buffers must be locked to read only when inspecting it to ensure safe access in memory.
-        CVPixelBufferLockBaseAddress(pixelBuffer, .readOnly)
-        defer { CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly) }
-        
-        guard let srcBaseAddress = CVPixelBufferGetBaseAddress(pixelBuffer) else {
-            print("Unable to get base address from source pixel buffer")
-            return nil
-        }
-        
-        let srcWidth = CVPixelBufferGetWidth(pixelBuffer)
-        let srcHeight = CVPixelBufferGetHeight(pixelBuffer)
-        let srcBytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)
-        //end of adapted code
-        
-        //code adapted from hxo (2017) & Stoneage (2017)
-        //allocate memory for the resulting vImage buffer (resized CVPixelBuffer)
-        let destBytesPerRow = width * 4
-        guard let destData = malloc(height * destBytesPerRow) else {
-            print("Unable to allocate memory for destination buffer")
-            return nil
-        }
-        
-        //create vImage buffer for the source (original dimensions)
-        var srcBuffer = vImage_Buffer(data: srcBaseAddress,
-                                      height: vImagePixelCount(srcHeight),
-                                      width: vImagePixelCount(srcWidth),
-                                      rowBytes: srcBytesPerRow)
-        
-        //create vImage buffer for the result (desired dimensions)
-        var destBuffer = vImage_Buffer(data: destData,
-                                       height: vImagePixelCount(height),
-                                       width: vImagePixelCount(width),
-                                       rowBytes: destBytesPerRow)
-        
-        //scale the source buffer to the destination buffer
-        let error = vImageScale_ARGB8888(&srcBuffer, &destBuffer, nil, vImage_Flags(0))
-        if error != kvImageNoError {
-            print("vImageScale_ARGB8888 error:", error)
-            free(destData)
-            return nil
-        }
-        //end of adapted code
-        
-        //Create an MLMultiArray, the same shape as the expected input of the model.
-        let shape: [NSNumber] = [1, NSNumber(value: height), NSNumber(value: width), 3]
-        guard let multiArray = try? MLMultiArray(shape: shape, dataType: .int32) else {
-            print("Failed to create MLMultiArray.")
-            free(destData)
-            return nil
-        }
-        
-        //code adapted from Alvarez (2018)
-        //Converts the pointer to the destination buffer to UInt8 instead of a raw memory address
-        //(this will assist in iterating through the pixels in memory)
-        let destPtr = destBuffer.data.assumingMemoryBound(to: UInt8.self)
-        
-        //Iterate over each pixel based on the location of the first pixel using Alvarez's method
-        /*
-        The pixel buffer is in the format kCVPixelFormatType_32BGRA, providing the information necessary to obtain the
-         correct information.
-         
-         y*bytesPerRow moves the pointer to the current row
-         x*4 moves the pointer to the current pixel in the row because each pixel has 4 bytes of data (32 bits)
-         index 0 from the selected address correlates to the blue channel
-         index 1 correlates to the green channel
-         index 2 correlates to the red channel
-         index 3 correlates to the alpha channel, hence it being ignored
-         */
-        for y in 0..<height {
-            for x in 0..<width {
-                let pixelAddress = destPtr + (y * destBuffer.rowBytes) + (x * 4)
-                let b = Int32(pixelAddress[0])
-                let g = Int32(pixelAddress[1])
-                let r = Int32(pixelAddress[2])
-                
-                //place the values in the corresponding places in the MLMultiArray as Int32
-                multiArray[[0, NSNumber(value: y), NSNumber(value: x), 0]] = NSNumber(value: r)
-                multiArray[[0, NSNumber(value: y), NSNumber(value: x), 1]] = NSNumber(value: g)
-                multiArray[[0, NSNumber(value: y), NSNumber(value: x), 2]] = NSNumber(value: b)
-            }
-        }
-        //end of adapted code
-        free(destData)
-        return multiArray
+    func convertToBGRA(_ pixelBuffer: CVPixelBuffer) -> CVPixelBuffer? {
+        let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
+        let context = CIContext()
+
+        var outputBuffer: CVPixelBuffer?
+        let attrs: [CFString: Any] = [
+            kCVPixelBufferCGImageCompatibilityKey: true,
+            kCVPixelBufferCGBitmapContextCompatibilityKey: true,
+            kCVPixelBufferPixelFormatTypeKey: kCVPixelFormatType_32BGRA
+        ]
+
+        CVPixelBufferCreate(
+            kCFAllocatorDefault,
+            CVPixelBufferGetWidth(pixelBuffer),
+            CVPixelBufferGetHeight(pixelBuffer),
+            kCVPixelFormatType_32BGRA,
+            attrs as CFDictionary,
+            &outputBuffer
+        )
+
+        guard let buffer = outputBuffer else { return nil }
+        context.render(ciImage, to: buffer)
+        return buffer
     }
 
-    
-    
+    func resizePixelBuffer(
+        _ srcPixelBuffer: CVPixelBuffer,
+        width: Int,
+        height: Int
+    ) -> CVPixelBuffer? {
+        
+        CVPixelBufferLockBaseAddress(srcPixelBuffer, .readOnly)
+        defer { CVPixelBufferUnlockBaseAddress(srcPixelBuffer, .readOnly) }
+        
+        guard let srcBaseAddress = CVPixelBufferGetBaseAddress(srcPixelBuffer) else {
+            return nil
+        }
+        
+        let srcWidth = CVPixelBufferGetWidth(srcPixelBuffer)
+        let srcHeight = CVPixelBufferGetHeight(srcPixelBuffer)
+        let srcBytesPerRow = CVPixelBufferGetBytesPerRow(srcPixelBuffer)
+        
+        var srcBuffer = vImage_Buffer(
+            data: srcBaseAddress,
+            height: vImagePixelCount(srcHeight),
+            width: vImagePixelCount(srcWidth),
+            rowBytes: srcBytesPerRow
+        )
+        
+        // Create destination pixel buffer
+        var dstPixelBuffer: CVPixelBuffer?
+        let attrs = [
+            kCVPixelBufferCGImageCompatibilityKey: true,
+            kCVPixelBufferCGBitmapContextCompatibilityKey: true
+        ] as CFDictionary
+        
+        CVPixelBufferCreate(
+            kCFAllocatorDefault,
+            width,
+            height,
+            CVPixelBufferGetPixelFormatType(srcPixelBuffer),
+            attrs,
+            &dstPixelBuffer
+        )
+        
+        guard let dst = dstPixelBuffer else { return nil }
+        
+        CVPixelBufferLockBaseAddress(dst, [])
+        defer { CVPixelBufferUnlockBaseAddress(dst, []) }
+        
+        guard let dstBaseAddress = CVPixelBufferGetBaseAddress(dst) else {
+            return nil
+        }
+        
+        var dstBuffer = vImage_Buffer(
+            data: dstBaseAddress,
+            height: vImagePixelCount(height),
+            width: vImagePixelCount(width),
+            rowBytes: CVPixelBufferGetBytesPerRow(dst)
+        )
+        
+        // Scale
+        let error = vImageScale_ARGB8888(
+            &srcBuffer,
+            &dstBuffer,
+            nil,
+            vImage_Flags(kvImageHighQualityResampling)
+        )
+        
+        if error != kvImageNoError {
+            return nil
+        }
+        
+        return dst
+    }
+
 }
 
 
