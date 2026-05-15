@@ -11,7 +11,7 @@ import CoreData
 struct SettingsView: View{
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
-    @ObservedObject var modelSwitcher = ModelSwitcher.shared
+    @ObservedObject var modelSwitcher = ModelManager.shared
     
     //code adapted from Hudson (2022)
     @FocusState private var nameIsFocused: Bool

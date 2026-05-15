@@ -13,7 +13,7 @@ struct SessionView: View {
     @ObservedObject var user: User
     @StateObject var cameraManagerModel = CameraManagerModel()
     @State private var isGoingHome = false //flag to return home (temporary)
-    @StateObject var popUpDetector = PopUpDetectionModel()
+    @StateObject var popUpDetector = PopUpManager()
     @State var popupCounter: Int = 0
     @State private var isPaused = false
     @State private var countDown = 3
@@ -27,7 +27,7 @@ struct SessionView: View {
                         Spacer().frame(height: 90)
                         HStack{
                             Spacer()
-                            CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: ModelSwitcher.shared.currentModel)
+                            CameraView(cameraManagerModel: cameraManagerModel, poseEstimator: ModelManager.shared.currentModel)
                                 .frame(width: 100, height: 150)
                                 .padding(.trailing, 30)
                         }

@@ -8,7 +8,7 @@ import CoreGraphics
 
 class ExerciseDetector{
     var poseEstimator: PoseEstimator {
-        return ModelSwitcher.shared.currentModel
+        return ModelManager.shared.currentModel
     }
     
     var startRight: Bool = false

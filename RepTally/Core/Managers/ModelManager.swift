@@ -10,8 +10,8 @@ import Combine
  Globally maintains the current model selected, making them easily hot swappable
  */
 
-class ModelSwitcher : ObservableObject {
-    static let shared = ModelSwitcher()
+class ModelManager : ObservableObject {
+    static let shared = ModelManager()
     
     private let moveNet = MoveNetOverlayController()
     private let vision = VisionOverlayController()

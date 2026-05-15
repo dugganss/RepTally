@@ -26,7 +26,7 @@ struct ConfigurableCentrePopup: CentrePopup{
     
     @Binding var eventFlagBoolean: Bool
     
-    init(popUpDetector: PopUpDetectionModel, title: String, buttonText: String, line1: String = "", line2: String = "", line3: String = "", dismissable: Bool = true, eventFlagBoolean: Binding<Bool> = .constant(false)) {
+    init(popUpDetector: PopUpManager, title: String, buttonText: String, line1: String = "", line2: String = "", line3: String = "", dismissable: Bool = true, eventFlagBoolean: Binding<Bool> = .constant(false)) {
         self.title = title
         self.line1 = line1
         self.line2 = line2
@@ -38,7 +38,7 @@ struct ConfigurableCentrePopup: CentrePopup{
         self._eventFlagBoolean = eventFlagBoolean
     }
     
-    var popUpDetector : PopUpDetectionModel
+    var popUpDetector : PopUpManager
     func createContent() -> some View { //essentially the body property of a typical view
         VStack{
             Text(title)

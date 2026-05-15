@@ -6,6 +6,10 @@
 //
 import CoreData
 
+/// Note: 16/5/26, To follow SOLID and MVVM, you want to refactor the codebase so that all queries to core data are contained within a module similar to this.
+/// Create a module that contains methods to fetch user data, then one to fetch session data so that there are seperate modules to handle fetching data from each category
+/// no viewmodels or views should contain code to fetch data from core data, they should call methods from a repository to get that data.
+
 struct DataFetcher{
     var user: User?
     var viewContext: NSManagedObjectContext?

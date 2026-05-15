@@ -11,6 +11,6 @@ import Combine
  This module is an observable object that uses isPopUpShowing
  as a flag to prevent UI operations from occuring whilst a popup is showing
 */
-class PopUpDetectionModel: ObservableObject{
+class PopUpManager: ObservableObject{
     @Published var isPopUpShowing = true
 }

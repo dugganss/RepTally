@@ -11,7 +11,7 @@ struct FrameCheckView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
     @StateObject var cameraInfoModel = CameraManagerModel() //Observable object to track whether someone's been detected on camera
-    @StateObject var popUpDetector = PopUpDetectionModel()
+    @StateObject var popUpDetector = PopUpManager()
     @State private var timeDetected = 5 //Amount of time someone needs to be detected on camera
     @State private var validDetection = false //flag for when timeDetected reaches 0
     var colors = [Color.red, Color.green] //colours for border
@@ -21,7 +21,7 @@ struct FrameCheckView: View {
     
     var body: some View{
         NavigationStack{
-            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: ModelSwitcher.shared.currentModel)
+            CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: ModelManager.shared.currentModel)
                 .clipShape(RoundedRectangle(cornerRadius: 55, style: .continuous))
                 .overlay(
                     RoundedRectangle(cornerRadius: 55, style: .continuous)
