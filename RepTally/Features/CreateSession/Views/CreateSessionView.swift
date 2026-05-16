@@ -12,14 +12,12 @@ import SwiftUI
 struct CreateSessionView:View{
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
+    @ObservedObject var nav : NavigationManager
     
     @State private var sets: [IntermediateSet] = [IntermediateSet(id: 1)] //list of the sets chosen by the user
     @State private var incorrectDataEntry = false
     
-    @State private var openFrameCheck = false
-    
     var body: some View{
-        NavigationStack{
             VStack{
                 HStack{
                     Spacer()
@@ -82,7 +80,7 @@ struct CreateSessionView:View{
                 ActionButton(title: "Start Session", isArrowButton: false, isBig: true, action: {
                     createSession()
                     if(!incorrectDataEntry){
-                        openFrameCheck = true
+                        nav.goToFrameCheck()
                     }
                 })
                 .padding(.bottom, 20)
@@ -94,11 +92,6 @@ struct CreateSessionView:View{
                 .navigationBarBackButtonHidden(true)
                 .navigationBarItems(leading: ReturnButton())
             //end of adapted code
-        }
-        .navigationDestination(isPresented: $openFrameCheck){
-            FrameCheckView(user: user)
-                .environment(\.managedObjectContext, viewContext)
-        }
     }
     
     func createSession(){

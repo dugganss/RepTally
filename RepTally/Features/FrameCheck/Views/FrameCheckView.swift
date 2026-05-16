@@ -10,17 +10,16 @@ import SwiftUI
 struct FrameCheckView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var user: User
+    @ObservedObject var nav: NavigationManager
     @StateObject var cameraInfoModel = CameraManagerModel() //Observable object to track whether someone's been detected on camera
     @StateObject var popUpDetector = PopUpManager()
     @State private var timeDetected = 5 //Amount of time someone needs to be detected on camera
-    @State private var validDetection = false //flag for when timeDetected reaches 0
     var colors = [Color.red, Color.green] //colours for border
     //code adapted from Hudson (2023)
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() //timer that updates every second
     //end of adapted code
     
     var body: some View{
-        NavigationStack{
             CameraView(cameraManagerModel: cameraInfoModel, poseEstimator: ModelManager.shared.currentModel)
                 .clipShape(RoundedRectangle(cornerRadius: 55, style: .continuous))
                 .overlay(
@@ -35,8 +34,8 @@ struct FrameCheckView: View {
                     }else{  //otherwise resets timer
                         timeDetected = 5
                     }
-                    if timeDetected <= 0 {
-                        validDetection = true
+                    if timeDetected == 0 {
+                        nav.goToSession()
                     }
                 }
                 .ignoresSafeArea()
@@ -47,10 +46,4 @@ struct FrameCheckView: View {
                     ConfigurableCentrePopup(popUpDetector: popUpDetector, title: "Lets see where you are...", buttonText: "Understood", line1: "- Put your phone at a distance where your whole body is visible in the frame", line2: "- Center yourself within the frame and try to ensure that your body parts are visible (e.g. no objects obstructing view)", line3: "- The session will automatically start when you have been detected for a short period of time", dismissable: true).showAndStack()
                 }
         }
-        .navigationDestination(isPresented: $validDetection){
-            SessionView(user: user)
-                .environment(\.managedObjectContext, viewContext)
-
-        }
     }
-}

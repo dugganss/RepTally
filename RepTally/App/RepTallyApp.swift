@@ -16,18 +16,11 @@ struct RepTallyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if let user = loggedInUser {
-                MainView(user: user)
-                //code adapted from Apple (n.d.-b)
-                    .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
-                    .implementPopupView()
-                //end of adapted code
-            }
-            else{
-                LogInView(loggedInUser: $loggedInUser)
-                    .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
-                    .implementPopupView()
-            }
+            RootView(loggedInUser: $loggedInUser)
+            //code adapted from Apple (n.d.-b)
+                .environment(\.managedObjectContext, coreDataStack.persistentContainer.viewContext)
+                .implementPopupView()
+            //end of adapted code
         }
         
     }

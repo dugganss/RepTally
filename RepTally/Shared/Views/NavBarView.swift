@@ -9,9 +9,11 @@ import SwiftUI
 ///This is the view for the Navigation bar found at the bottom of some pages.
 ///It has been implemented as its own view to allow for reusability on multiple screens.
 struct NavBarView: View {
-    @Binding var selectedTab: Int
-    @Binding var homePath: NavigationPath
-    @Binding var resetBools: Bool
+//    @Binding var selectedTab: Int
+//    @Binding var homePath: NavigationPath
+//    @Binding var resetBools: Bool
+    
+    @ObservedObject var nav : NavigationManager
     
     var body: some View{
         Color("NavBarColour")
@@ -19,12 +21,7 @@ struct NavBarView: View {
                 HStack{
                     Button(action: {
                         withAnimation(.none) {
-                            if selectedTab == 0 {
-                                resetBools = true
-                            }
-                            else{
-                                selectedTab = 0
-                            }
+                            nav.selectedTab = .home
                         }
                     }){
                         Image(systemName: "house")
@@ -37,7 +34,7 @@ struct NavBarView: View {
                     Spacer()
                     Button(action: {
                         withAnimation(.none) {
-                            selectedTab = 1
+                            nav.selectedTab = .settings
                         }
                     }){
                         Image(systemName: "gearshape")
