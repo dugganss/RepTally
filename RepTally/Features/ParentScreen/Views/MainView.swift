@@ -17,18 +17,24 @@ struct MainView: View {
     
     //renders the currently selected view underneath the nav bar if the screen displays a nav bar, this ensures that it is persistent.
     var body: some View {
-        ZStack(alignment: .bottom) {
+        NavigationStack(path: $homePath) {
             //design pattern adapted from App Dev Insights
-            Group {
-                if selectedTab == 0 {
-                    HomeView(navigationPath: $homePath, showNav: $showNav , resetBools: $resetBools, user: user)
-                        .transition(.identity)
-                } else if selectedTab == 1 {
-                    SettingsView(user: user)
-                        .transition(.identity)
+            ZStack {
+                LinearGradient(stops: [.init(color: .purple, location: 0.2),
+                                       .init(color: .black, location: 0.6)
+                ], startPoint: .top, endPoint: .bottom)
+                
+                Group {
+                    if selectedTab == 0 {
+                        HomeView(navigationPath: $homePath, showNav: $showNav , resetBools: $resetBools, user: user)
+                            .transition(.identity)
+                    } else if selectedTab == 1 {
+                        SettingsView(user: user)
+                            .transition(.identity)
+                    }
                 }
+                .animation(.none, value: selectedTab)
             }
-            .animation(.none, value: selectedTab)
             
             if showNav{
                 NavBarView(selectedTab: $selectedTab, homePath: $homePath, resetBools: $resetBools)

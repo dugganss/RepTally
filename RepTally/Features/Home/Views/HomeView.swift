@@ -21,7 +21,7 @@ struct HomeView: View {
     @State private var openWeeklyGoal = false
     
     var body: some View {
-        NavigationStack(path: $navigationPath){
+        //NavigationStack(path: $navigationPath){
         //end of adapted code
             VStack{
                 HStack{
@@ -66,7 +66,7 @@ struct HomeView: View {
                 }.padding(.bottom)
                 
                 ZStack{
-                    Color("BackgroundColour")
+                    //Color("BackgroundColour")
                     VStack{
                         Group{
                             HomeCardView(title: "View your Previous Sessions", action: {self.openPreviousSessions = true})
@@ -99,7 +99,7 @@ struct HomeView: View {
                 }
             }
         }
-    }
+    //}
     
     func resetNavigationBooleans() {
         openCreateSessions = false

@@ -29,5 +29,6 @@ struct RepTallyApp: App {
                     .implementPopupView()
             }
         }
+        
     }
 }
