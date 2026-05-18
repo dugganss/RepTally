@@ -4,7 +4,7 @@
 //
 //  Created by Samuel Duggan on 09/03/2025.
 //
-//TODO: currently trying to figure out how to get the background onto each view rendered on top of this view with the current nav system
+//TODO: currently trying to figure out how to get the background onto each view rendered on top of this view with the current nav system efficiently
 import SwiftUI
 
 struct MainView: View {
@@ -57,13 +57,18 @@ struct MainView: View {
                         MainBackgroundView()
                         SessionView(user: user, nav: nav)
                     }
-                    
 
                 case .previousSessions:
-                    PreviousSessionView(user: user)
-
+                    ZStack{
+                        MainBackgroundView()
+                        PreviousSessionView(user: user)
+                    }
+                    
                 case .weeklyGoal:
-                    WeeklyGoalView(user: user)
+                    ZStack{
+                        MainBackgroundView()
+                        WeeklyGoalView(user: user)
+                    }
                 }
             }
         }
