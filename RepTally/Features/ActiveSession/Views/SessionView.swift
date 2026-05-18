@@ -181,7 +181,7 @@ struct SessionView: View {
             }
             .onDisappear{   //clears the settracker when the view closes (it is a singleton so needs to be emptied after sessions)
                 SetTracker.shared.hardReset()
-            }   
+            }
     }
     
 }

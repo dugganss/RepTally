@@ -65,6 +65,7 @@ struct HomeView: View {
                     }
                 }
             }.ignoresSafeArea()
+            .background(.clear)
         }
 }
     

@@ -4,23 +4,18 @@
 //
 //  Created by Samuel Duggan on 09/03/2025.
 //
-
+//TODO: currently trying to figure out how to get the background onto each view rendered on top of this view with the current nav system
 import SwiftUI
 
 struct MainView: View {
     @StateObject private var nav = NavigationManager()
     @ObservedObject var user: User
-    
-    //renders the currently selected view underneath the nav bar if the screen displays a nav bar, this ensures that it is persistent.
+
     var body: some View {
         NavigationStack(path: $nav.path) {
-            //design pattern adapted from App Dev Insights
             VStack(spacing: 0){
                 ZStack {
-                    LinearGradient(stops: [.init(color: .purple, location: 0.2),
-                                           .init(color: .black, location: 0.6)
-                    ], startPoint: .top, endPoint: .bottom)
-                    
+                    MainBackgroundView()
                     
                     Group {
                         switch nav.selectedTab {
@@ -49,13 +44,20 @@ struct MainView: View {
                     SettingsView(user: user)
 
                 case .createSession:
-                    CreateSessionView(user: user, nav: nav)
+                    ZStack{
+                        MainBackgroundView()
+                        CreateSessionView(user: user, nav: nav)
+                    }
 
                 case .frameCheck:
                     FrameCheckView(user: user, nav: nav)
 
                 case .session:
-                    SessionView(user: user, nav: nav)
+                    ZStack{
+                        MainBackgroundView()
+                        SessionView(user: user, nav: nav)
+                    }
+                    
 
                 case .previousSessions:
                     PreviousSessionView(user: user)

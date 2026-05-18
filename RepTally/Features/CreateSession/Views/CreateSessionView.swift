@@ -29,6 +29,7 @@ struct CreateSessionView:View{
                     Spacer()
                 }
                 
+                
                 ScrollView{
                     VStack{
                         ForEach(sets){ set in
@@ -86,12 +87,11 @@ struct CreateSessionView:View{
                 .padding(.bottom, 20)
                 
                 Spacer()
-            }.ignoresSafeArea()
-            //code adapted from Ashish (2019)
-            
-                .navigationBarBackButtonHidden(true)
-                .navigationBarItems(leading: ReturnButton())
-            //end of adapted code
+            }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: ReturnButton())
+            .ignoresSafeArea()
+
     }
     
     func createSession(){
